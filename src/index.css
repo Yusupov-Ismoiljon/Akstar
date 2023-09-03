@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.brend {
+    @apply text-[#191919]
+}
+
+.logo {
+    @apply text-[#1B37A3]
+}
+
+a.active {
+    @apply text-[#1B37A3]
+}
+.icon{
+    @apply text-[#B0B0B0]
+}
