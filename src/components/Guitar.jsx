@@ -45,9 +45,9 @@ const Guitar = ({ shop, setShop }) => {
                                 <div>
                                     <div className={`w-full ${tab === e.id ? 'block' : 'hidden'}`}>
                                         <p>{e.content}</p>
-                                        <div className={`${e.id === 2 ? "block" : "hidden"}`}>
+                                        <div className={`grid md:grid-cols-2 grid-cols-1 ${e.id === 2 ? "block" : "hidden"}`}>
                                             <ul className='space-y-4'>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4 space-y-4'>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
                                                     <span>Производитель:</span>
                                                     <span className='text-[#262626]'>Alhambra</span>
                                                 </li>
@@ -58,6 +58,30 @@ const Guitar = ({ shop, setShop }) => {
                                                 <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] space-x-4'>
                                                     <span>Цвет:</span>
                                                     <span className='text-[#262626]'>Натуральный</span>
+                                                </li>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                    <span>Артикул:</span>
+                                                    <span className='text-[#262626]'>1.122</span>
+                                                </li>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] space-x-4'>
+                                                    <span>Базовая единица:</span>
+                                                    <span className='text-[#262626]'>шт</span>
+                                                </li>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] space-x-4'>
+                                                    <span>Ставки налогов:</span>
+                                                    <span className='text-[#262626]'>Ставки налогов:</span>
+                                                </li>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                    <span>Верхняя дека:</span>
+                                                    <span className='text-[#262626]'>Массив ели</span>
+                                                </li>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] space-x-4'>
+                                                    <span>Звукосниматель:</span>
+                                                    <span className='text-[#262626]'>Есть</span>
+                                                </li>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] space-x-4'>
+                                                    <span>Вес нетто (кг):</span>
+                                                    <span className='text-[#262626]'>2.9</span>
                                                 </li>
                                             </ul>
                                         </div>
