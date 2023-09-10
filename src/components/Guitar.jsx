@@ -47,15 +47,15 @@ const Guitar = ({ shop, setShop }) => {
                                         <p>{e.content}</p>
                                         <div className={`${e.id === 2 ? "block" : "hidden"}`}>
                                             <ul className='space-y-4'>
-                                                <li className='font-medium text-base leading-6 text-[#89898E] space-x-4'>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4 space-y-4'>
                                                     <span>Производитель:</span>
                                                     <span className='text-[#262626]'>Alhambra</span>
                                                 </li>
-                                                <li className='font-medium text-base leading-6 text-[#89898E] space-x-4'>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] space-x-4'>
                                                     <span>Количество струн:</span>
                                                     <span className='text-[#262626]'>6</span>
                                                 </li>
-                                                <li className='font-medium text-base leading-6 text-[#89898E] space-x-4'>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] space-x-4'>
                                                     <span>Цвет:</span>
                                                     <span className='text-[#262626]'>Натуральный</span>
                                                 </li>
