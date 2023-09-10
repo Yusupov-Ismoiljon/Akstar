@@ -34,7 +34,7 @@ const Main = ({ shop, setShop }) => {
                             <span className='font-bold text-4xl brend'>Каталог</span>
                         </button>
                         {menuKatal &&
-                            <div className='w-[360px] bg-white absolute shadov rounded-lg p-[30px] -top-[30px] z-40'>
+                            <div className='md:w-[360px] bg-white absolute shadov rounded-lg p-[30px] -top-[30px] z-40'>
                                 <button onClick={() => setMenuKatal(!menuKatal)} className='flex items-center mb-[30px]'>
                                     <img className='mr-4' src="./img/x.svg" alt="" aria-hidden='true' />
                                     <span className='font-bold text-4xl brend'>Каталог</span>
