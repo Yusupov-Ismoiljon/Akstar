@@ -86,7 +86,7 @@ const Main = ({ shop, setShop }) => {
                                 <img className='w-6 mr-2.5' src="./img/sozlash.svg" alt="" />
                                 <span className='font-bold text-base brend'>Фильтр</span>
                             </button>
-                            <div className="w-72">
+                            <div>
                                 <Select label='По популярности'>
                                     <Option>По популярности</Option>
                                     <Option>Сначала дорогие</Option>
