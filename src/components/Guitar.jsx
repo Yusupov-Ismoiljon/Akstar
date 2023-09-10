@@ -28,7 +28,7 @@ const Guitar = ({ shop, setShop }) => {
         <div>
             <Header shop={shop} setShop={setShop} />
             <div className='w-full max-w-[1540px] mx-auto px-5 py-10'>
-                <div className="flex justify-between w-[636px] bg-slate-300 py-2 px-5 rounded-xl">
+                <div className="md:flex md:justify-between md:w-[636px] bg-slate-300 py-2 px-5 rounded-xl">
                     {tapArr.map((el) => {
                         return (
                             <div>
