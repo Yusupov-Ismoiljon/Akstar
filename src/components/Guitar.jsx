@@ -20,7 +20,6 @@ const Guitar = ({ shop, setShop }) => {
         {
             id: 3,
             title: 'Доставка и оплата',
-            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea necessitatibus fuga ullam, porro dignissimos ab beatae aut perferendis! Cum qui aliquam unde illum vitae ipsa recusandae officiis facilis. Iusto, voluptatem!',
         },
     ];
 
@@ -118,6 +117,19 @@ const Guitar = ({ shop, setShop }) => {
                                                     <span className='text-[#262626]'>43мм</span>
                                                 </li>
                                             </ul>
+                                        </div>
+                                        <div className={` ${e.id === 3 ? 'block' : 'hidden'}`}>
+                                            <div className='space-y-4'>
+                                                <p className='font-medium text-base leading-6'>Мы стараемся сохранять цены на товары для клиентов максимально доступными, поэтому доставка оплачивается клиентом ПРИ ПОЛУЧЕНИИ, чтобы всё было максимально прозрачно и мы могли сохранить максимально выгодную стоимость товаров для наших клиентов. Доставка осуществляется службами СДЭК или Почта России и оформляется страховка на весь заказ.</p>
+                                                <p className='font-medium text-base leading-6'><span className='font-bold'>Срок доставки:</span> 3-5 рабочих дней с момента отправки заказа.</p>
+                                                <p className='font-bold text-base leading-6'>Гитары:</p>
+                                                <p className='font-medium text-base leading-6'>Москва: 1090-1200 рублей за 1 ед. товара</p>
+                                                <p className='font-medium text-base leading-6'>Санкт-Петербург: 700-1000 рублей за 1 ед. товара (либо САМОВЫВОЗ из пункта выдачи)</p>
+                                                <p className='font-medium text-base leading-6'>Сочи: 880-1100 рублей за 1 ед. товара</p>
+                                                <p className='font-medium text-base leading-6'>Казань: 650-1025 рублей за 1 ед. товара</p>
+                                                <p className='font-medium text-base leading-6'>Новосибирск: 1350-1765 рублей</p>
+                                                <p className='font-bold text-base leading-6'>Итоговая стоимость доставки будет известна тогда, когда заказ прибудет к вам.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
