@@ -1,5 +1,5 @@
 import React from 'react'
-import Frame from '../components/Frame'
+import Frame from './Frame'
 import { Outlet } from 'react-router-dom'
 
 const RootLayouts = () => {

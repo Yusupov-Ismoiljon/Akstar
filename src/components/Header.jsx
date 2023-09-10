@@ -1,12 +1,13 @@
-import { Button } from '@material-tailwind/react';
+import { Badge } from '@material-tailwind/react';
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-const Header = () => {
+const Header = ({ shop, setShop }) => {
     const [menu, setMenu] = useState(false);
+
     return (
         <header>
-            <div className='w-full max-w-[1920px] mx-auto px-5 py-3 mb-3'>
+            <div className='w-full max-w-[1540px] mx-auto px-5 py-3 mb-3'>
                 <div className='flex items-center justify-between'>
                     <Link to={`/`}>
                         <h1 className='font-russo font-light md:text-[40.34px] text-[23px] logo leading-[135%] uppercase'>akstar</h1>
@@ -40,7 +41,13 @@ const Header = () => {
                     <div className='lg:block hidden'>
                         <ul className='flex items-center space-x-7'>
                             <li>
-                                <i className="fas fa-cart-shopping fa-lg"></i>
+                                <Link to='/магазин'>
+                                    <Badge color="blue" content={shop.length}>
+                                        <button>
+                                            <i className="fas fa-cart-shopping fa-lg"></i>
+                                        </button>
+                                    </Badge>
+                                </Link>
                             </li>
                             <li>
                                 <i className="fa-sharp fa-regular fa-heart fa-lg"></i>
@@ -101,6 +108,18 @@ const Header = () => {
                         </div>
                     </div>
                 }
+            </div>
+            <div className='-z-30 bg-black mb-4'>
+                <div className='w-full max-w-[1540px] mx-auto px-5'>
+                    <marquee>
+                        <div className='font-raleway text-white space-x-9 py-2'>
+                            <span className='text-base leading-normal uppercase'>Промокод <span className='font-extrabold'>CROW</span>- скидка 25% на все курсы гитарной академии</span>
+                            <span className='text-base leading-normal uppercase'>Промокод <span className='font-extrabold'>CROW</span>- скидка 25% на все курсы гитарной академии</span>
+                            <span className='text-base leading-normal uppercase'>Промокод <span className='font-extrabold'>CROW</span>- скидка 25% на все курсы гитарной академии</span>
+                            <span className='text-base leading-normal uppercase'>Промокод <span className='font-extrabold'>CROW</span>- скидка 25% на все курсы гитарной академии</span>
+                        </div>
+                    </marquee>
+                </div>
             </div>
         </header>
     )
