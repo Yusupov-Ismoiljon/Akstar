@@ -43,7 +43,7 @@ const Guitar = ({ shop, setShop }) => {
                         {tapArr.map((e) => {
                             return (
                                 <div>
-                                    <div className={`${tab === e.id ? 'block' : 'hidden'}`}>
+                                    <div className={`w-full ${tab === e.id ? 'block' : 'hidden'}`}>
                                         <p>{e.content}</p>
                                         <div className={`${e.id === 2 ? "block" : "hidden"}`}>
                                             <ul className='space-y-4'>
