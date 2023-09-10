@@ -84,6 +84,40 @@ const Guitar = ({ shop, setShop }) => {
                                                     <span className='text-[#262626]'>2.9</span>
                                                 </li>
                                             </ul>
+                                            <ul className='space-y-4'>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                    <span>Вес брутто (кг):</span>
+                                                    <span className='text-[#262626]'>4.1</span>
+                                                </li>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                    <span>Объем (м3):</span>
+                                                    <span className='text-[#262626]'>0.0968</span>
+                                                </li>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                    <span>Анкер:</span>
+                                                    <span className='text-[#262626]'>Есть</span>
+                                                </li>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                    <span>УПАКдлина (см):</span>
+                                                    <span className='text-[#262626]'>122</span>
+                                                </li>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                    <span>УПАКдлина (см):</span>
+                                                    <span className='text-[#262626]'>48</span>
+                                                </li>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                    <span>УПАКдлина (см):</span>
+                                                    <span className='text-[#262626]'>18</span>
+                                                </li>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                    <span>Чехол/кейс:</span>
+                                                    <span className='text-[#262626]'>Чехол</span>
+                                                </li>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                    <span>Ширина грифа:</span>
+                                                    <span className='text-[#262626]'>43мм</span>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
