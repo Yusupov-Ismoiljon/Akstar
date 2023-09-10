@@ -51,11 +51,11 @@ const Guitar = ({ shop, setShop }) => {
                                                     <span>Производитель:</span>
                                                     <span className='text-[#262626]'>Alhambra</span>
                                                 </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] space-x-4'>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
                                                     <span>Количество струн:</span>
                                                     <span className='text-[#262626]'>6</span>
                                                 </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] space-x-4'>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
                                                     <span>Цвет:</span>
                                                     <span className='text-[#262626]'>Натуральный</span>
                                                 </li>
@@ -63,11 +63,11 @@ const Guitar = ({ shop, setShop }) => {
                                                     <span>Артикул:</span>
                                                     <span className='text-[#262626]'>1.122</span>
                                                 </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] space-x-4'>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
                                                     <span>Базовая единица:</span>
                                                     <span className='text-[#262626]'>шт</span>
                                                 </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] space-x-4'>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
                                                     <span>Ставки налогов:</span>
                                                     <span className='text-[#262626]'>Ставки налогов:</span>
                                                 </li>
@@ -75,11 +75,11 @@ const Guitar = ({ shop, setShop }) => {
                                                     <span>Верхняя дека:</span>
                                                     <span className='text-[#262626]'>Массив ели</span>
                                                 </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] space-x-4'>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
                                                     <span>Звукосниматель:</span>
                                                     <span className='text-[#262626]'>Есть</span>
                                                 </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] space-x-4'>
+                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
                                                     <span>Вес нетто (кг):</span>
                                                     <span className='text-[#262626]'>2.9</span>
                                                 </li>
