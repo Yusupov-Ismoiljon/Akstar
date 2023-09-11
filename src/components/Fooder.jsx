@@ -15,32 +15,32 @@ const Fooder = () => {
               <ul className='flex space-x-3'>
                 <li data-aos-delay="100" data-aos="fade-up" className='aos-init aos-animate'>
                   <a target="_blank" href="https://t.me/Ismoiljon_12_04">
-                    <i class="fa-brands fa-telegram hover:fa-beat fa-2xl text-white"></i>
+                    <i className="fa-brands fa-telegram hover:fa-beat fa-2xl text-white"></i>
                   </a>
                 </li>
                 <li data-aos-delay="100" data-aos="fade-up" className='aos-init aos-animate'>
                   <a target="_blank" href="https://t.me/Ismoiljon_12_04">
-                    <i class="fa-brands fa-square-instagram hover:fa-beat fa-2xl text-white"></i>
+                    <i className="fa-brands fa-square-instagram hover:fa-beat fa-2xl text-white"></i>
                   </a>
                 </li>
                 <li data-aos-delay="100" data-aos="fade-up" className='aos-init aos-animate'>
                   <a target="_blank" href="https://t.me/Ismoiljon_12_04">
-                    <i class="fa-brands fa-square-youtube hover:fa-beat fa-2xl text-white"></i>
+                    <i className="fa-brands fa-square-youtube hover:fa-beat fa-2xl text-white"></i>
                   </a>
                 </li>
                 <li data-aos-delay="100" data-aos="fade-up" className='aos-init aos-animate'>
                   <a target="_blank" href="https://t.me/Ismoiljon_12_04">
-                    <i class="fa-brands fa-tiktok fa-2xl text-white"></i>
+                    <i className="fa-brands fa-tiktok fa-2xl text-white"></i>
                   </a>
                 </li>
                 <li data-aos-delay="100" data-aos="fade-up" className='aos-init aos-animate'>
                   <a target="_blank" href="https://t.me/Ismoiljon_12_04">
-                    <i class="fa-brands fa-vk fa-2xl text-white"></i>
+                    <i className="fa-brands fa-vk fa-2xl text-white"></i>
                   </a>
                 </li>
                 <li data-aos-delay="100" data-aos="fade-up" className='aos-init aos-animate'>
                   <a target="_blank" href="https://t.me/Ismoiljon_12_04">
-                    <i class="fa-brands fa-vk fa-2xl text-white"></i>
+                    <i className="fa-brands fa-vk fa-2xl text-white"></i>
                   </a>
                 </li>
               </ul>

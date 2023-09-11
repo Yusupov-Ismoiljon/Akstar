@@ -8,6 +8,12 @@ const Guitar = ({ shop, setShop }) => {
     const setActiveTab = (id) => {
         setTab(id)
     };
+
+    const [tabImg, setTabImg] = useState(1);
+    const setActiveTabImg = (id) => {
+        setTabImg(id)
+    };
+
     const tapArr = [
         {
             id: 1,
@@ -24,122 +30,165 @@ const Guitar = ({ shop, setShop }) => {
         },
     ];
 
+    const tabImgArr = [
+        {
+            id: 1,
+            img: "./img/gitar.png"
+        },
+        {
+            id: 2,
+            img: "./img/gitarani.png"
+        },
+        {
+            id: 3,
+            img: "./img/tab-guitar1.jpg"
+        },
+        {
+            id: 4,
+            img: "./img/tab-guitar2.webp"
+        }
+    ]
+
     return (
         <div>
             <Header shop={shop} setShop={setShop} />
             <div className='w-full max-w-[1540px] mx-auto px-5 py-10'>
-                <div className="md:flex md:justify-between md:w-[636px] bg-slate-300 py-2 px-5 rounded-xl">
-                    {tapArr.map((el) => {
-                        return (
-                            <div>
-                                <button className={`px-6 py-2.5 rounded-lg ${tab === el.id ? 'duration-700 bg-[#F7F7FC] logo' : 'border-transparent'} font-bold text-xl leading-7`} onClick={() => setActiveTab(el.id)}>{el.title}</button>
-                            </div>
-                        )
-                    })}
-                </div>
-
-                <div className='p-7 bg-[#F7F7FC]'>
+                <div className='grid md:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-7 mb-16'>
+                    <div className='w-28 grid gap-7'>
+                        {tabImgArr.map((e) => {
+                            return (
+                                <button onClick={() => setActiveTabImg(e.id)}>
+                                    <img className={`md:w-28 md:h-28 w-[70px] h-[70px] ${tabImg === e.id ? 'border-2 border-[#1B37A3] rounded duration-500' : 'border-transparent'}`} src={e.img} alt="" />
+                                </button>
+                            )
+                        })}
+                    </div>
                     <div>
-                        {tapArr.map((e) => {
+                        {
+                            tabImgArr.map((e)=> {
+                                return (
+                                    <div className={`w-full ${tabImg === e.id ? 'block' : 'hidden'}`}>
+                                        <img className='w-[520px] h-[520px]' src={e.img} alt="" />
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                </div>
+                <div>
+                    <div className="md:flex md:justify-between md:w-[636px] bg-slate-300 py-2 px-5 rounded-xl">
+                        {tapArr.map((el) => {
                             return (
                                 <div>
-                                    <div className={`w-full ${tab === e.id ? 'block' : 'hidden'}`}>
-                                        <p>{e.content}</p>
-                                        <div className={`grid md:grid-cols-2 grid-cols-1 ${e.id === 2 ? "block" : "hidden"}`}>
-                                            <ul className='space-y-4'>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
-                                                    <span>Производитель:</span>
-                                                    <span className='text-[#262626]'>Alhambra</span>
-                                                </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
-                                                    <span>Количество струн:</span>
-                                                    <span className='text-[#262626]'>6</span>
-                                                </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
-                                                    <span>Цвет:</span>
-                                                    <span className='text-[#262626]'>Натуральный</span>
-                                                </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
-                                                    <span>Артикул:</span>
-                                                    <span className='text-[#262626]'>1.122</span>
-                                                </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
-                                                    <span>Базовая единица:</span>
-                                                    <span className='text-[#262626]'>шт</span>
-                                                </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
-                                                    <span>Ставки налогов:</span>
-                                                    <span className='text-[#262626]'>Ставки налогов:</span>
-                                                </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
-                                                    <span>Верхняя дека:</span>
-                                                    <span className='text-[#262626]'>Массив ели</span>
-                                                </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
-                                                    <span>Звукосниматель:</span>
-                                                    <span className='text-[#262626]'>Есть</span>
-                                                </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
-                                                    <span>Вес нетто (кг):</span>
-                                                    <span className='text-[#262626]'>2.9</span>
-                                                </li>
-                                            </ul>
-                                            <ul className='space-y-4'>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
-                                                    <span>Вес брутто (кг):</span>
-                                                    <span className='text-[#262626]'>4.1</span>
-                                                </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
-                                                    <span>Объем (м3):</span>
-                                                    <span className='text-[#262626]'>0.0968</span>
-                                                </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
-                                                    <span>Анкер:</span>
-                                                    <span className='text-[#262626]'>Есть</span>
-                                                </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
-                                                    <span>УПАКдлина (см):</span>
-                                                    <span className='text-[#262626]'>122</span>
-                                                </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
-                                                    <span>УПАКдлина (см):</span>
-                                                    <span className='text-[#262626]'>48</span>
-                                                </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
-                                                    <span>УПАКдлина (см):</span>
-                                                    <span className='text-[#262626]'>18</span>
-                                                </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
-                                                    <span>Чехол/кейс:</span>
-                                                    <span className='text-[#262626]'>Чехол</span>
-                                                </li>
-                                                <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
-                                                    <span>Ширина грифа:</span>
-                                                    <span className='text-[#262626]'>43мм</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className={` ${e.id === 3 ? 'block' : 'hidden'}`}>
-                                            <div className='space-y-4'>
-                                                <p className='font-medium text-base leading-6'>Мы стараемся сохранять цены на товары для клиентов максимально доступными, поэтому доставка оплачивается клиентом ПРИ ПОЛУЧЕНИИ, чтобы всё было максимально прозрачно и мы могли сохранить максимально выгодную стоимость товаров для наших клиентов. Доставка осуществляется службами СДЭК или Почта России и оформляется страховка на весь заказ.</p>
-                                                <p className='font-medium text-base leading-6'><span className='font-bold'>Срок доставки:</span> 3-5 рабочих дней с момента отправки заказа.</p>
-                                                <p className='font-bold text-base leading-6'>Гитары:</p>
-                                                <p className='font-medium text-base leading-6'>Москва: 1090-1200 рублей за 1 ед. товара</p>
-                                                <p className='font-medium text-base leading-6'>Санкт-Петербург: 700-1000 рублей за 1 ед. товара (либо САМОВЫВОЗ из пункта выдачи)</p>
-                                                <p className='font-medium text-base leading-6'>Сочи: 880-1100 рублей за 1 ед. товара</p>
-                                                <p className='font-medium text-base leading-6'>Казань: 650-1025 рублей за 1 ед. товара</p>
-                                                <p className='font-medium text-base leading-6'>Новосибирск: 1350-1765 рублей</p>
-                                                <p className='font-bold text-base leading-6'>Итоговая стоимость доставки будет известна тогда, когда заказ прибудет к вам<div className=""></div></p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <button className={`px-6 py-2.5 rounded-lg ${tab === el.id ? 'duration-700 bg-[#F7F7FC] logo' : 'border-transparent'} font-bold text-xl leading-7`} onClick={() => setActiveTab(el.id)}>{el.title}</button>
                                 </div>
                             )
                         })}
                     </div>
+
+                    <div className='p-7 bg-[#F7F7FC]'>
+                        <div>
+                            {tapArr.map((e) => {
+                                return (
+                                    <div>
+                                        <div className={`w-full ${tab === e.id ? 'block' : 'hidden'}`}>
+                                            <p>{e.content}</p>
+                                            <div className={`grid md:grid-cols-2 grid-cols-1 ${e.id === 2 ? "block" : "hidden"}`}>
+                                                <ul className='space-y-4'>
+                                                    <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                        <span>Производитель:</span>
+                                                        <span className='text-[#262626]'>Alhambra</span>
+                                                    </li>
+                                                    <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                        <span>Количество струн:</span>
+                                                        <span className='text-[#262626]'>6</span>
+                                                    </li>
+                                                    <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                        <span>Цвет:</span>
+                                                        <span className='text-[#262626]'>Натуральный</span>
+                                                    </li>
+                                                    <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                        <span>Артикул:</span>
+                                                        <span className='text-[#262626]'>1.122</span>
+                                                    </li>
+                                                    <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                        <span>Базовая единица:</span>
+                                                        <span className='text-[#262626]'>шт</span>
+                                                    </li>
+                                                    <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                        <span>Ставки налогов:</span>
+                                                        <span className='text-[#262626]'>Ставки налогов:</span>
+                                                    </li>
+                                                    <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                        <span>Верхняя дека:</span>
+                                                        <span className='text-[#262626]'>Массив ели</span>
+                                                    </li>
+                                                    <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                        <span>Звукосниматель:</span>
+                                                        <span className='text-[#262626]'>Есть</span>
+                                                    </li>
+                                                    <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                        <span>Вес нетто (кг):</span>
+                                                        <span className='text-[#262626]'>2.9</span>
+                                                    </li>
+                                                </ul>
+                                                <ul className='space-y-4'>
+                                                    <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                        <span>Вес брутто (кг):</span>
+                                                        <span className='text-[#262626]'>4.1</span>
+                                                    </li>
+                                                    <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                        <span>Объем (м3):</span>
+                                                        <span className='text-[#262626]'>0.0968</span>
+                                                    </li>
+                                                    <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                        <span>Анкер:</span>
+                                                        <span className='text-[#262626]'>Есть</span>
+                                                    </li>
+                                                    <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                        <span>УПАКдлина (см):</span>
+                                                        <span className='text-[#262626]'>122</span>
+                                                    </li>
+                                                    <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                        <span>УПАКдлина (см):</span>
+                                                        <span className='text-[#262626]'>48</span>
+                                                    </li>
+                                                    <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                        <span>УПАКдлина (см):</span>
+                                                        <span className='text-[#262626]'>18</span>
+                                                    </li>
+                                                    <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                        <span>Чехол/кейс:</span>
+                                                        <span className='text-[#262626]'>Чехол</span>
+                                                    </li>
+                                                    <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
+                                                        <span>Ширина грифа:</span>
+                                                        <span className='text-[#262626]'>43мм</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div className={` ${e.id === 3 ? 'block' : 'hidden'}`}>
+                                                <div className='space-y-4'>
+                                                    <p className='font-medium text-base leading-6'>Мы стараемся сохранять цены на товары для клиентов максимально доступными, поэтому доставка оплачивается клиентом ПРИ ПОЛУЧЕНИИ, чтобы всё было максимально прозрачно и мы могли сохранить максимально выгодную стоимость товаров для наших клиентов. Доставка осуществляется службами СДЭК или Почта России и оформляется страховка на весь заказ.</p>
+                                                    <p className='font-medium text-base leading-6'><span className='font-bold'>Срок доставки:</span> 3-5 рабочих дней с момента отправки заказа.</p>
+                                                    <p className='font-bold text-base leading-6'>Гитары:</p>
+                                                    <p className='font-medium text-base leading-6'>Москва: 1090-1200 рублей за 1 ед. товара</p>
+                                                    <p className='font-medium text-base leading-6'>Санкт-Петербург: 700-1000 рублей за 1 ед. товара (либо САМОВЫВОЗ из пункта выдачи)</p>
+                                                    <p className='font-medium text-base leading-6'>Сочи: 880-1100 рублей за 1 ед. товара</p>
+                                                    <p className='font-medium text-base leading-6'>Казань: 650-1025 рублей за 1 ед. товара</p>
+                                                    <p className='font-medium text-base leading-6'>Новосибирск: 1350-1765 рублей</p>
+                                                    <p className='font-bold text-base leading-6'>Итоговая стоимость доставки будет известна тогда, когда заказ прибудет к вам<div className=""></div></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
                 </div>
             </div>
-            <Fooder/>
+            <Fooder />
         </div>
     )
 }
