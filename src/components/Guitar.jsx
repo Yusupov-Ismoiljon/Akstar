@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Header from './Header'
+import Fooder from './Fooder'
 
 
 const Guitar = ({ shop, setShop }) => {
@@ -128,7 +129,7 @@ const Guitar = ({ shop, setShop }) => {
                                                 <p className='font-medium text-base leading-6'>Сочи: 880-1100 рублей за 1 ед. товара</p>
                                                 <p className='font-medium text-base leading-6'>Казань: 650-1025 рублей за 1 ед. товара</p>
                                                 <p className='font-medium text-base leading-6'>Новосибирск: 1350-1765 рублей</p>
-                                                <p className='font-bold text-base leading-6'>Итоговая стоимость доставки будет известна тогда, когда заказ прибудет к вам.</p>
+                                                <p className='font-bold text-base leading-6'>Итоговая стоимость доставки будет известна тогда, когда заказ прибудет к вам<div className=""></div></p>
                                             </div>
                                         </div>
                                     </div>
@@ -138,6 +139,7 @@ const Guitar = ({ shop, setShop }) => {
                     </div>
                 </div>
             </div>
+            <Fooder/>
         </div>
     )
 }

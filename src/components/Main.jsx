@@ -161,23 +161,22 @@ const Main = ({ shop, setShop }) => {
                         }
                         <ul className='grid md:grid-cols-5 p-5'>
                             <li data-aos-delay="100" data-aos="fade-up" className="text-white relative aos-init aos-animate">
-                                <Link to='/guitar'>
-                                    <button onClick={() => setLove(!love)} className='absolute top-3 right-3 z-30'>
-                                        <i className={`fa-regular fa-heart fa-xl ${!love ? `fa-sharp text-[#B0B0B0]` : `fas text-[#1B37A3]`}`}></i>
-                                    </button>
+                                <button onClick={() => setLove(!love)} className='absolute top-3 right-3 z-30'>
+                                    <i className={`fa-regular fa-heart fa-xl ${!love ? `fa-sharp text-[#B0B0B0]` : `fas text-[#1B37A3]`}`}></i>
+                                </button>
+                                <Link to={`/guitar`}>
                                     <div className="bg-white rounded-xl py-4">
                                         <img className="w-full" src='./img/gitar.png' alt="new product" />
                                     </div>
-                                    <div className="py-3 space-y-1">
-                                        <span className="font-medium text-sm text-[#DEDEDE]">Акустические гитары</span>
-                                        <h3 className="font-bold text-sm sm:text-base brend">lc-3400</h3>
-                                        <span className="font-extrabold text-base sm:text-lg logo">11 360 ₽</span>
-                                    </div>
-                                    <button className='font-semibold text-base leading-6 text-[#1B37A3] py-1 px-9 border-2 border-[#1B37A3] rounded-md'
-                                    >
-                                        В корзину
-                                    </button>
                                 </Link>
+                                <div className="py-3 space-y-1">
+                                    <span className="font-medium text-sm text-[#DEDEDE]">Акустические гитары</span>
+                                    <h3 className="font-bold text-sm sm:text-base brend">lc-3400</h3>
+                                    <span className="font-extrabold text-base sm:text-lg logo">11 360 ₽</span>
+                                </div>
+                                <button className='font-semibold text-base leading-6 text-[#1B37A3] py-1 px-9 border-2 border-[#1B37A3] rounded-md'>
+                                    В корзину
+                                </button>
                             </li>
                         </ul>
                     </div>
