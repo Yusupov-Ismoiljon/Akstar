@@ -5,7 +5,7 @@ const Fooder = () => {
   return (
     <div className='bg-[#1B37A3] text-white'>
       <div className='w-full max-w-[1540px] mx-auto px-5 py-12'>
-        <div className="md:flex justify-between">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           <div>
             <Link to={`/`}>
               <h1 data-aos-delay="100" data-aos="fade-up" className='font-russo font-light md:text-[40.34px] text-[23px] text-white leading-[135%] uppercase mb-7  aos-init aos-animate'>akstar</h1>

@@ -1,7 +1,7 @@
 import { Checkbox, Option, Select } from '@material-tailwind/react';
 import React, { useState } from 'react'
-import Header from './Header';
 import { Link } from 'react-router-dom';
+import { api } from '../data';
 
 const Main = ({ shop, setShop }) => {
     const [menuKatal, setMenuKatal] = useState(false);
@@ -96,11 +96,11 @@ const Main = ({ shop, setShop }) => {
                         </div>
                     </div>
 
-                    <div className='flex flex-col md:flex-row space-x-7'>
+                    <div className={`${!sozlash ? 'w-full' : 'sm:flex justify-between gap-7' }`}>
                         {/* sozlash menu */}
                         {sozlash &&
                             <div>
-                                <div className='w-[300px] space-y-[30px]'>
+                                <div className='w-full sm:w-[300px] space-y-[30px]'>
                                     <div className='space-y-4'>
                                         <span className='fo nt-bold text-lg leading-normal block brend'>Разедл</span>
                                         <ul>
@@ -159,25 +159,29 @@ const Main = ({ shop, setShop }) => {
                                 </div>
                             </div>
                         }
-                        <ul className='grid md:grid-cols-5 p-5'>
-                            <li data-aos-delay="100" data-aos="fade-up" className="text-white relative aos-init aos-animate">
-                                <button onClick={() => setLove(!love)} className='absolute top-3 right-3 z-30'>
-                                    <i className={`fa-regular fa-heart fa-xl ${!love ? `fa-sharp text-[#B0B0B0]` : `fas text-[#1B37A3]`}`}></i>
-                                </button>
-                                <Link to={`/guitar`}>
-                                    <div className="bg-white rounded-xl py-4">
-                                        <img className="w-full" src='./img/gitar.png' alt="new product" />
-                                    </div>
-                                </Link>
-                                <div className="py-3 space-y-1">
-                                    <span className="font-medium text-sm text-[#DEDEDE]">Акустические гитары</span>
-                                    <h3 className="font-bold text-sm sm:text-base brend">lc-3400</h3>
-                                    <span className="font-extrabold text-base sm:text-lg logo">11 360 ₽</span>
-                                </div>
-                                <button className='font-semibold text-base leading-6 text-[#1B37A3] py-1 px-9 border-2 border-[#1B37A3] rounded-md'>
-                                    В корзину
-                                </button>
-                            </li>
+                        <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 p-5'>
+                            {api.map((e) => {
+                                return (
+                                    <li key={e.id} data-aos-delay="100" data-aos="fade-up" className="w-full text-white text-center md:text-start relative aos-init aos-animate">
+                                        <button className='absolute top-3 right-3 z-30'>
+                                            <i className={`fa-regular fa-heart fa-xl text-[#B0B0B0]`}></i>
+                                        </button>
+                                        <Link to={`/guitar/${e.id}`}>
+                                            <div className="bg-white rounded-xl py-4">
+                                                <img className="w-full" src={e.img} alt="new product" />
+                                            </div>
+                                        </Link>
+                                        <div className="py-3 space-y-1">
+                                            <span className="font-medium text-sm text-[#DEDEDE]">{e.ak}</span>
+                                            <h3 className="font-bold text-sm sm:text-base brend">{e.lc}</h3>
+                                            <span className="font-extrabold text-base sm:text-lg logo">{e.pul}</span>
+                                        </div>
+                                        <button className='font-semibold text-base leading-6 text-[#1B37A3] py-1 px-9 border-2 border-[#1B37A3] rounded-md'>
+                                            {e.karzinka}
+                                        </button>
+                                    </li>
+                                )
+                            })}
                         </ul>
                     </div>
                 </div>

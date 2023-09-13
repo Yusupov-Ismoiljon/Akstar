@@ -1,7 +1,10 @@
-import React, { useState } from 'react'
-import Header from './Header'
-import Fooder from './Fooder'
-
+import React, { useState } from 'react';
+import Header from './Header';
+import Fooder from './Fooder';
+import { api } from '../data';
+import { tapArr } from '../data';
+import { tabImgArr } from '../data';
+import Swiper from '../layouts/Swiper';
 
 const Guitar = ({ shop, setShop }) => {
     const [tab, setTab] = useState(1);
@@ -9,72 +12,57 @@ const Guitar = ({ shop, setShop }) => {
         setTab(id)
     };
 
-    const [tabImg, setTabImg] = useState(1);
+    const [tabImg, setTabImg] = useState(4);
     const setActiveTabImg = (id) => {
         setTabImg(id)
     };
 
-    const tapArr = [
-        {
-            id: 1,
-            title: 'Описание',
-            content: 'Акустическая гитара в корпусе джамбо, с очень мощным звуком и в то же время очень удобная.Инструмент огромных размеров, с эстетикой и звуковой концепцией, которая удивляет с первой секунды.Это одна из самых популярных акустических гитар, обеспечивающая насыщенное звучание с превосходными средними частотами и четкими высокими частотами. Корпус Jumbo очень удобен, а также обеспечивает полный спектр оттенков звучания с очень универсальным откликом.Примечательно, что эта модель имеет большой резонанс, но в то же время очень удобна. Эта комбинация является результатом исследований и проектирования гитар Alhambra. Эта гитара со струнами 12-53, специально настроенными для получения наилучших ощущений от.Ручная работа и отборные материалы.За разработку акустических гитар Alhambra отвечает небольшая группа мастеров, которые со всей тщательностью походят к отбору материалов. Для верхней деки используется массив немецкой ели, для задней деки и обечайки выбран клен, который является традиционным материалом для акустических гитар и выделяется тем, что предлагает много гармоник, звучания и яркости. Древесина высокой плотности, определяющая элегантный и ценный инструмент. ',
-        },
-        {
-            id: 2,
-            title: 'Характеристики',
-        },
-        {
-            id: 3,
-            title: 'Доставка и оплата',
-        },
-    ];
-
-    const tabImgArr = [
-        {
-            id: 1,
-            img: "./img/gitar.png"
-        },
-        {
-            id: 2,
-            img: "./img/gitarani.png"
-        },
-        {
-            id: 3,
-            img: "./img/tab-guitar1.jpg"
-        },
-        {
-            id: 4,
-            img: "./img/tab-guitar2.webp"
-        }
-    ]
-
     return (
         <div>
             <Header shop={shop} setShop={setShop} />
-            <div className='w-full max-w-[1540px] mx-auto px-5 py-10'>
-                <div className='grid md:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-7 mb-16'>
-                    <div className='w-28 grid gap-7'>
-                        {tabImgArr.map((e) => {
-                            return (
-                                <button onClick={() => setActiveTabImg(e.id)}>
-                                    <img className={`md:w-28 md:h-28 w-[70px] h-[70px] ${tabImg === e.id ? 'border-2 border-[#1B37A3] rounded duration-500' : 'border-transparent'}`} src={e.img} alt="" />
-                                </button>
-                            )
-                        })}
-                    </div>
-                    <div>
-                        {
-                            tabImgArr.map((e)=> {
+            <div className='w-full max-w-[1540px] mx-auto px-5 py-10 mb-16'>
+                {/* img-tab */}
+                <div className='grid md:grid-cols-2 grid-cols-1  gap-7 mb-16'>
+                    <div className='md:flex items-center justify-between'>
+                        <div className='md:w-28 grid grid-cols-4 md:grid-cols-1 gap-7'>
+                            {tabImgArr.map((e) => {
                                 return (
-                                    <div className={`w-full ${tabImg === e.id ? 'block' : 'hidden'}`}>
-                                        <img className='w-[520px] h-[520px]' src={e.img} alt="" />
-                                    </div>
+                                    <button onClick={() => setActiveTabImg(e.id)}>
+                                        <img className={`md:w-28 md:h-28 w-[70px] h-[70px] ${tabImg === e.id ? 'border-2 border-[#1B37A3] rounded duration-500' : 'border-transparent'}`} src={e.img} aria-hidden='false' />
+                                    </button>
                                 )
-                            })
-                        }
+                            })}
+                        </div>
+                        <div>
+                            {
+                                tabImgArr.map((e) => {
+                                    return (
+                                        <div className={`w-full ${tabImg === e.id ? 'block' : 'hidden'}`}>
+                                            <img className='w-[520px] h-[520px]' src={e.img} alt="" />
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+
+                    <div className='space-y-7'>
+                        <div>
+                            <h2 className='font-bold text-[28px] leading-9 md:text-4xl md:leading-normal mb-4'>1.122 AJ-SM E9</h2>
+                            <span className='font-bold text-sm text-[#9ACC6C]'>В наличии (4)</span>
+                        </div>
+                        <p className='font-normal text-base leading-normal'>Фолк гитара с металлическими струнами, верхняя дека - ель, корпус - агатис, цвет натуральный, 39", с вырезом</p>
+                        <div className='space-y-4'>
+                            <h3 className='font-bold text-lg leading-normal brend'>Описание</h3>
+                            <p className='font-normal text-base leading-6'>Акустическая гитара в корпусе джамбо, с очень мощным звуком и в то же время очень удобная.Инструмент огромных размеров, с эстетикой и звуковой концепцией, которая удивляет с первой секунды.Это одна из самых популярных акустических гитар, обеспечивающая насыщенное звучание с...</p>
+                            <p className='font-semibold text-sm leading-normal logo'>Подробнее</p>
+                        </div>
+                        <p className='font-extrabold text-4xl leading-normal'>11 360 ₽</p>
+                        <button className='w-[240px] font-semibold text-lg leading-6 text-white bg-[#1B37A3] rounded-lg py-4'>В корзину</button>
                     </div>
                 </div>
+
+                {/* text-tab */}
                 <div>
                     <div className="md:flex md:justify-between md:w-[636px] bg-slate-300 py-2 px-5 rounded-xl">
                         {tapArr.map((el) => {
@@ -94,7 +82,7 @@ const Guitar = ({ shop, setShop }) => {
                                         <div className={`w-full ${tab === e.id ? 'block' : 'hidden'}`}>
                                             <p>{e.content}</p>
                                             <div className={`grid md:grid-cols-2 grid-cols-1 ${e.id === 2 ? "block" : "hidden"}`}>
-                                                <ul className='space-y-4'>
+                                                <ul key={e.id} className='space-y-4'>
                                                     <li className='grid md:grid-cols-2 grid-cols-1 font-medium text-base leading-6 text-[#89898E] md:space-x-4'>
                                                         <span>Производитель:</span>
                                                         <span className='text-[#262626]'>Alhambra</span>
@@ -187,6 +175,9 @@ const Guitar = ({ shop, setShop }) => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className='w-full max-w-[1540px] mx-auto px-5'>
+                <Swiper/>
             </div>
             <Fooder />
         </div>
