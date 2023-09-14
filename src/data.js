@@ -1,7 +1,7 @@
 export const api = [
     {
         id: 1,
-        img: './img/gitar.png',
+        img: '../img/gitar.png',
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: '11 360 ₽',
@@ -9,7 +9,7 @@ export const api = [
     },
     {
         id: 2,
-        img: './img/gitar.png',
+        img: '../img/gitar.png',
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: '11 360 ₽',
@@ -17,7 +17,7 @@ export const api = [
     },
     {
         id: 3,
-        img: './img/gitar.png',
+        img: '../img/gitar.png',
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: '11 360 ₽',
@@ -25,7 +25,7 @@ export const api = [
     },
     {
         id: 4,
-        img: './img/gitar.png',
+        img: '../img/gitar.png',
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: '11 360 ₽',
@@ -33,7 +33,7 @@ export const api = [
     },
     {
         id: 5,
-        img: './img/gitar.png',
+        img: '../img/gitar.png',
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: '11 360 ₽',
@@ -41,7 +41,7 @@ export const api = [
     },
     {
         id: 6,
-        img: './img/gitar.png',
+        img: '../img/gitar.png',
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: '11 360 ₽',
@@ -49,7 +49,7 @@ export const api = [
     },
     {
         id: 7,
-        img: './img/gitar.png',
+        img: '../img/gitar.png',
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: '11 360 ₽',
@@ -57,7 +57,7 @@ export const api = [
     },
     {
         id: 8,
-        img: './img/gitar.png',
+        img: '../img/gitar.png',
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: '11 360 ₽',
@@ -65,7 +65,7 @@ export const api = [
     },
     {
         id: 9,
-        img: './img/gitar.png',
+        img: '../img/gitar.png',
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: '11 360 ₽',
@@ -73,7 +73,7 @@ export const api = [
     },
     {
         id: 10,
-        img: './img/gitar.png',
+        img: '../img/gitar.png',
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: '11 360 ₽',
@@ -81,7 +81,7 @@ export const api = [
     },
     {
         id: 11,
-        img: './img/gitar.png',
+        img: '../img/gitar.png',
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: '11 360 ₽',
@@ -89,7 +89,7 @@ export const api = [
     },
     {
         id: 12,
-        img: './img/gitar.png',
+        img: '../img/gitar.png',
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: '11 360 ₽',
@@ -97,7 +97,7 @@ export const api = [
     },
     {
         id: 13,
-        img: './img/gitar.png',
+        img: '../img/gitar.png',
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: '11 360 ₽',
@@ -105,7 +105,7 @@ export const api = [
     },
     {
         id: 14,
-        img: './img/gitar.png',
+        img: '../img/gitar.png',
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: '11 360 ₽',
@@ -113,7 +113,7 @@ export const api = [
     },
     {
         id: 15,
-        img: './img/gitar.png',
+        img: '../img/gitar.png',
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: '11 360 ₽',
@@ -121,7 +121,7 @@ export const api = [
     },
     {
         id: 16,
-        img: './img/gitar.png',
+        img: '../img/gitar.png',
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: '11 360 ₽',
