@@ -7,7 +7,7 @@ import { tabImgArr } from '../data';
 import MySwiper from '../layouts/Swiper';
 
 
-const Guitar = ({ shop, setShop }) => {
+const Guitar = ({ shop, shop1, addCart, addCart1 }) => {
     const [tab, setTab] = useState(1);
     const setActiveTab = (id) => {
         setTab(id)
@@ -18,50 +18,59 @@ const Guitar = ({ shop, setShop }) => {
         setTabImg(id)
     };
 
+
+
     return (
         <div>
-            <Header shop={shop} setShop={setShop} />
+            <Header shop={shop} />
             <div className='w-full max-w-[1540px] mx-auto px-5 py-10 mb-16'>
                 {/* img-tab */}
-                <div className='grid md:grid-cols-2 grid-cols-1  gap-7 mb-16'>
-                    <div className='md:flex items-center justify-between'>
-                        <div className='md:w-28 grid grid-cols-4 md:grid-cols-1 gap-7'>
-                            {tabImgArr.map((e) => {
-                                return (
-                                    <button key={e.id} onClick={() => setActiveTabImg(e.id)}>
-                                        <img className={`md:w-28 md:h-28 w-[70px] h-[70px] ${tabImg === e.id ? 'border-2 border-[#1B37A3] rounded duration-500' : 'border-transparent'}`} src={e.img} aria-hidden='false' />
-                                    </button>
-                                )
-                            })}
-                        </div>
-                        <div>
-                            {
-                                tabImgArr.map((e) => {
-                                    return (
-                                        <div key={e.id} className={`w-full ${tabImg === e.id ? 'block' : 'hidden'}`}>
-                                            <img className='w-[520px] h-[520px]' src={e.img} alt="" />
-                                        </div>
-                                    )
-                                })
-                            }
-                        </div>
-                    </div>
+                {shop1.map((e) => {
+                    return (
+                    <div className='grid md:grid-cols-2 grid-cols-1  gap-7 mb-16'>
 
-                    <div className='space-y-7'>
-                        <div>
-                            <h2 className='font-bold text-[28px] leading-9 md:text-4xl md:leading-normal mb-4'>1.122 AJ-SM E9</h2>
-                            <span className='font-bold text-sm text-[#9ACC6C]'>В наличии (4)</span>
+                        <div className='md:flex items-center justify-between'>
+                            <div className='md:w-28 grid grid-cols-4 md:grid-cols-1 gap-7'>
+                                {tabImgArr.map((r) => {
+                                    return (
+                                        <button key={r.id} onClick={() => setActiveTabImg(r.id)}>
+                                            <img className={`md:w-28 md:h-28 w-[70px] h-[70px] ${tabImg === r.id ? 'border-2 border-[#1B37A3] rounded duration-500' : 'border-transparent'}`} src={r.img} aria-hidden='false' />
+                                        </button>
+                                    )
+                                })}
+                            </div>
+                            <div>
+                                {
+                                    tabImgArr.map((i) => {
+                                        return (
+                                            <div key={i.id} className={`w-full ${tabImg === i.id ? 'block' : 'hidden'}`}>
+                                                <img className='w-[520px] h-[520px]' src={i.img} alt="" />
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </div>
                         </div>
-                        <p className='font-normal text-base leading-normal'>Фолк гитара с металлическими струнами, верхняя дека - ель, корпус - агатис, цвет натуральный, 39", с вырезом</p>
-                        <div className='space-y-4'>
-                            <h3 className='font-bold text-lg leading-normal brend'>Описание</h3>
-                            <p className='font-normal text-base leading-6'>Акустическая гитара в корпусе джамбо, с очень мощным звуком и в то же время очень удобная.Инструмент огромных размеров, с эстетикой и звуковой концепцией, которая удивляет с первой секунды.Это одна из самых популярных акустических гитар, обеспечивающая насыщенное звучание с...</p>
-                            <p className='font-semibold text-sm leading-normal logo'>Подробнее</p>
+                        <div className='space-y-7'>
+                            <div>
+                                <h2 className='font-bold text-[28px] leading-9 md:text-4xl md:leading-normal mb-4'>1.122 AJ-SM E9</h2>
+                                <span className='font-bold text-sm text-[#9ACC6C]'>В наличии (4)</span>
+                            </div>
+                            <p className='font-normal text-base leading-normal'>Фолк гитара с металлическими струнами, верхняя дека - ель, корпус - агатис, цвет натуральный, 39", с вырезом</p>
+                            <div className='space-y-4'>
+                                <h3 className='font-bold text-lg leading-normal brend'>Описание</h3>
+                                <p className='font-normal text-base leading-6'>Акустическая гитара в корпусе джамбо, с очень мощным звуком и в то же время очень удобная.Инструмент огромных размеров, с эстетикой и звуковой концепцией, которая удивляет с первой секунды.Это одна из самых популярных акустических гитар, обеспечивающая насыщенное звучание с...</p>
+                                <p className='font-semibold text-sm leading-normal logo'>Подробнее</p>
+                            </div>
+                            <p className='font-extrabold text-4xl leading-normal'>11 360 ₽</p>
+                            <button onClick={() => addCart(e.id)} className='w-[240px] font-semibold text-lg leading-6 text-white bg-[#1B37A3] rounded-lg py-4'>
+                                В корзину
+                            </button>
                         </div>
-                        <p className='font-extrabold text-4xl leading-normal'>11 360 ₽</p>
-                        <button className='w-[240px] font-semibold text-lg leading-6 text-white bg-[#1B37A3] rounded-lg py-4'>В корзину</button>
                     </div>
-                </div>
+                    )
+                })}
+
 
                 {/* text-tab */}
                 <div>
@@ -176,7 +185,7 @@ const Guitar = ({ shop, setShop }) => {
                 </div>
             </div>
             <div className='w-full max-w-[1540px] mx-auto px-5 mb-14'>
-                <MySwiper />
+                <MySwiper addCart={addCart} addCart1={addCart1} />
             </div>
             <Fooder />
         </div>

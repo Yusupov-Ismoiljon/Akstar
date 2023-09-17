@@ -161,4 +161,4 @@ export const tabImgArr = [
         id: 7,
         img: "../img/tab-guitar2.webp"
     }
-]
+];

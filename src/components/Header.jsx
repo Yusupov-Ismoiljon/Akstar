@@ -1,8 +1,8 @@
 import { Badge } from '@material-tailwind/react';
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-const Header = ({ shop, setShop }) => {
+const Header = ({shop}) => {
     const [menu, setMenu] = useState(false);
 
     return (
@@ -42,7 +42,7 @@ const Header = ({ shop, setShop }) => {
                         <ul className='flex items-center space-x-7'>
                             <li>
                                 <Link to='/магазин'>
-                                    <Badge color="blue" content={shop.length}>
+                                    <Badge color="blue" placement="top-end" overlap='square' content={shop.length}>
                                         <button>
                                             <i className="fas fa-cart-shopping fa-lg"></i>
                                         </button>

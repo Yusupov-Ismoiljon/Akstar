@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Tavar = ({shop, setShop}) => {
+const Tavar = () => {
   const [isLiked, setIsLiked] = useState(false);
 
   return (

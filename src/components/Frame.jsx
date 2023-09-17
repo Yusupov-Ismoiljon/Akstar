@@ -8,137 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'
 
 
-const Frame = ({ shop, setShop }) => {
-  const api = [
-    {
-      id: 1,
-      img: './img/gitar.png',
-      ak: 'Акустические гитары',
-      lc: 'lc-3400',
-      pul: '11 360 ₽',
-      karzinka: 'В корзину'
-    },
-    {
-      id: 2,
-      img: './img/gitar.png',
-      ak: 'Акустические гитары',
-      lc: 'lc-3400',
-      pul: '11 360 ₽',
-      karzinka: 'В корзину'
-    },
-    {
-      id: 3,
-      img: './img/gitar.png',
-      ak: 'Акустические гитары',
-      lc: 'lc-3400',
-      pul: '11 360 ₽',
-      karzinka: 'В корзину'
-    },
-    {
-      id: 4,
-      img: './img/gitar.png',
-      ak: 'Акустические гитары',
-      lc: 'lc-3400',
-      pul: '11 360 ₽',
-      karzinka: 'В корзину'
-    },
-    {
-      id: 5,
-      img: './img/gitar.png',
-      ak: 'Акустические гитары',
-      lc: 'lc-3400',
-      pul: '11 360 ₽',
-      karzinka: 'В корзину'
-    },
-    {
-      id: 6,
-      img: './img/gitar.png',
-      ak: 'Акустические гитары',
-      lc: 'lc-3400',
-      pul: '11 360 ₽',
-      karzinka: 'В корзину'
-    },
-    {
-      id: 7,
-      img: './img/gitar.png',
-      ak: 'Акустические гитары',
-      lc: 'lc-3400',
-      pul: '11 360 ₽',
-      karzinka: 'В корзину'
-    },
-    {
-      id: 8,
-      img: './img/gitar.png',
-      ak: 'Акустические гитары',
-      lc: 'lc-3400',
-      pul: '11 360 ₽',
-      karzinka: 'В корзину'
-    },
-    {
-      id: 9,
-      img: './img/gitar.png',
-      ak: 'Акустические гитары',
-      lc: 'lc-3400',
-      pul: '11 360 ₽',
-      karzinka: 'В корзину'
-    },
-    {
-      id: 10,
-      img: './img/gitar.png',
-      ak: 'Акустические гитары',
-      lc: 'lc-3400',
-      pul: '11 360 ₽',
-      karzinka: 'В корзину'
-    },
-    {
-      id: 11,
-      img: './img/gitar.png',
-      ak: 'Акустические гитары',
-      lc: 'lc-3400',
-      pul: '11 360 ₽',
-      karzinka: 'В корзину'
-    },
-    {
-      id: 12,
-      img: './img/gitar.png',
-      ak: 'Акустические гитары',
-      lc: 'lc-3400',
-      pul: '11 360 ₽',
-      karzinka: 'В корзину'
-    },
-    {
-      id: 13,
-      img: './img/gitar.png',
-      ak: 'Акустические гитары',
-      lc: 'lc-3400',
-      pul: '11 360 ₽',
-      karzinka: 'В корзину'
-    },
-    {
-      id: 14,
-      img: './img/gitar.png',
-      ak: 'Акустические гитары',
-      lc: 'lc-3400',
-      pul: '11 360 ₽',
-      karzinka: 'В корзину'
-    },
-    {
-      id: 15,
-      img: './img/gitar.png',
-      ak: 'Акустические гитары',
-      lc: 'lc-3400',
-      pul: '11 360 ₽',
-      karzinka: 'В корзину'
-    },
-    {
-      id: 16,
-      img: './img/gitar.png',
-      ak: 'Акустические гитары',
-      lc: 'lc-3400',
-      pul: '11 360 ₽',
-      karzinka: 'В корзину'
-    }
-  ]
+const Frame = ({shop, addCart, addCart1}) => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -146,11 +16,11 @@ const Frame = ({ shop, setShop }) => {
 
   return (
     <div>
-      <Header shop={shop} setShop={setShop} />
+      <Header shop={shop}/>
       <div>
         <Hero />
         <Tavar />
-        <Main shop={shop} setShop={setShop} api />
+        <Main addCart={addCart} addCart1={addCart1}/>
       </div>
       <Fooder />
     </div>
