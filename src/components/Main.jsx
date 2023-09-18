@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { api } from '../data';
 
 
-const Main = ({addCart, addCart1}) => {
+const Main = ({ addCart, addCart1 }) => {
 
     const [menuKatal, setMenuKatal] = useState(false);
     const [sozlash, setSozlash] = useState(false);
@@ -97,7 +97,7 @@ const Main = ({addCart, addCart1}) => {
                         </div>
                     </div>
 
-                    <div className={`${!sozlash ? 'w-full' : 'sm:flex justify-between gap-7' }`}>
+                    <div className={`${!sozlash ? 'w-full' : 'sm:flex justify-between gap-7'}`}>
                         {/* sozlash menu */}
                         {sozlash &&
                             <div>
@@ -166,9 +166,10 @@ const Main = ({addCart, addCart1}) => {
                                     <li key={e.id} data-aos-delay="100" data-aos="fade-up" className="w-full text-white text-center md:text-start relative aos-init aos-animate">
                                         <button className='absolute top-3 right-3 z-30'>
                                             <i className={`fa-regular fa-heart fa-xl text-[#B0B0B0]`}></i>
+                                            {/* <i class="fa-solid fa-heart text-red-500 fa-xl"></i> */}
                                         </button>
                                         <Link to={`/guitar/${e.id}`}>
-                                            <button onClick={()=> addCart1(e.id)} className="bg-white rounded-xl py-4">
+                                            <button onClick={() => addCart1(e.id)} className="bg-white rounded-xl py-4">
                                                 <img className="w-full" src={e.img} alt="new product" />
                                             </button>
                                         </Link>
@@ -177,7 +178,7 @@ const Main = ({addCart, addCart1}) => {
                                             <h3 className="font-bold text-sm sm:text-base brend">{e.lc}</h3>
                                             <span className="font-extrabold text-base sm:text-lg logo">{e.pul}</span>
                                         </div>
-                                        <button onClick={()=> addCart(e.id)} className='font-semibold text-base leading-6 text-[#1B37A3] py-1 px-9 border-2 border-[#1B37A3] rounded-md'>
+                                        <button onClick={() => addCart(e.id)} className='font-semibold text-base leading-6 text-[#1B37A3] py-1 px-9 border-2 border-[#1B37A3] rounded-md'>
                                             {e.karzinka}
                                         </button>
                                     </li>

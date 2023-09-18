@@ -11,7 +11,7 @@ import { api } from "./data";
 export default function App() {
   const [shop, setShop] = useState([]);
   const [shop1, setShop1] = useState([]);
-  const [love, setLove] = useState([]);
+  const [like, setLike] = useState([]);
 
   const addCart = (i) => {
     const found = shop.find(e => e.id === i);
