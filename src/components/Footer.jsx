@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Fooder = () => {
+const Footer = () => {
   return (
     <div className='bg-[#1B37A3] text-white'>
-      <div className='w-full max-w-[1540px] mx-auto px-5 py-12'>
+      <div className='w-full max-w-[1540px] mx-auto px-10 py-12'>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           <div>
             <Link to={`/`}>
@@ -83,4 +83,4 @@ const Fooder = () => {
   )
 }
 
-export default Fooder
+export default Footer

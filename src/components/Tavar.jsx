@@ -5,7 +5,7 @@ const Tavar = () => {
 
   return (
     <section className="bg-[#1B37A3] py-7">
-      <div className="w-full max-w-[1540px] mx-auto px-5">
+      <div className="w-full max-w-[1540px] mx-auto px-10">
         <div className="grid gap-y-8 lg:grid-cols-7 items-center">
           <div className="col-span-3 text-white">
             <h2 data-aos="fade-right" className="font-bold text-5xl mb-[30px] hidden md:block aos-init aos-animate">Поступление новых товаров</h2>

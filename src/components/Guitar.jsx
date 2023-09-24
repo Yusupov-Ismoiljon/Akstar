@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import Header from './Header';
-import Fooder from './Fooder';
+import Footer from './Footer';
 import { api } from '../data';
 import { tapArr } from '../data';
 import { tabImgArr } from '../data';
 import MySwiper from '../layouts/Swiper';
 
 
-const Guitar = ({ shop, shop1, addCart, addCart1 }) => {
+const Guitar = ({ shop, like, shop1, addCart, addCart1, addLike }) => {
     const [tab, setTab] = useState(1);
     const setActiveTab = (id) => {
         setTab(id)
@@ -22,8 +22,8 @@ const Guitar = ({ shop, shop1, addCart, addCart1 }) => {
 
     return (
         <div>
-            <Header shop={shop} />
-            <div className='w-full max-w-[1540px] mx-auto px-5 py-10 mb-16'>
+            <Header shop={shop} like={like} />
+            <div className='w-full max-w-[1540px] mx-auto px-10 py-10 mb-16'>
                 {/* img-tab */}
                 {shop1.map((e) => {
                     return (
@@ -184,10 +184,10 @@ const Guitar = ({ shop, shop1, addCart, addCart1 }) => {
                     </div>
                 </div>
             </div>
-            <div className='w-full max-w-[1540px] mx-auto px-5 mb-14'>
-                <MySwiper addCart={addCart} addCart1={addCart1} />
+            <div className='w-full max-w-[1540px] mx-auto px-10 mb-14'>
+                <MySwiper addCart={addCart} addCart1={addCart1} addLike={addLike}/>
             </div>
-            <Fooder />
+            <Footer />
         </div>
     )
 }

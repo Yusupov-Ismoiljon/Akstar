@@ -4,7 +4,7 @@ import 'swiper/css'
 import { api } from '../data';
 import { Link } from 'react-router-dom';
 
-export default function MySwiper({addCart, addCart1}) {
+export default function MySwiper({addCart, addCart1, addLike}) {
     return (
         <>
             <Swiper
@@ -20,7 +20,7 @@ export default function MySwiper({addCart, addCart1}) {
                     {api.map((e) => {
                         return (
                             <SwiperSlide key={e.id} className='flex flex-col'>
-                                <button className='absolute top-3 right-3 z-30'>
+                                <button onClick={()=> addLike(e.id)} className='absolute top-3 right-3 z-30'>
                                     <i className={`fa-regular fa-heart fa-xl text-[#B0B0B0]`}></i>
                                 </button>
                                 <Link to={`/guitar/${e.id}`}>

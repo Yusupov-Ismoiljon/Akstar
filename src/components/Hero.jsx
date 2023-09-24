@@ -5,7 +5,7 @@ const Hero = () => {
 
     return (
         <>
-            <div className='w-full max-w-[1540px] mx-auto px-5'>
+            <div className='w-full max-w-[1540px] mx-auto px-10'>
                 <div>
                     <div className='grid grid-cols-1 md:grid-cols-5 justify-center items-center py-8 gap-7'>
                         <div className='w-full hidden md:flex flex-col gap-7 col-span-2'>

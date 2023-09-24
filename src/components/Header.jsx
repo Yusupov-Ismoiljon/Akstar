@@ -2,12 +2,12 @@ import { Badge } from '@material-tailwind/react';
 import React, { useContext, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-const Header = ({shop}) => {
+const Header = ({ shop, like }) => {
     const [menu, setMenu] = useState(false);
 
     return (
         <header>
-            <div className='w-full max-w-[1540px] mx-auto px-5 py-3 mb-3'>
+            <div className='w-full max-w-[1540px] mx-auto px-10 py-3 mb-3'>
                 <div className='flex items-center justify-between'>
                     <Link to={`/`}>
                         <h1 className='font-russo font-light md:text-[40.34px] text-[23px] logo leading-[135%] uppercase'>akstar</h1>
@@ -21,7 +21,7 @@ const Header = ({shop}) => {
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='/академия'>
+                                    <NavLink to='/like'>
                                         <span className='font-semibold text-lg leading-normal'>Академия</span>
                                     </NavLink>
                                 </li>
@@ -41,16 +41,18 @@ const Header = ({shop}) => {
                     <div className='lg:block hidden'>
                         <ul className='flex items-center space-x-7'>
                             <li>
-                                <Link to='/магазин'>
-                                    <Badge color="blue" placement="top-end" overlap='square' content={shop.length}>
-                                        <button>
-                                            <i className="fas fa-cart-shopping fa-lg"></i>
-                                        </button>
-                                    </Badge>
-                                </Link>
+                                <Badge color="blue" content={`${shop.length}`}>
+                                    <Link to='/магазин'>
+                                        <i className="fas fa-cart-shopping fa-xl"></i>
+                                    </Link>
+                                </Badge>
                             </li>
                             <li>
-                                <i className="fa-sharp fa-regular fa-heart fa-lg"></i>
+                                <Badge content={`${like.length}`}>
+                                    <Link to='/like'>
+                                        <i className="fa-sharp fa-regular fa-heart fa-xl"></i>
+                                    </Link>
+                                </Badge>
                             </li>
                             <li className='flex items-center'>
                                 <i className="fa-regular fa-user fa-lg mr-2.5"></i>
@@ -59,11 +61,12 @@ const Header = ({shop}) => {
                         </ul>
                     </div>
                     <div className='lg:hidden block'>
-                        <button className='relative'>
-                            <i className="w-9 fa-solid fa-cart-shopping fa-md mr-5"></i>
-                            <span className='flex items-center justify-center w-3 h-3 text-white bg-[#1B37A3] text-[8px] rounded-full absolute px-1 -top-1 right-5'>0</span>
-                        </button>
-                        <button className='w-5' onClick={() => setMenu(!menu)}>
+                            <Badge color="blue" content={`${shop.length}`}>
+                                <Link to='/магазин'>
+                                    <i className="fas fa-cart-shopping fa-lg"></i>
+                                </Link>
+                            </Badge>
+                        <button className='w-5 ml-5' onClick={() => setMenu(!menu)}>
                             <i className={`fas ${!menu ? `fa-bars` : `fa-xmark text-red-500`} fa-lg`}></i>
                         </button>
                     </div>
@@ -80,7 +83,7 @@ const Header = ({shop}) => {
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to='/академия'>
+                                        <NavLink to='/like'>
                                             <span className='font-semibold text-lg leading-normal'>Академия</span>
                                         </NavLink>
                                     </li>
@@ -110,7 +113,7 @@ const Header = ({shop}) => {
                 }
             </div>
             <div className='-z-30 bg-black mb-4'>
-                <div className='w-full max-w-[1540px] mx-auto px-5'>
+                <div className='w-full max-w-[1540px] mx-auto px-10'>
                     <marquee>
                         <div className='font-raleway text-white space-x-9 py-2'>
                             <span className='text-base leading-normal uppercase'>Промокод <span className='font-extrabold'>CROW</span>- скидка 25% на все курсы гитарной академии</span>
