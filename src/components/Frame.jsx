@@ -25,7 +25,7 @@ const Frame = ({ shop, addCart, addCart1, addLike, like, removeLike }) => {
       <div>
         <Hero />
         <Tavar />
-        <div className='w-full max-w-[1540px] mx-auto px-10 mt-10'>
+        <div className='w-full max-w-[1300px] mx-auto px-10 mt-10'>
           <ul className="flex items-center space-x-1 mb-[30px]">
             <li className="flex items-center">
               <a className="font-normal text-xs leading-normal logo mr-1" href="#">
@@ -147,12 +147,12 @@ const Frame = ({ shop, addCart, addCart1, addLike, like, removeLike }) => {
             </div>
           </div>
           <div className={`relative mb-16`}>
-            <div className='absolute mr-10'>
+            <div className='absolute mr-5'>
               <MainLayouts menuKatal={menuKatal} setMenuKatal={setMenuKatal} sozlash={sozlash} setSozlash={setSozlash} />
             </div>
-            <ul className={`grid grid-cols-1 md:grid-cols-2 xl:${sozlash ? 'grid-cols-3' : 'grid-cols-5'} ${sozlash ? 'md:ml-80 md:pt-0 pt-[760px]' : 'ml-0'} gap-7`}>
-              {api.map((card) => (
-                <Main key={card.id} addCart={addCart} addCart1={addCart1} addLike={addLike} removeLike={removeLike} card={card} />
+            <ul className={`grid grid-cols-1 md:grid-cols-2 ${sozlash ? 'lg:grid-cols-2 md:ml-80 md:pt-0 pt-[760px]' : 'lg:grid-cols-4 ml-0'} xl:grid-cols-5 gap-7`}>
+              {api.map((e) => (
+                <Main key={e.id} addCart={addCart} addCart1={addCart1} addLike={addLike} removeLike={removeLike} e={e} />
               ))
               }
             </ul>

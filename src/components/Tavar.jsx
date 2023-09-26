@@ -5,13 +5,13 @@ const Tavar = () => {
 
   return (
     <section className="bg-[#1B37A3] py-7">
-      <div className="w-full max-w-[1540px] mx-auto px-10">
-        <div className="grid gap-y-8 lg:grid-cols-7 items-center">
-          <div className="col-span-3 text-white">
-            <h2 data-aos="fade-right" className="font-bold text-5xl mb-[30px] hidden md:block aos-init aos-animate">Поступление новых товаров</h2>
-            <button data-aos="fade-up" className="py-4 px-9 bg-white text-black rounded-[10px] text-lg font-semibold aos-init aos-animate">Перейти в каталог</button>
+      <div className="w-full max-w-[1300px] mx-auto px-10">
+        <div className="lg:flex justify-between gap-y-8 items-center">
+          <div className="lg:mb-0 mb-5 text-white">
+            <h2 data-aos="fade-right" className="font-bold md:text-5xl text-2xl mb-[30px] block aos-init aos-animate">Поступление новых товаров</h2>
+            <button data-aos="fade-up" className="bg-white text-black rounded-[10px] text-lg font-semibold md:py-4 md:px-9 py-2 px-5 aos-init aos-animate">Перейти в каталог</button>
           </div>
-          <div className="col-span-4">
+          <div>
             <ul className="grid grid-cols-2 md:grid-cols-3 gap-5">
               <li data-aos-delay="0" data-aos="fade-up" className="text-white relative aos-init aos-animate">
                 <button className='absolute top-3 right-3 z-30 text-xl'>

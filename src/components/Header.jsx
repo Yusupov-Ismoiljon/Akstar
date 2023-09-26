@@ -7,7 +7,7 @@ const Header = ({ shop, like }) => {
 
     return (
         <header>
-            <div className='w-full max-w-[1540px] mx-auto px-10 py-3 mb-3'>
+            <div className='w-full max-w-[1300px] mx-auto px-10 py-3 mb-3'>
                 <div className='flex items-center justify-between'>
                     <Link to={`/`}>
                         <h1 className='font-russo font-light md:text-[40.34px] text-[23px] logo leading-[135%] uppercase'>akstar</h1>
@@ -113,7 +113,7 @@ const Header = ({ shop, like }) => {
                 }
             </div>
             <div className='-z-30 bg-black mb-4'>
-                <div className='w-full max-w-[1540px] mx-auto px-10'>
+                <div className='w-full max-w-[1300px] mx-auto px-10'>
                     <marquee>
                         <div className='font-raleway text-white space-x-9 py-2'>
                             <span className='text-base leading-normal uppercase'>Промокод <span className='font-extrabold'>CROW</span>- скидка 25% на все курсы гитарной академии</span>

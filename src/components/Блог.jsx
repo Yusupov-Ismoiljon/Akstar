@@ -5,25 +5,29 @@ import { Input, Tab, Tabs, TabsHeader } from '@material-tailwind/react';
 import { bolg } from '../data';
 
 const Blog = ({ shop, like }) => {
-    const [activeTab, setActiveTab] = React.useState("Bce");
+    const [activeTab, setActiveTab] = React.useState("bce");
     const data = [
         {
             label: "Bce",
+            value: "bce"
         },
         {
-            label: "Полезные статьи"
+            label: "Полезные статьи",
+            value: "foydali maqolalar"
         },
         {
-            label: "Информационные"
+            label: "Информационные",
+            value: "malumot"
         },
         {
-            label: "Новинки"
+            label: "Новинки",
+            value: "yangi"
         }
     ];
     return (
         <>
             <Header shop={shop} like={like} />
-            <div className='w-full max-w-[1540px] mx-auto px-10'>
+            <div className='w-full max-w-[1300px] mx-auto px-10'>
                 <div className='mb-7'>
                     <div className='flex justify-between'>
                         <div className='xl:flex xl:gap-x-9'>
@@ -34,11 +38,12 @@ const Blog = ({ shop, like }) => {
                                         className: "bg-transparent border-b-2 border-[#1B37A3] shadow-none rounded-none p-4",
                                     }}
                                 >
-                                    {data.map(({ label }) => (
+                                    {data.map(({ label, value }) => (
                                         <Tab
-                                            value={label}
-                                            onClick={() => setActiveTab(label)}
-                                            className={`md:w-[137px] font-bold text-sm ${activeTab === label ? "logo" : "icon"} duration-700`}
+                                            value={value}
+                                            key={value}
+                                            onClick={() => setActiveTab(value)}
+                                            className={`md:w-[137px] font-bold text-sm ${activeTab === value ? "logo" : "icon"} duration-700`}
                                         >
                                             {label}
                                         </Tab>
@@ -49,8 +54,8 @@ const Blog = ({ shop, like }) => {
                         </div>
 
                         <div className='md:w-[410px] w-[233px] relative'>
-                            <input className='py-2 px-6 rounded-3xl border border-black outline-none' type="search" placeholder='Поиск...' />
-                            <i className="fa-solid fa-magnifying-glass absolute left-6 top-3 mr-4"></i>
+                            <input className='rounded-3xl border border-black outline-none py-2 px-12' type="search" placeholder='Поиск...' />
+                            <i className="fa-solid fa-magnifying-glass absolute left-5 top-3 mr-4"></i>
                         </div>
                     </div>
                     <Tabs className='xl:hidden block' value={activeTab}>
