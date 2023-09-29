@@ -29,7 +29,7 @@ const Guitar = ({ shop, like, shop1, addCart, addCart1, addLike, removeLike }) =
                 {/* img-tab */}
                 {shop1.map((e) => {
                     return (
-                        <div className={`grid xl:grid-cols-2 grid-cols-1 gap-7 mb-16 ${shop1}`}>
+                        <div className={`grid xl:grid-cols-2 grid-cols-1 gap-7 mb-16`}>
                             <div className='md:flex md:items-center md:justify-between'>
                                 <div className='md:block hidden'>
                                     <div className='md:w-28 grid grid-cols-4 md:grid-cols-1 gap-7'>
@@ -79,7 +79,7 @@ const Guitar = ({ shop, like, shop1, addCart, addCart1, addLike, removeLike }) =
                                 </div>
                                 <p className='font-extrabold text-4xl leading-normal'>11 360 ₽</p>
                                 <button onClick={() => addCart(e.id)} className='w-[240px] font-semibold text-lg leading-6 text-white bg-[#1B37A3] rounded-lg py-4'>
-                                    В корзину
+                                    {e.karzinka}
                                 </button>
                             </div>
                         </div>

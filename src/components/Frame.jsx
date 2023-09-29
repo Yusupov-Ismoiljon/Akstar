@@ -8,7 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'
 import { api } from '../data';
 import card from '@material-tailwind/react/theme/components/card';
-import { Card, Select } from '@material-tailwind/react';
+import { Card, Option, Select } from '@material-tailwind/react';
 import MainLayouts from '../layouts/MainLayouts';
 
 

@@ -3,8 +3,9 @@ import Header from './Header';
 import Footer from './Footer';
 import { Input, Tab, Tabs, TabsHeader } from '@material-tailwind/react';
 import { bolg } from '../data';
+import { Link } from 'react-router-dom';
 
-const Blog = ({ shop, like }) => {
+const Blog = ({ shop, like, addMalumot }) => {
     const [activeTab, setActiveTab] = React.useState("bce");
     const data = [
         {
@@ -83,7 +84,9 @@ const Blog = ({ shop, like }) => {
                             bolg.map((e) => {
                                 return (
                                     <li key={e.id} data-aos-delay="0" data-aos="fade-up" className='show rounded-xl p-4 mb-14 aos-init aos-animate'>
-                                        <img className='rounded-xl mb-4' src={e.img} alt="" />
+                                        <Link to={`/malumotlar/${e.id}`} onClick={() => addMalumot(e.id)}>
+                                            <img className='rounded-xl mb-4' src={e.img} alt="" />
+                                        </Link>
                                         <div className='space-y-2.5'>
                                             <div className='flex justify-between items-center icon'>
                                                 <p>01.07.2023</p>

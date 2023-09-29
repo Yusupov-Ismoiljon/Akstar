@@ -1,10 +1,10 @@
 import { Badge } from '@material-tailwind/react';
 import React, { useContext, useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom';
+import Sinup from './Sinup';
 
-const Header = ({ shop, like }) => {
+const Header = ({ shop, like, singup, setSIngup }) => {
     const [menu, setMenu] = useState(false);
-
     return (
         <header>
             <div className='w-full max-w-[1300px] mx-auto px-10 py-3 mb-3'>
@@ -55,17 +55,19 @@ const Header = ({ shop, like }) => {
                                 </Badge>
                             </li>
                             <li className='flex items-center'>
-                                <i className="fa-regular fa-user fa-lg mr-2.5"></i>
-                                <span className='font-medium text-base leading-normal'>Войти</span>
+                                <Link to={'/singup'}>
+                                    <i className="fa-regular fa-user fa-lg mr-2.5"></i>
+                                    <span className='font-medium text-base leading-normal'>Войти</span>
+                                </Link>
                             </li>
                         </ul>
                     </div>
                     <div className='lg:hidden block'>
+                        <Link to='/магазин'>
                             <Badge color="blue" content={`${shop.length}`}>
-                                <Link to='/магазин'>
-                                    <i className="fas fa-cart-shopping fa-lg"></i>
-                                </Link>
+                                <i className="fas fa-cart-shopping fa-lg"></i>
                             </Badge>
+                        </Link>
                         <button className='w-5 ml-5' onClick={() => setMenu(!menu)}>
                             <i className={`fas ${!menu ? `fa-bars` : `fa-xmark text-red-500`} fa-lg`}></i>
                         </button>

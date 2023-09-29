@@ -27,8 +27,8 @@ const Main = ({ addCart, addCart1, addLike, removeLike, e }) => {
       className="text-white relative aos-init aos-animate"
     >
 
-      <Link onClick={() => addCart1(e.id)} className="bg-white rounded-xl py-4" to={`/guitar/${e.id}`}>
-        <img className="w-full" src={e.img} alt="new product" />
+      <Link onClick={() => addCart1(e)} className="bg-white rounded-xl py-4" to={`/guitar/${e.id}`}>
+          <img className="w-full" src={e.img} alt="new product" />
       </Link>
       <div className="py-3 space-y-1">
         <span className="font-medium text-sm text-[#DEDEDE]">{e.ak}</span>
