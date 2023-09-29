@@ -55,7 +55,7 @@ const Header = ({ shop, like, singup, setSIngup }) => {
                                 </Badge>
                             </li>
                             <li className='flex items-center'>
-                                <Link to={'/singup'}>
+                                <Link to={'/signup'}>
                                     <i className="fa-regular fa-user fa-lg mr-2.5"></i>
                                     <span className='font-medium text-base leading-normal'>Войти</span>
                                 </Link>
