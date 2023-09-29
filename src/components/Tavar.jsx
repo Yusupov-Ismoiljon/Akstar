@@ -14,9 +14,6 @@ const Tavar = () => {
           <div>
             <ul className="grid grid-cols-2 md:grid-cols-3 gap-5">
               <li data-aos-delay="0" data-aos="fade-up" className="text-white relative aos-init aos-animate">
-                <button className='absolute top-3 right-3 z-30 text-xl'>
-                  <i className={`fa-solid fa-heart icon`}></i>
-                </button>
                 <div className="bg-white rounded-xl py-4">
                   <img className="w-full" src="./img/gitar.png" alt="new product" />
                 </div>
@@ -27,9 +24,6 @@ const Tavar = () => {
                 </div>
               </li>
               <li data-aos-delay="300" data-aos="fade-up" className="text-white relative aos-init aos-animate">
-                <button className='absolute top-3 right-3 z-30 text-xl'>
-                  <i className={`fa-solid fa-heart icon`}></i>
-                </button>
                 <div className="bg-white rounded-xl py-4">
                   <img className="w-full" src="./img/gitar.png" alt="new product" />
                 </div>
@@ -40,9 +34,6 @@ const Tavar = () => {
                 </div>
               </li>
               <li data-aos-delay="600" data-aos="fade-up" className="text-white relative aos-init aos-animate">
-                <button className='absolute top-3 right-3 z-30 text-xl'>
-                  <i className={`fa-solid fa-heart icon`}></i>
-                </button>
                 <div className="bg-white rounded-xl py-4">
                   <img className="w-full" src="./img/gitar.png" alt="new product" />
                 </div>

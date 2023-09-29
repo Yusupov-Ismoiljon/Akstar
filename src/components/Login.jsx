@@ -22,10 +22,10 @@ const Login = ({ shop, like, signup, setSignup }) => {
                             </h2>
                             <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
                                 <div className="mb-4 flex flex-col gap-4">
-                                    <Input className='block' size="lg" label="Почта*" required/>
+                                    <Input className='block' size="lg" type='email' label="Почта" required/>
                                     <Input className='block' type="password" size="lg" label="Пароль" required/>
                                 </div>
-                                <Button className="mt-7 bg-[#1B37A3]" fullWidth>
+                                <Button type='submit' className="mt-7 bg-[#1B37A3]" fullWidth>
                                     Войти
                                 </Button>
                                 <Typography color="gray" className="mt-4 text-center font-normal">

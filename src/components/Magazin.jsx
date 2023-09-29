@@ -44,7 +44,7 @@ const Magazin = ({ shop, like, setShop, addCartPul}) => {
         <div className='w-full max-w-[1300px] mx-auto px-10'>
           <h2 className='font-bold text-4xl leading-normal mb-[30px]'>Корзина</h2>
           <div className={`xl:flex xl:justify-between gap-7 ${shop.length >= 0 ? 'block' : 'hidden'}`}>
-            <ul className='flex flex-col gap-7 space-y-3'>
+            <ul className='flex flex-col gap-5 space-y-3'>
               {shop.map((product) => (
                 <li className='flex flex-col gap-7' key={product.id}>
                   <div className='flex justify-between w-full gap-[30px] items-start'>
@@ -57,7 +57,7 @@ const Magazin = ({ shop, like, setShop, addCartPul}) => {
                             Фолк гитара с металлическими струнами, верхняя дека - ель, <br /> корпус - агатис, цвет натуральный, 39", с вырезом
                           </p>
                         </div>
-                        <p className='font-bold text-3xl logo leading-normal xl:block hidden'>{product.pul}</p>
+                        <p className='font-bold text-3xl logo leading-normal xl:block hidden'>{product.pul}₽</p>
                       </div>
                       <div className='xl:block hidden'>
                         <div className='flex justify-between'>
@@ -83,7 +83,7 @@ const Magazin = ({ shop, like, setShop, addCartPul}) => {
                   </div>
 
                   <div className='flex justify-between items-center xl:hidden block'>
-                    <p className='font-bold text-3xl logo leading-normal'>{product.pul}</p>
+                    <p className='font-bold text-3xl logo leading-normal'>{product.pul} ₽</p>
 
                     <div className='space-x-4'>
                       <button onClick={() => addCartPul(product, -1)} disabled={product.miqdor <= 1}>
