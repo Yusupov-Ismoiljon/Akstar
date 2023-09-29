@@ -11,6 +11,7 @@ import Guitar from "./components/Guitar";
 import BlockMalumot from "./components/BlogMalumot";
 import Sinup from "./components/Sinup";
 import Login from "./components/Login";
+// import Menu from "./layouts/Menu";
 
 export default function App() {
   const [shop, setShop] = useState([]);
@@ -102,6 +103,7 @@ export default function App() {
         <Route path='/malumotlar/:id' element={<BlockMalumot shop={shop} like={like} />} />
         <Route path='/signup' element={<Sinup shop={shop} like={like} />}/>
         <Route path='/login' element={<Login shop={shop} like={like} />}/>
+        {/* <Route path='/menu' element={<Menu shop={shop} like={like} />}/> */}
       </Route>
     )
   );

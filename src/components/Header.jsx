@@ -1,7 +1,6 @@
 import { Badge } from '@material-tailwind/react';
 import React, { useContext, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom';
-import Sinup from './Sinup';
 
 const Header = ({ shop, like, singup, setSIngup }) => {
     const [menu, setMenu] = useState(false);
@@ -75,7 +74,7 @@ const Header = ({ shop, like, singup, setSIngup }) => {
 
                 </div>
                 {menu &&
-                    <div className='fixed w-full bg-white top-[60px] left-0 bottom-0 z-30 lg:hidden'>
+                    <div className='w-full absolute bg-white top-[60px] left-0 z-30 lg:hidden'>
                         <div className='relative'>
                             <nav className='py-10 pl-4'>
                                 <ul className='space-y-10'>
