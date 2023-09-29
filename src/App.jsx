@@ -10,6 +10,7 @@ import ReactLayouts from "./layouts/ReactLayouts";
 import Guitar from "./components/Guitar";
 import BlockMalumot from "./components/BlogMalumot";
 import Sinup from "./components/Sinup";
+import Login from "./components/Login";
 
 export default function App() {
   const [shop, setShop] = useState([]);
@@ -99,7 +100,8 @@ export default function App() {
         <Route path="/like" element={<CardLike shop={shop} like={like} addLike={addLike} removeLike={removeLike} />} />
         <Route path="/ьлог" element={<Blog shop={shop} like={like} />} />
         <Route path='/malumotlar/:id' element={<BlockMalumot shop={shop} like={like} />} />
-        <Route path='/singup' element={<Sinup shop={shop} like={like} />}/>
+        <Route path='/signup' element={<Sinup shop={shop} like={like} />}/>
+        <Route path='/login' element={<Login shop={shop} like={like} />}/>
       </Route>
     )
   );
