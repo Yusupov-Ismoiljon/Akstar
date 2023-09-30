@@ -15,12 +15,11 @@ const Tavar = () => {
             <ul className="grid grid-cols-2 md:grid-cols-3 gap-5">
               <li data-aos-delay="0" data-aos="fade-up" className="text-white relative aos-init aos-animate">
                 <div className="bg-white rounded-xl py-4">
-                  <img className="w-full" src="./img/gitar.png" alt="new product" />
+                  <img className="w-full h-52" src="./img/erkak1.jpeg" alt="new product" />
                 </div>
                 <div className="py-3">
-                  <span className="font-medium text-sm text-[#DEDEDE]">Акустические гитары</span>
-                  <h3 className="font-bold text-sm sm:text-base">LC-3400</h3>
-                  <span className="font-extrabold text-base sm:text-lg">11 360  ₽</span>
+                  <h3 className="font-bold text-sm sm:text-base">Мужская футболка Street Style</h3>
+                  <span className="font-extrabold text-base sm:text-lg">711 ₽</span>
                 </div>
               </li>
               <li data-aos-delay="300" data-aos="fade-up" className="text-white relative aos-init aos-animate">
@@ -28,7 +27,6 @@ const Tavar = () => {
                   <img className="w-full" src="./img/gitar.png" alt="new product" />
                 </div>
                 <div className="py-3">
-                  <span className="font-medium text-sm text-[#DEDEDE]">Акустические гитары</span>
                   <h3 className="font-semibold text-sm sm:text-base">LC-3400</h3>
                   <span className="font-bold text-base sm:text-lg">11 360  ₽</span>
                 </div>
@@ -38,7 +36,6 @@ const Tavar = () => {
                   <img className="w-full" src="./img/gitar.png" alt="new product" />
                 </div>
                 <div className="py-3">
-                  <span className="font-medium text-sm text-[#DEDEDE]">Акустические гитары</span>
                   <h3 className="font-semibold text-sm sm:text-base">LC-3400</h3>
                   <span className="font-bold text-base sm:text-lg">11 360  ₽</span>
                 </div>

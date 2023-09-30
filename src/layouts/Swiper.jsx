@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-export default function MySwiper({ addCart, addCart1, addLike, removeLike, e }) {
+export default function MySwiper({ addCart, addLike, removeLike, e }) {
     const [liked, setLiked] = useState(false);
     const toggleLike = (id) => {
         setLiked(!liked);
@@ -20,12 +20,11 @@ export default function MySwiper({ addCart, addCart1, addLike, removeLike, e }) 
                 ></i>
             </button>
             <Link to={`/guitar/${e.id}`}>
-                <button onClick={() => addCart1(e.id)} className="bg-white rounded-xl py-4">
+                <button className="bg-white rounded-xl py-4">
                     <img className="w-full" src={e.img} alt="new product" />
                 </button>
             </Link>
             <div className="py-3 space-y-1">
-                <span className="font-medium text-sm text-[#DEDEDE]">{e.ak}</span>
                 <h3 className="font-bold text-sm sm:text-base brend">{e.lc}</h3>
                 <span className="font-extrabold text-base sm:text-lg logo">{e.pul}  ₽</span>
             </div>

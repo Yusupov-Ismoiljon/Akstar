@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 
 const Main = ({ addCart, addCart1, addLike, removeLike, e }) => {
   const [liked, setLiked] = useState(false);
-  const [showInfo, setShowInfo] = useState(false);
-
   const toggleLike = (id) => {
     setLiked(!liked);
     if (!liked) {
@@ -31,7 +29,6 @@ const Main = ({ addCart, addCart1, addLike, removeLike, e }) => {
 
       </div>
       <div className="py-3 space-y-1">
-        <span className="font-medium text-sm text-[#DEDEDE]">{e.ak}</span>
         <h3 className="font-bold text-sm sm:text-base brend">{e.lc}</h3>
         <span className="font-extrabold text-base sm:text-lg logo">{e.pul}  ₽</span>
       </div>
@@ -39,7 +36,7 @@ const Main = ({ addCart, addCart1, addLike, removeLike, e }) => {
         <button onClick={() => addCart(e.id)} className="w-full font-semibold text-base leading-6 text-[#1B37A3] py-1 px-9 border-2 border-[#1B37A3] rounded-md mr-2">
           {e.karzinka}
         </button>
-        <Link onClick={() => addCart1(e.id)} to={`/guitar/${e.id}`} className="flex justify-center items-center px-5 font-semibold text-base leading-6  text-white bg-[#1B37A3] rounded-md">
+        <Link to={`/guitar/${e.id}`} className="flex justify-center items-center px-5 font-semibold text-base leading-6  text-white bg-[#1B37A3] rounded-md">
           i
         </Link>
       </div>

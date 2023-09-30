@@ -16,7 +16,6 @@ import Error404 from "./layouts/Error404";
 
 export default function App() {
   const [shop, setShop] = useState([]);
-  const [shop1, setShop1] = useState([]);
   const [like, setLike] = useState([]);
 
 
@@ -51,20 +50,6 @@ export default function App() {
     }
   };
 
-  const addCart1 = (i) => {
-    const found = shop1.find((e) => e.id === i.id);
-
-    if (!found) {
-      setShop1([...shop1, { ...i, miqdor: 1 }]);
-    } else {
-      const updatedShop1 = shop1.map((e) =>
-        e.id === i.id ? { ...e, miqdor: e.miqdor + 1 } : e
-      );
-      setShop1(updatedShop1);
-    }
-  };
-
-
   const addLike = (i) => {
     const productToAdd = api.find((e) => e.id === i);
     setLike([...like, { ...productToAdd, miqdor: 1 }]);
@@ -96,9 +81,9 @@ export default function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/">
-        <Route path="/" element={<ReactLayouts shop={shop} like={like} addCart={addCart} addCart1={addCart1} addLike={addLike} removeLike={removeLike} />} />
-        <Route path="/guitar/:id" element={<Guitar shop={shop} setShop1={setShop1} like={like} shop1={shop1} addCart={addCart} addCart1={addCart1} addLike={addLike} removeLike={removeLike} />} />
-        <Route path="магазин" element={<Magazin shop={shop} like={like} setShop={setShop} addCart={addCart} addCart1={addCart1} addCartPul={addCartPul} />} />
+        <Route path="/" element={<ReactLayouts shop={shop} like={like} addCart={addCart} addLike={addLike} removeLike={removeLike} />} />
+        <Route path="/guitar/:id" element={<Guitar shop={shop}  like={like} addCart={addCart} addLike={addLike} removeLike={removeLike} />} />
+        <Route path="магазин" element={<Magazin shop={shop} like={like} setShop={setShop} addCart={addCart} addCartPul={addCartPul} />} />
         <Route path="/like" element={<CardLike shop={shop} like={like} addLike={addLike} removeLike={removeLike} />} />
         <Route path="/ьлог" element={<Blog shop={shop} like={like} />} />
         <Route path='/malumotlar/:id' element={<BlockMalumot shop={shop} like={like} />} />
