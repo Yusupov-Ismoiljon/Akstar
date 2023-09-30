@@ -5,7 +5,6 @@ export const api = [
     {
         id: 1,
         img: '../img/erkak1.jpeg',
-        ak: 'Акустические гитары',
         lc: 'Мужская футболка Street Style',
         pul: 711,
         miqdor: 1,
@@ -32,7 +31,6 @@ export const api = [
     {
         id: 2,
         img: '../img/erkak2.jpg',
-        ak: 'Акустические гитары',
         lc: 'Джинсы Терра Про, мужские',
         pul: 1304,
         miqdor: 1,
@@ -59,7 +57,6 @@ export const api = [
     {
         id: 3,
         img: '../img/erkak3.jpg',
-        ak: 'Акустические гитары',
         lc: 'Джинсы Терра Про, мужские',
         pul: 650,
         miqdor: 1,
@@ -86,7 +83,6 @@ export const api = [
     {
         id: 4,
         img: '../img/erkak4.jpg',
-        ak: 'Акустические гитары',
         lc: 'Джинсы Терра Про, мужские',
         pul: 550,
         miqdor: 1,
@@ -113,7 +109,6 @@ export const api = [
     {
         id: 5,
         img: '../img/erkak5.jpeg',
-        ak: 'Акустические гитары',
         lc: 'Футболка Стиль Street Style',
         pul: 499,
         miqdor: 1,
@@ -140,7 +135,6 @@ export const api = [
     {
         id: 6,
         img: '../img/erkak6.jpeg',
-        ak: 'Акустические гитары',
         lc: 'Футболка Стиль Street Style',
         pul: 701,
         miqdor: 1,
@@ -167,7 +161,6 @@ export const api = [
     {
         id: 7,
         img: '../img/erkak7.jpeg',
-        ak: 'Акустические гитары',
         lc: 'Футболка Стиль Street Style',
         pul: 605,
         miqdor: 1,
@@ -194,7 +187,6 @@ export const api = [
     {
         id: 8,
         img: '../img/erkak8.jpeg',
-        ak: 'Акустические гитары',
         lc: "флисовая куртка",
         pul: 555,
         miqdor: 1,
@@ -221,7 +213,6 @@ export const api = [
     {
         id: 9,
         img: '../img/erkak9.jpeg',
-        ak: 'Акустические гитары',
         lc: "флисовая куртка",
         pul: 699,
         miqdor: 1,
@@ -248,7 +239,6 @@ export const api = [
     {
         id: 10,
         img: '../img/erkak10.jpeg',
-        ak: 'Акустические гитары',
         lc: "флисовая куртка",
         pul: 590,
         miqdor: 1,
@@ -275,7 +265,6 @@ export const api = [
     {
         id: 11,
         img: '../img/erkak11.jpeg',
-        ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 500,
         miqdor: 1,
@@ -302,7 +291,6 @@ export const api = [
     {
         id: 12,
         img: '../img/erkak12.jpeg',
-        ak: 'Акустические гитары',
         lc: 'Nike',
         pul: 602,
         miqdor: 1,
@@ -329,7 +317,6 @@ export const api = [
     {
         id: 13,
         img: '../img/erkak13.jpeg',
-        ak: 'Акустические гитары',
         lc: 'Роскошные копии спортивных трикотажных изделий Nike.',
         pul: 780,
         miqdor: 1,
@@ -356,7 +343,6 @@ export const api = [
     {
         id: 14,
         img: '../img/erkak14.jpeg',
-        ak: 'Акустические гитары',
         lc: 'Мужская футболка Street Style',
         pul: 589,
         miqdor: 1,
@@ -383,7 +369,6 @@ export const api = [
     {
         id: 15,
         img: '../img/erkak15.jpg',
-        ak: 'Акустические гитары',
         lc: 'Мужская футболка Street Style',
         pul: 800,
         miqdor: 1,
@@ -410,7 +395,6 @@ export const api = [
     {
         id: 16,
         img: '../img/erkak16.jpeg',
-        ak: 'Акустические гитары',
         lc: 'Роскошные копии спортивных трикотажных изделий Nike.',
         pul: 899,
         miqdor: 1,
@@ -437,155 +421,426 @@ export const api = [
 ];
 export const api2 = [
     {
-        id: 1,
-        img: opaxon,
-        ak: 'Акустические гитары',
-        lc: 'lc-3400',
-        pul: 11360,
+        id: 17,
+        img: '../img/ayollar1.jpg',
+        lc: 'Kurtka Anaki qora 1833 ayollar uchun',
+        pul: 660,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/ayolar1.jpeg"
+            },
+            {
+                id: 5,
+                img: "../img/ayolar2.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/ayolar5.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/ayolar4.jpg"
+            }
+        ]
     },
     {
-        id: 2,
-        img: opaxon,
-        ak: 'Акустические гитары',
+        id: 18,
+        img: '../img/ayolar2.jpg',
         lc: 'lc-3400',
-        pul: 11360,
+        pul: 700,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/ayolar2.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/ayolar1.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/ayolar5.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/ayolar4.jpg"
+            }
+        ]
     },
     {
-        id: 3,
-        img: opaxon,
-        ak: 'Акустические гитары',
-        lc: 'lc-3400',
-        pul: 11360,
+        id: 19,
+        img: '../img/ayolar3.jpg',
+        lc: 'Kurtka Anaki qora 2091 ayollar uchun',
+        pul: 609,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/ayolar2.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/ayolar1.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/ayolar5.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/ayolar4.jpg"
+            }
+        ]
     },
     {
-        id: 4,
-        img: opaxon,
-        ak: 'Акустические гитары',
+        id: 20,
+        img: '../img/ayolar4.jpg',
         lc: 'lc-3400',
-        pul: 11360,
+        pul: 800,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/ayolar2.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/ayolar1.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/ayolar5.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/ayolar4.jpg"
+            }
+        ]
     },
     {
-        id: 5,
-        img: opaxon,
-        ak: 'Акустические гитары',
+        id: 21,
+        img: '../img/ayolar5.jpeg',
         lc: 'lc-3400',
-        pul: 11360,
+        pul: 560,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/ayolar2.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/ayolar1.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/ayolar5.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/ayolar4.jpg"
+            }
+        ]
     },
     {
-        id: 6,
-        img: opaxon,
-        ak: 'Акустические гитары',
+        id: 22,
+        img: '../img/ayolar6.jpg',
         lc: 'lc-3400',
-        pul: 11360,
+        pul: 900,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/ayolar2.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/ayolar1.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/ayolar5.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/ayolar4.jpg"
+            }
+        ]
     },
     {
-        id: 7,
-        img: opaxon,
-        ak: 'Акустические гитары',
+        id: 23,
+        img: '../img/ayolar7.jpeg',
         lc: 'lc-3400',
-        pul: 11360,
+        pul: 950,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/ayolar2.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/ayolar1.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/ayolar5.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/ayolar4.jpg"
+            }
+        ]
     },
     {
-        id: 8,
-        img: opaxon,
-        ak: 'Акустические гитары',
+        id: 24,
+        img: '../img/ayolar8.jpg',
         lc: 'lc-3400',
-        pul: 11360,
+        pul: 790,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/ayolar2.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/ayolar1.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/ayolar5.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/ayolar4.jpg"
+            }
+        ]
     },
     {
-        id: 9,
-        img: opaxon,
-        ak: 'Акустические гитары',
+        id: 25,
+        img: '../img/ayolar9.jpeg',
         lc: 'lc-3400',
-        pul: 11360,
+        pul: 560,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/ayolar2.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/ayolar1.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/ayolar5.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/ayolar4.jpg"
+            }
+        ]
     },
     {
-        id: 10,
-        img: opaxon,
-        ak: 'Акустические гитары',
+        id: 26,
+        img: '../img/ayolar10.jpg',
         lc: 'lc-3400',
-        pul: 11360,
+        pul: 950,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/ayolar2.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/ayolar1.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/ayolar5.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/ayolar4.jpg"
+            }
+        ]
     },
     {
-        id: 11,
-        img: opaxon,
-        ak: 'Акустические гитары',
+        id: 27,
+        img: '../img/ayolar11.jpg',
         lc: 'lc-3400',
-        pul: 11360,
+        pul: 890,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/ayolar2.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/ayolar1.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/ayolar5.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/ayolar4.jpg"
+            }
+        ]
     },
     {
-        id: 12,
-        img: opaxon,
-        ak: 'Акустические гитары',
+        id: 28,
+        img: '../img/ayolar12.jpg',
         lc: 'lc-3400',
-        pul: 11360,
+        pul: 600,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/ayolar2.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/ayolar1.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/ayolar5.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/ayolar4.jpg"
+            }
+        ]
     },
     {
-        id: 13,
-        img: opaxon,
-        ak: 'Акустические гитары',
+        id: 29,
+        img: '../img/ayolar13.jpg',
         lc: 'lc-3400',
-        pul: 11360,
+        pul: 760,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/ayolar2.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/ayolar1.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/ayolar5.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/ayolar4.jpg"
+            }
+        ]
     },
     {
-        id: 14,
-        img: opaxon,
-        ak: 'Акустические гитары',
+        id: 30,
+        img: '../img/ayolar14.jpg',
         lc: 'lc-3400',
-        pul: 11360,
+        pul: 750,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/ayolar2.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/ayolar1.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/ayolar5.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/ayolar4.jpg"
+            }
+        ]
     },
     {
-        id: 15,
-        img: opaxon,
-        ak: 'Акустические гитары',
+        id: 31,
+        img: '../img/ayolar15.jpg',
         lc: 'lc-3400',
-        pul: 11360,
+        pul: 800,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/ayolar2.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/ayolar1.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/ayolar5.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/ayolar4.jpg"
+            }
+        ]
     },
     {
-        id: 16,
-        img: opaxon,
-        ak: 'Акустические гитары',
-        lc: 'lc-3400',
-        pul: 11360,
+        id: 32,
+        img: '../img/ayolar16.jpeg',
+        lc: 'Plash Molto Caldo sport uslabida kuzgi plash',
+        pul: 555,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/ayolar2.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/ayolar1.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/ayolar5.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/ayolar4.jpg"
+            }
+        ]
     }
 ];
 export const api3 = [
     {
         id: 1,
         img: opaxon,
-        ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
         miqdor: 1,
@@ -594,7 +849,6 @@ export const api3 = [
     {
         id: 2,
         img: opaxon,
-        ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
         miqdor: 1,
@@ -603,7 +857,6 @@ export const api3 = [
     {
         id: 3,
         img: opaxon,
-        ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
         miqdor: 1,
@@ -612,7 +865,6 @@ export const api3 = [
     {
         id: 4,
         img: opaxon,
-        ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
         miqdor: 1,
@@ -621,7 +873,6 @@ export const api3 = [
     {
         id: 5,
         img: opaxon,
-        ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
         miqdor: 1,
@@ -630,7 +881,6 @@ export const api3 = [
     {
         id: 6,
         img: opaxon,
-        ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
         miqdor: 1,
@@ -639,7 +889,6 @@ export const api3 = [
     {
         id: 7,
         img: opaxon,
-        ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
         miqdor: 1,
@@ -648,7 +897,6 @@ export const api3 = [
     {
         id: 8,
         img: opaxon,
-        ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
         miqdor: 1,
@@ -657,7 +905,6 @@ export const api3 = [
     {
         id: 9,
         img: opaxon,
-        ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
         miqdor: 1,
@@ -666,7 +913,6 @@ export const api3 = [
     {
         id: 10,
         img: opaxon,
-        ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
         miqdor: 1,
@@ -675,7 +921,6 @@ export const api3 = [
     {
         id: 11,
         img: opaxon,
-        ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
         miqdor: 1,
@@ -684,7 +929,6 @@ export const api3 = [
     {
         id: 12,
         img: opaxon,
-        ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
         miqdor: 1,
@@ -693,7 +937,6 @@ export const api3 = [
     {
         id: 13,
         img: opaxon,
-        ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
         miqdor: 1,
@@ -702,7 +945,6 @@ export const api3 = [
     {
         id: 14,
         img: opaxon,
-        ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
         miqdor: 1,
@@ -711,7 +953,6 @@ export const api3 = [
     {
         id: 15,
         img: opaxon,
-        ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
         miqdor: 1,
@@ -720,7 +961,6 @@ export const api3 = [
     {
         id: 16,
         img: opaxon,
-        ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
         miqdor: 1,
