@@ -743,25 +743,6 @@ export const tapArr = [
     },
 ];
 
-export const tabImgArr = [
-    {
-        id: 4,
-        img: "../img/gitar.png"
-    },
-    {
-        id: 5,
-        img: "../img/gitarani.png"
-    },
-    {
-        id: 6,
-        img: "../img/tab-guitar1.jpg"
-    },
-    {
-        id: 7,
-        img: "../img/tab-guitar2.webp"
-    }
-];
-
 export const bolg = [
     {
         id: 1,
