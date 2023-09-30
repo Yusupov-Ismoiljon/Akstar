@@ -4,7 +4,153 @@ import opaxon from '../public/img/opaxon.png';
 export const api = [
     {
         id: 1,
-        img: '../img/gitar.png',
+        img: '../img/erkak1.jpeg',
+        ak: 'Акустические гитары',
+        lc: 'Мужская футболка Street Style',
+        pul: 711,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 2,
+        img: '../img/erkak2.jpg',
+        ak: 'Акустические гитары',
+        lc: 'Джинсы Терра Про, мужские',
+        pul: 1304,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 3,
+        img: '../img/erkak3.jpg',
+        ak: 'Акустические гитары',
+        lc: 'Джинсы Терра Про, мужские',
+        pul: 650,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 4,
+        img: '../img/erkak4.jpg',
+        ak: 'Акустические гитары',
+        lc: 'Джинсы Терра Про, мужские',
+        pul: 550,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 5,
+        img: '../img/erkak5.jpeg',
+        ak: 'Акустические гитары',
+        lc: 'Футболка Стиль Street Style',
+        pul: 499,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 6,
+        img: '../img/erkak6.jpeg',
+        ak: 'Акустические гитары',
+        lc: 'Футболка Стиль Street Style',
+        pul: 701,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 7,
+        img: '../img/erkak7.jpeg',
+        ak: 'Акустические гитары',
+        lc: 'Футболка Стиль Street Style',
+        pul: 605,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 8,
+        img: '../img/erkak8.jpeg',
+        ak: 'Акустические гитары',
+        lc: "флисовая куртка",
+        pul: 555,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 9,
+        img: '../img/erkak9.jpeg',
+        ak: 'Акустические гитары',
+        lc: "флисовая куртка",
+        pul: 699,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 10,
+        img: '../img/erkak10.jpeg',
+        ak: 'Акустические гитары',
+        lc: "флисовая куртка",
+        pul: 590,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 11,
+        img: '../img/erkak11.jpeg',
+        ak: 'Акустические гитары',
+        lc: 'lc-3400',
+        pul: 500,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 12,
+        img: '../img/erkak12.jpeg',
+        ak: 'Акустические гитары',
+        lc: 'Nike',
+        pul: 602,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 13,
+        img: '../img/erkak13.jpeg',
+        ak: 'Акустические гитары',
+        lc: 'Роскошные копии спортивных трикотажных изделий Nike.',
+        pul: 780,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 14,
+        img: '../img/erkak14.jpeg',
+        ak: 'Акустические гитары',
+        lc: 'Мужская футболка Street Style',
+        pul: 589,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 15,
+        img: '../img/erkak15.jpg',
+        ak: 'Акустические гитары',
+        lc: 'Мужская футболка Street Style',
+        pul: 800,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 16,
+        img: '../img/erkak16.jpeg',
+        ak: 'Акустические гитары',
+        lc: 'Роскошные копии спортивных трикотажных изделий Nike.',
+        pul: 899,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    }
+];
+export const api2 = [
+    {
+        id: 1,
+        img: opaxon,
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
@@ -13,7 +159,7 @@ export const api = [
     },
     {
         id: 2,
-        img: '../img/gitar.png',
+        img: opaxon,
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
@@ -22,7 +168,7 @@ export const api = [
     },
     {
         id: 3,
-        img: '../img/gitar.png',
+        img: opaxon,
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
@@ -31,7 +177,7 @@ export const api = [
     },
     {
         id: 4,
-        img: '../img/gitar.png',
+        img: opaxon,
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
@@ -40,7 +186,7 @@ export const api = [
     },
     {
         id: 5,
-        img: '../img/gitar.png',
+        img: opaxon,
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
@@ -49,7 +195,7 @@ export const api = [
     },
     {
         id: 6,
-        img: '../img/gitar.png',
+        img: opaxon,
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
@@ -58,7 +204,7 @@ export const api = [
     },
     {
         id: 7,
-        img: '../img/gitar.png',
+        img: opaxon,
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
@@ -67,7 +213,7 @@ export const api = [
     },
     {
         id: 8,
-        img: '../img/gitar.png',
+        img: opaxon,
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
@@ -76,7 +222,7 @@ export const api = [
     },
     {
         id: 9,
-        img: '../img/gitar.png',
+        img: opaxon,
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
@@ -85,7 +231,7 @@ export const api = [
     },
     {
         id: 10,
-        img: '../img/gitar.png',
+        img: opaxon,
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
@@ -94,7 +240,7 @@ export const api = [
     },
     {
         id: 11,
-        img: '../img/gitar.png',
+        img: opaxon,
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
@@ -103,7 +249,7 @@ export const api = [
     },
     {
         id: 12,
-        img: '../img/gitar.png',
+        img: opaxon,
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
@@ -112,7 +258,7 @@ export const api = [
     },
     {
         id: 13,
-        img: '../img/gitar.png',
+        img: opaxon,
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
@@ -121,7 +267,7 @@ export const api = [
     },
     {
         id: 14,
-        img: '../img/gitar.png',
+        img: opaxon,
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
@@ -130,7 +276,7 @@ export const api = [
     },
     {
         id: 15,
-        img: '../img/gitar.png',
+        img: opaxon,
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
@@ -139,7 +285,7 @@ export const api = [
     },
     {
         id: 16,
-        img: '../img/gitar.png',
+        img: opaxon,
         ak: 'Акустические гитары',
         lc: 'lc-3400',
         pul: 11360,
@@ -147,7 +293,152 @@ export const api = [
         karzinka: 'В корзину'
     }
 ];
-
+export const api3 = [
+    {
+        id: 1,
+        img: opaxon,
+        ak: 'Акустические гитары',
+        lc: 'lc-3400',
+        pul: 11360,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 2,
+        img: opaxon,
+        ak: 'Акустические гитары',
+        lc: 'lc-3400',
+        pul: 11360,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 3,
+        img: opaxon,
+        ak: 'Акустические гитары',
+        lc: 'lc-3400',
+        pul: 11360,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 4,
+        img: opaxon,
+        ak: 'Акустические гитары',
+        lc: 'lc-3400',
+        pul: 11360,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 5,
+        img: opaxon,
+        ak: 'Акустические гитары',
+        lc: 'lc-3400',
+        pul: 11360,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 6,
+        img: opaxon,
+        ak: 'Акустические гитары',
+        lc: 'lc-3400',
+        pul: 11360,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 7,
+        img: opaxon,
+        ak: 'Акустические гитары',
+        lc: 'lc-3400',
+        pul: 11360,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 8,
+        img: opaxon,
+        ak: 'Акустические гитары',
+        lc: 'lc-3400',
+        pul: 11360,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 9,
+        img: opaxon,
+        ak: 'Акустические гитары',
+        lc: 'lc-3400',
+        pul: 11360,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 10,
+        img: opaxon,
+        ak: 'Акустические гитары',
+        lc: 'lc-3400',
+        pul: 11360,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 11,
+        img: opaxon,
+        ak: 'Акустические гитары',
+        lc: 'lc-3400',
+        pul: 11360,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 12,
+        img: opaxon,
+        ak: 'Акустические гитары',
+        lc: 'lc-3400',
+        pul: 11360,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 13,
+        img: opaxon,
+        ak: 'Акустические гитары',
+        lc: 'lc-3400',
+        pul: 11360,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 14,
+        img: opaxon,
+        ak: 'Акустические гитары',
+        lc: 'lc-3400',
+        pul: 11360,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 15,
+        img: opaxon,
+        ak: 'Акустические гитары',
+        lc: 'lc-3400',
+        pul: 11360,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    },
+    {
+        id: 16,
+        img: opaxon,
+        ak: 'Акустические гитары',
+        lc: 'lc-3400',
+        pul: 11360,
+        miqdor: 1,
+        karzinka: 'В корзину'
+    }
+];
 export const tapArr = [
     {
         id: 1,
