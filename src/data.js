@@ -9,7 +9,25 @@ export const api = [
         lc: 'Мужская футболка Street Style',
         pul: 711,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/erkak1.jpeg"
+            },
+            {
+                id: 5,
+                img: "../img/erkak2.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/erkak3.jpg"
+            },
+            {
+                id: 7,
+                img: "../img/erkak4.jpg"
+            }
+        ]
     },
     {
         id: 2,
@@ -18,7 +36,25 @@ export const api = [
         lc: 'Джинсы Терра Про, мужские',
         pul: 1304,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/erkak2.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/erkak1.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/erkak5.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/erkak4.jpg"
+            }
+        ]
     },
     {
         id: 3,
@@ -27,7 +63,25 @@ export const api = [
         lc: 'Джинсы Терра Про, мужские',
         pul: 650,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/erkak3.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/erkak2.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/erkak1.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/erkak4.jpg"
+            }
+        ]
     },
     {
         id: 4,
@@ -36,7 +90,25 @@ export const api = [
         lc: 'Джинсы Терра Про, мужские',
         pul: 550,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/erkak4.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/erkak5.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/erkak6.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/erkak7.jpeg"
+            }
+        ]
     },
     {
         id: 5,
@@ -45,7 +117,25 @@ export const api = [
         lc: 'Футболка Стиль Street Style',
         pul: 499,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/erkak5.jpeg"
+            },
+            {
+                id: 5,
+                img: "../img/erkak6.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/erkak7.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/erkak8.jpeg"
+            }
+        ]
     },
     {
         id: 6,
@@ -54,7 +144,25 @@ export const api = [
         lc: 'Футболка Стиль Street Style',
         pul: 701,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 6,
+                img: "../img/erkak6.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/erkak2.jpg"
+            },
+            {
+                id: 8,
+                img: "../img/erkak3.jpg"
+            },
+            {
+                id: 9,
+                img: "../img/erkak4.jpg"
+            }
+        ]
     },
     {
         id: 7,
@@ -63,7 +171,25 @@ export const api = [
         lc: 'Футболка Стиль Street Style',
         pul: 605,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/erkak7.jpeg"
+            },
+            {
+                id: 5,
+                img: "../img/erkak8.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/erkak9.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/erkak10.jpeg"
+            }
+        ]
     },
     {
         id: 8,
@@ -72,7 +198,25 @@ export const api = [
         lc: "флисовая куртка",
         pul: 555,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/erkak8.jpeg"
+            },
+            {
+                id: 5,
+                img: "../img/erkak9.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/erkak10.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/erkak11.jpeg"
+            }
+        ]
     },
     {
         id: 9,
@@ -81,7 +225,25 @@ export const api = [
         lc: "флисовая куртка",
         pul: 699,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/erkak9.jpeg"
+            },
+            {
+                id: 5,
+                img: "../img/erkak10.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/erkak11.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/erkak12.jpeg"
+            }
+        ]
     },
     {
         id: 10,
@@ -90,7 +252,25 @@ export const api = [
         lc: "флисовая куртка",
         pul: 590,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/erkak10.jpeg"
+            },
+            {
+                id: 5,
+                img: "../img/erkak11.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/erkak12.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/erkak13.jpeg"
+            }
+        ]
     },
     {
         id: 11,
@@ -99,7 +279,25 @@ export const api = [
         lc: 'lc-3400',
         pul: 500,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/erkak11.jpeg"
+            },
+            {
+                id: 5,
+                img: "../img/erkak12.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/erkak13.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/erkak14.jpeg"
+            }
+        ]
     },
     {
         id: 12,
@@ -108,7 +306,25 @@ export const api = [
         lc: 'Nike',
         pul: 602,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/erkak12.jpeg"
+            },
+            {
+                id: 5,
+                img: "../img/erkak13.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/erkak14.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/erkak15.jpg"
+            }
+        ]
     },
     {
         id: 13,
@@ -117,7 +333,25 @@ export const api = [
         lc: 'Роскошные копии спортивных трикотажных изделий Nike.',
         pul: 780,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/erkak13.jpeg"
+            },
+            {
+                id: 5,
+                img: "../img/erkak14.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/erkak15.jpg"
+            },
+            {
+                id: 7,
+                img: "../img/erkak16.jpeg"
+            }
+        ]
     },
     {
         id: 14,
@@ -126,7 +360,25 @@ export const api = [
         lc: 'Мужская футболка Street Style',
         pul: 589,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/erkak14.jpeg"
+            },
+            {
+                id: 5,
+                img: "../img/erkak15.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/erkak16.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/erkak1.jpeg"
+            }
+        ]
     },
     {
         id: 15,
@@ -135,7 +387,25 @@ export const api = [
         lc: 'Мужская футболка Street Style',
         pul: 800,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/erkak15.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/erkak16.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/erkak1.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/erkak2.jpg"
+            }
+        ]
     },
     {
         id: 16,
@@ -144,7 +414,25 @@ export const api = [
         lc: 'Роскошные копии спортивных трикотажных изделий Nike.',
         pul: 899,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/erkak16.jpeg"
+            },
+            {
+                id: 5,
+                img: "../img/erkak1.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/erkak2.jpg"
+            },
+            {
+                id: 7,
+                img: "../img/erkak3.jpg"
+            }
+        ]
     }
 ];
 export const api2 = [
