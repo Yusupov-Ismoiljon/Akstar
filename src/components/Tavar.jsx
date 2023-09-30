@@ -20,7 +20,7 @@ const Tavar = () => {
                 <div className="py-3">
                   <span className="font-medium text-sm text-[#DEDEDE]">Акустические гитары</span>
                   <h3 className="font-bold text-sm sm:text-base">LC-3400</h3>
-                  <span className="font-extrabold text-base sm:text-lg">11 360 ₽</span>
+                  <span className="font-extrabold text-base sm:text-lg">11 360  ₽</span>
                 </div>
               </li>
               <li data-aos-delay="300" data-aos="fade-up" className="text-white relative aos-init aos-animate">
@@ -30,7 +30,7 @@ const Tavar = () => {
                 <div className="py-3">
                   <span className="font-medium text-sm text-[#DEDEDE]">Акустические гитары</span>
                   <h3 className="font-semibold text-sm sm:text-base">LC-3400</h3>
-                  <span className="font-bold text-base sm:text-lg">11 360 ₽</span>
+                  <span className="font-bold text-base sm:text-lg">11 360  ₽</span>
                 </div>
               </li>
               <li data-aos-delay="600" data-aos="fade-up" className="text-white relative aos-init aos-animate">
@@ -40,7 +40,7 @@ const Tavar = () => {
                 <div className="py-3">
                   <span className="font-medium text-sm text-[#DEDEDE]">Акустические гитары</span>
                   <h3 className="font-semibold text-sm sm:text-base">LC-3400</h3>
-                  <span className="font-bold text-base sm:text-lg">11 360 ₽</span>
+                  <span className="font-bold text-base sm:text-lg">11 360  ₽</span>
                 </div>
               </li>
             </ul>

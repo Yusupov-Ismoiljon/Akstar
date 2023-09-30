@@ -48,7 +48,7 @@ const Magazin = ({ shop, like, setShop, addCartPul}) => {
               {shop.map((product) => (
                 <li className='flex flex-col gap-7' key={product.id}>
                   <div className='sm:flex sm:justify-between w-full gap-[30px] items-start'>
-                    <img className='h-[190px]' src={product.img} alt='product img' />
+                    <img className='h-[190px] rounded-md' src={product.img} alt='product img' />
                     <div>
                       <div className='flex justify-between gap-7 mb-7'>
                         <div>
@@ -57,7 +57,7 @@ const Magazin = ({ shop, like, setShop, addCartPul}) => {
                             Фолк гитара с металлическими струнами, верхняя дека - ель, <br /> корпус - агатис, цвет натуральный, 39", с вырезом
                           </p>
                         </div>
-                        <p className='font-bold text-3xl logo leading-normal xl:block hidden'>{product.pul}₽</p>
+                        <p className='font-bold text-3xl logo leading-normal xl:block hidden'>{product.pul} ₽</p>
                       </div>
                       <div className='xl:block hidden'>
                         <div className='flex justify-between'>
@@ -83,7 +83,7 @@ const Magazin = ({ shop, like, setShop, addCartPul}) => {
                   </div>
 
                   <div className='flex justify-between items-center xl:hidden block'>
-                    <p className='font-bold text-3xl logo leading-normal'>{product.pul} ₽</p>
+                    <p className='font-bold text-3xl logo leading-normal'>{product.pul}  ₽</p>
 
                     <div className='space-x-4'>
                       <button onClick={() => addCartPul(product, -1)} disabled={product.miqdor <= 1}>
@@ -111,7 +111,7 @@ const Magazin = ({ shop, like, setShop, addCartPul}) => {
                 <input className='w-full rounded-xl p-4' type='text' placeholder='Промокод:' />
                 <div className='flex justify-between'>
                   <span className='font-bold text-2xl leading-normal'>Итого</span>
-                  <span className='font-bold text-3xl leading-normal logo'>{narhi}  ₽</span>
+                  <span className='font-bold text-3xl leading-normal logo'>{narhi}   ₽</span>
                 </div>
               </div>
               <button className='w-full md:w-[410px] bg-[#1B37A3] text-white rounded-xl px-9 py-4'>Перейти к оформлению</button>

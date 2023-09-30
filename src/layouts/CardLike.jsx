@@ -19,7 +19,7 @@ const CardLike = ({ shop, like, removeLike }) => {
                 <li key={e.id} data-aos-delay="100" data-aos="fade-right" className='aos-init aos-animate'>
                   <div className='md:flex md:justify-between items-center gap-y-5'>
                     <div className='md:flex items-center gap-5'>
-                      <img className='h-[190px] mb-5 md:mb-0' src={e.img} alt="product img" />
+                      <img className='h-[190px] rounded-md mb-5 md:mb-0' src={e.img} alt="product img" />
                       <div>
                         <p className='font-bold text-2xl leading-normal mb-5'>{e.lc}</p>
                         <p className='font-normal text-base leading-normal'>Фолк гитара с металлическими струнами, верхняя дека - ель, <br /> корпус - агатис, цвет натуральный, 39", с вырезом</p>
@@ -27,7 +27,7 @@ const CardLike = ({ shop, like, removeLike }) => {
                     </div>
 
                     <div className='hidden lg:block'>
-                      <p className='font-bold text-3xl logo leading-normal'>{e.pul} ₽</p>
+                      <p className='font-bold text-3xl logo leading-normal'>{e.pul}  ₽</p>
                       <button className='text-[#B0B0B0] my-auto' onClick={() => removeLike(e.id)}>
                         <span className='leading-normal'>
                           Удалить
@@ -37,7 +37,7 @@ const CardLike = ({ shop, like, removeLike }) => {
                     </div>
                   </div>
                   <div className='flex justify-between block lg:hidden mt-5 md:mt-0'>
-                    <p className='font-bold text-3xl logo leading-normal'>{e.pul} ₽</p>
+                    <p className='font-bold text-3xl logo leading-normal'>{e.pul}  ₽</p>
                     <button className='text-[#B0B0B0] my-auto' onClick={() => removeLike(e.id)}>
                       <span className='leading-normal'>
                         Удалить
