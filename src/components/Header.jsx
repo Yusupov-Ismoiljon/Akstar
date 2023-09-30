@@ -21,12 +21,12 @@ const Header = ({ shop, like, singup, setSIngup }) => {
                                 </li>
                                 <li>
                                     <NavLink to='/like'>
-                                        <span className='font-semibold text-lg leading-normal'>Академия</span>
+                                        <span className='font-semibold text-lg leading-normal'>Любимые</span>
                                     </NavLink>
                                 </li>
                                 <li>
                                     <NavLink to='/магазин'>
-                                        <span className='font-semibold text-lg leading-normal'>Магазин</span>
+                                        <span className='font-semibold text-lg leading-normal'>Корзина</span>
                                     </NavLink>
                                 </li>
                                 <li>

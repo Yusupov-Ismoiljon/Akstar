@@ -24,7 +24,7 @@ const Main = ({ addCart, addCart1, addLike, removeLike, e }) => {
       key={e.id}
       data-aos-delay="100"
       data-aos="fade-up"
-      className="text-white relative aos-init aos-animate"
+      className="show text-white relative aos-init aos-animate rounded-lg p-5"
     >
 
       <Link onClick={() => addCart1(e)} className="bg-white rounded-xl py-4" to={`/guitar/${e.id}`}>
