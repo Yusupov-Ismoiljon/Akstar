@@ -3,10 +3,10 @@ import Header from './Header';
 import Footer from './Footer';
 import { api } from '../data';
 import { tapArr } from '../data';
-import { tabImgArr } from '../data';
 import MySwiper from '../layouts/Swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { useParams } from 'react-router-dom';
 
 
 const Guitar = ({ shop, like, shop1, addCart, addCart1, addLike, removeLike }) => {
@@ -20,82 +20,81 @@ const Guitar = ({ shop, like, shop1, addCart, addCart1, addLike, removeLike }) =
         setTabImg(id)
     };
 
-
+    const { id } = useParams();
+    const e = api.find(i => i.id === parseInt(id));
 
     return (
         <div>
             <Header shop={shop} like={like} />
             <div className='w-full max-w-[1300px] mx-auto px-10 py-10 mb-16'>
                 {/* img-tab */}
-                {shop1.map((e) => {
-                    return (
-                        <div className={`grid xl:grid-cols-2 grid-cols-1 gap-7 mb-16`}>
-                            <div className='md:flex md:items-center md:justify-between'>
-                                <div className='md:block hidden'>
-                                    <div className='md:w-28 grid grid-cols-4 md:grid-cols-1 gap-7'>
-                                        {tabImgArr.map((r) => {
-                                            return (
-                                                <button key={r.id} onClick={() => setActiveTabImg(r.id)}>
-                                                    <img className={`md:w-28 md:h-28 w-[70px] h-[70px] ${tabImg === r.id ? 'border-2 border-[#1B37A3] rounded duration-500' : 'border-transparent'}`} src={r.img} aria-hidden='false' />
-                                                </button>
-                                            )
-                                        })}
-                                    </div>
-                                </div>
-                                <div className='md:mb-0 mb-5'>
-                                    {
-                                        tabImgArr.map((i) => {
-                                            return (
-                                                <div key={i.id} className={`w-full ${tabImg === i.id ? 'block' : 'hidden'}`}>
-                                                    <img className='w-[520px] h-[520px]' src={i.img} alt="" />
-                                                </div>
-                                            )
-                                        })
-                                    }
-                                </div>
-                                <div className='md:hidden block'>
-                                    <div className='grid grid-cols-4 md:grid-cols-1 gap-7'>
-                                        {tabImgArr.map((r) => {
-                                            return (
-                                                <button key={r.id} onClick={() => setActiveTabImg(r.id)}>
-                                                    <img className={`md:w-28 md:h-28 w-[70px] h-[70px] ${tabImg === r.id ? 'border-2 border-[#1B37A3] rounded duration-500' : 'border-transparent'}`} src={r.img} aria-hidden='false' />
-                                                </button>
-                                            )
-                                        })}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className='space-y-7'>
-                                <div>
-                                    <h2 className='font-bold text-[28px] leading-9 md:text-4xl md:leading-normal mb-4'>1.122 AJ-SM E9</h2>
-                                    <span className='font-bold text-sm text-[#9ACC6C]'>В наличии (4)</span>
-                                </div>
-                                <p className='font-normal text-base leading-normal'>Фолк гитара с металлическими струнами, верхняя дека - ель, корпус - агатис, цвет натуральный, 39", с вырезом</p>
-                                <div className='space-y-4'>
-                                    <h3 className='font-bold text-lg leading-normal brend'>Описание</h3>
-                                    <p className='font-normal text-base leading-6'>Акустическая гитара в корпусе джамбо, с очень мощным звуком и в то же время очень удобная.Инструмент огромных размеров, с эстетикой и звуковой концепцией, которая удивляет с первой секунды.Это одна из самых популярных акустических гитар, обеспечивающая насыщенное звучание с...</p>
-                                    <p className='font-semibold text-sm leading-normal logo'>Подробнее</p>
-                                </div>
-                                <p className='font-extrabold text-4xl leading-normal'>11 360 ₽</p>
-                                <button onClick={() => addCart(e.id)} className='w-[240px] font-semibold text-lg leading-6 text-white bg-[#1B37A3] rounded-lg py-4'>
-                                    {e.karzinka}
-                                </button>
+                <div className={`grid xl:grid-cols-2 grid-cols-1 gap-7 mb-16`}>
+                    <div className='md:flex md:items-center md:justify-between'>
+                        <div className='md:block hidden'>
+                            <div className='md:w-28 grid grid-cols-4 md:grid-cols-1 gap-7 mr-5'>
+                                {e.tab.map((e) => {
+                                    return (
+                                        <button key={e.id} onClick={() => setActiveTabImg(e.id)}>
+                                            <img className={`md:w-28 md:h-28 w-[70px] h-[70px] rounded-lg ${e.tab === e.id ? 'border-2 border-[#1B37A3] rounded duration-500' : 'border-transparent'}`} src={e.img} aria-hidden='false' />
+                                        </button>
+                                    )
+                                })}
                             </div>
                         </div>
-                    )
-                })}
+                        <div className='md:mb-0 mb-5'>
+                            {
+                                e.tab.map((i) => {
+                                    return (
+                                        <div key={i.id} className={`w-full ${tabImg === i.id ? 'block' : 'hidden'}`}>
+                                            <img className='w-[520px] h-[520px]' src={i.img} alt="" />
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                        <div className='md:hidden block'>
+                            <div className='grid grid-cols-4 md:grid-cols-1 gap-7'>
+                                {e.tab.map((e) => {
+                                    return (
+                                        <button key={e.id} onClick={() => setActiveTabImg(e.id)}>
+                                            <img className={`md:w-28 md:h-28 w-[70px] h-[70px] ${e.tab === e.id ? 'border-2 border-[#1B37A3] rounded duration-500' : 'border-transparent'}`} src={e.img} aria-hidden='false' />
+                                        </button>
+                                    )
+                                })}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='space-y-7'>
+                        <div>
+                            <h2 className='font-bold text-[28px] leading-9 md:text-4xl md:leading-normal mb-4'>1.122 AJ-SM E9</h2>
+                            <span className='font-bold text-sm text-[#9ACC6C]'>В наличии (4)</span>
+                        </div>
+                        <p className='font-normal text-base leading-normal'>Фолк гитара с металлическими струнами, верхняя дека - ель, корпус - агатис, цвет натуральный, 39", с вырезом</p>
+                        <div className='space-y-4'>
+                            <h3 className='font-bold text-lg leading-normal brend'>Описание</h3>
+                            <p className='font-normal text-base leading-6'>Акустическая гитара в корпусе джамбо, с очень мощным звуком и в то же время очень удобная.Инструмент огромных размеров, с эстетикой и звуковой концепцией, которая удивляет с первой секунды.Это одна из самых популярных акустических гитар, обеспечивающая насыщенное звучание с...</p>
+                            <p className='font-semibold text-sm leading-normal logo'>Подробнее</p>
+                        </div>
+                        <p className='font-extrabold text-4xl leading-normal'>11 360  ₽</p>
+                        <button onClick={() => addCart(e.id)} className='w-[240px] font-semibold text-lg leading-6 text-white bg-[#1B37A3] rounded-lg py-4'>
+                            {e.karzinka}
+                        </button>
+                    </div>
+                </div>
 
 
                 {/* text-tab */}
                 <div>
                     <div className="md:flex md:justify-between md:w-[636px] bg-slate-300 py-2 px-5 rounded-xl">
-                        {tapArr.map((el) => {
+                        {e.tab.map((el) => {
                             return (
                                 <div key={el.id}>
-                                    <button className={`px-6 py-2.5 rounded-lg ${tab === el.id ? 'duration-700 bg-[#F7F7FC] logo' : 'border-transparent'} font-bold text-xl leading-7`} onClick={() => setActiveTab(el.id)}>{el.title}</button>
+                                    <button className={`px-6 py-2.5 rounded-lg ${tab === el.id ? 'duration-700 bg-[#F7F7FC] logo' : 'border-transparent'} font-bold text-xl leading-7`} onClick={() => setActiveTab(el.id)}>
+                                        {el.title}
+                                    </button>
                                 </div>
-                            )
+                            );
                         })}
                     </div>
 
