@@ -421,16 +421,16 @@ export const api = [
 ];
 export const api2 = [
     {
-        id: 17,
+        id: 1,
         img: '../img/ayollar1.jpg',
-        lc: 'Kurtka Anaki qora 1833 ayollar uchun',
+        lc: 'Куртка Anaki черная 1833 женская',
         pul: 660,
         miqdor: 1,
         karzinka: 'В корзину',
         tab: [
             {
                 id: 4,
-                img: "../img/ayolar1.jpeg"
+                img: "../img/ayollar1.jpg"
             },
             {
                 id: 5,
@@ -438,7 +438,7 @@ export const api2 = [
             },
             {
                 id: 6,
-                img: "../img/ayolar5.jpeg"
+                img: "../img/ayolar3.jpg"
             },
             {
                 id: 7,
@@ -447,9 +447,9 @@ export const api2 = [
         ]
     },
     {
-        id: 18,
+        id: 2,
         img: '../img/ayolar2.jpg',
-        lc: 'lc-3400',
+        lc: 'Куртка Anaki черная 2050 женская',
         pul: 700,
         miqdor: 1,
         karzinka: 'В корзину',
@@ -460,33 +460,33 @@ export const api2 = [
             },
             {
                 id: 5,
-                img: "../img/ayolar1.jpeg"
+                img: "../img/ayolar3.jpg"
             },
             {
                 id: 6,
-                img: "../img/ayolar5.jpeg"
+                img: "../img/ayolar4.jpg"
             },
             {
                 id: 7,
-                img: "../img/ayolar4.jpg"
+                img: "../img/ayolar5.jpeg"
             }
         ]
     },
     {
-        id: 19,
+        id: 3,
         img: '../img/ayolar3.jpg',
-        lc: 'Kurtka Anaki qora 2091 ayollar uchun',
+        lc: 'Куртка Anaki черная 2091 женская',
         pul: 609,
         miqdor: 1,
         karzinka: 'В корзину',
         tab: [
             {
                 id: 4,
-                img: "../img/ayolar2.jpg"
+                img: "../img/ayolar3.jpg"
             },
             {
                 id: 5,
-                img: "../img/ayolar1.jpeg"
+                img: "../img/ayolar4.jpg"
             },
             {
                 id: 6,
@@ -494,168 +494,168 @@ export const api2 = [
             },
             {
                 id: 7,
-                img: "../img/ayolar4.jpg"
+                img: "../img/ayolar6.jpg"
             }
         ]
     },
     {
-        id: 20,
+        id: 4,
         img: '../img/ayolar4.jpg',
-        lc: 'lc-3400',
+        lc: 'Куртка Anaki черная 1991 женская',
         pul: 800,
         miqdor: 1,
         karzinka: 'В корзину',
         tab: [
             {
                 id: 4,
-                img: "../img/ayolar2.jpg"
+                img: "../img/ayolar4.jpg"
             },
             {
                 id: 5,
-                img: "../img/ayolar1.jpeg"
-            },
-            {
-                id: 6,
                 img: "../img/ayolar5.jpeg"
             },
             {
+                id: 6,
+                img: "../img/ayolar6.jpg"
+            },
+            {
                 id: 7,
-                img: "../img/ayolar4.jpg"
+                img: "../img/ayolar7.jpeg"
             }
         ]
     },
     {
-        id: 21,
+        id: 5,
         img: '../img/ayolar5.jpeg',
-        lc: 'lc-3400',
+        lc: 'Куртка Anaki черная M005 женская',
         pul: 560,
         miqdor: 1,
         karzinka: 'В корзину',
         tab: [
             {
                 id: 4,
-                img: "../img/ayolar2.jpg"
-            },
-            {
-                id: 5,
-                img: "../img/ayolar1.jpeg"
-            },
-            {
-                id: 6,
                 img: "../img/ayolar5.jpeg"
             },
             {
+                id: 5,
+                img: "../img/ayolar6.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/ayolar7.jpeg"
+            },
+            {
                 id: 7,
-                img: "../img/ayolar4.jpg"
+                img: "../img/ayolar8.jpg"
             }
         ]
     },
     {
-        id: 22,
+        id: 6,
         img: '../img/ayolar6.jpg',
-        lc: 'lc-3400',
+        lc: 'Куртка Anaki черный 22364 для девушек',
         pul: 900,
         miqdor: 1,
         karzinka: 'В корзину',
         tab: [
             {
                 id: 4,
-                img: "../img/ayolar2.jpg"
+                img: "../img/ayolar6.jpg"
             },
             {
                 id: 5,
-                img: "../img/ayolar1.jpeg"
+                img: "../img/ayolar7.jpeg"
             },
             {
                 id: 6,
-                img: "../img/ayolar5.jpeg"
+                img: "../img/ayolar8.jpg"
             },
             {
                 id: 7,
-                img: "../img/ayolar4.jpg"
+                img: "../img/ayolar9.jpeg"
             }
         ]
     },
     {
-        id: 23,
+        id: 7,
         img: '../img/ayolar7.jpeg',
-        lc: 'lc-3400',
+        lc: 'Куртка Anaki черная 701 женская',
         pul: 950,
         miqdor: 1,
         karzinka: 'В корзину',
         tab: [
             {
                 id: 4,
-                img: "../img/ayolar2.jpg"
+                img: "../img/ayolar7.jpeg"
             },
             {
                 id: 5,
-                img: "../img/ayolar1.jpeg"
+                img: "../img/ayolar8.jpg"
             },
             {
                 id: 6,
-                img: "../img/ayolar5.jpeg"
+                img: "../img/ayolar9.jpeg"
             },
             {
                 id: 7,
-                img: "../img/ayolar4.jpg"
+                img: "../img/ayolar10.jpg"
             }
         ]
     },
     {
-        id: 24,
+        id: 8,
         img: '../img/ayolar8.jpg',
-        lc: 'lc-3400',
+        lc: 'Куртка Anaki черная M091 женская',
         pul: 790,
         miqdor: 1,
         karzinka: 'В корзину',
         tab: [
             {
                 id: 4,
-                img: "../img/ayolar2.jpg"
+                img: "../img/ayolar8.jpg"
             },
             {
                 id: 5,
-                img: "../img/ayolar1.jpeg"
+                img: "../img/ayolar9.jpeg"
             },
             {
                 id: 6,
-                img: "../img/ayolar5.jpeg"
+                img: "../img/ayolar10.jpg"
             },
             {
                 id: 7,
-                img: "../img/ayolar4.jpg"
+                img: "../img/ayolar11.jpg"
             }
         ]
     },
     {
-        id: 25,
+        id: 9,
         img: '../img/ayolar9.jpeg',
-        lc: 'lc-3400',
+        lc: 'Куртка Anaki черная 091 женская',
         pul: 560,
         miqdor: 1,
         karzinka: 'В корзину',
         tab: [
             {
                 id: 4,
-                img: "../img/ayolar2.jpg"
+                img: "../img/ayolar9.jpeg"
             },
             {
                 id: 5,
-                img: "../img/ayolar1.jpeg"
+                img: "../img/ayolar10.jpg"
             },
             {
                 id: 6,
-                img: "../img/ayolar5.jpeg"
+                img: "../img/ayolar11.jpg"
             },
             {
                 id: 7,
-                img: "../img/ayolar4.jpg"
+                img: "../img/ayolar12.jpg"
             }
         ]
     },
     {
-        id: 26,
+        id: 10,
         img: '../img/ayolar10.jpg',
         lc: 'lc-3400',
         pul: 950,
@@ -664,154 +664,154 @@ export const api2 = [
         tab: [
             {
                 id: 4,
-                img: "../img/ayolar2.jpg"
+                img: "../img/ayolar10.jpg"
             },
             {
                 id: 5,
-                img: "../img/ayolar1.jpeg"
+                img: "../img/ayolar11.jpg"
             },
             {
                 id: 6,
-                img: "../img/ayolar5.jpeg"
+                img: "../img/ayolar12.jpg"
             },
             {
                 id: 7,
-                img: "../img/ayolar4.jpg"
+                img: "../img/ayolar13.jpg"
             }
         ]
     },
     {
-        id: 27,
+        id: 11,
         img: '../img/ayolar11.jpg',
-        lc: 'lc-3400',
+        lc: 'Куртка Anaki черная 5000-2091 женская',
         pul: 890,
         miqdor: 1,
         karzinka: 'В корзину',
         tab: [
             {
                 id: 4,
-                img: "../img/ayolar2.jpg"
+                img: "../img/ayolar11.jpg"
             },
             {
                 id: 5,
-                img: "../img/ayolar1.jpeg"
+                img: "../img/ayolar12.jpg"
             },
             {
                 id: 6,
-                img: "../img/ayolar5.jpeg"
+                img: "../img/ayolar13.jpg"
             },
             {
                 id: 7,
-                img: "../img/ayolar4.jpg"
+                img: "../img/ayolar14.jpg"
             }
         ]
     },
     {
-        id: 28,
+        id: 12,
         img: '../img/ayolar12.jpg',
-        lc: 'lc-3400',
+        lc: 'Куртка Anaki черная M209 женская',
         pul: 600,
         miqdor: 1,
         karzinka: 'В корзину',
         tab: [
             {
                 id: 4,
-                img: "../img/ayolar2.jpg"
+                img: "../img/ayolar12.jpg"
             },
             {
                 id: 5,
-                img: "../img/ayolar1.jpeg"
+                img: "../img/ayolar13.jpg"
             },
             {
                 id: 6,
-                img: "../img/ayolar5.jpeg"
+                img: "../img/ayolar14.jpg"
             },
             {
                 id: 7,
-                img: "../img/ayolar4.jpg"
+                img: "../img/ayolar15.jpg"
             }
         ]
     },
     {
-        id: 29,
+        id: 13,
         img: '../img/ayolar13.jpg',
-        lc: 'lc-3400',
+        lc: 'Куртка Anaki черная 09050-2091 женская',
         pul: 760,
         miqdor: 1,
         karzinka: 'В корзину',
         tab: [
             {
                 id: 4,
-                img: "../img/ayolar2.jpg"
+                img: "../img/ayolar13.jpg"
             },
             {
                 id: 5,
-                img: "../img/ayolar1.jpeg"
+                img: "../img/ayolar14.jpg"
             },
             {
                 id: 6,
-                img: "../img/ayolar5.jpeg"
+                img: "../img/ayolar15.jpg"
             },
             {
                 id: 7,
-                img: "../img/ayolar4.jpg"
+                img: "../img/ayolar16.jpeg"
             }
         ]
     },
     {
-        id: 30,
+        id: 14,
         img: '../img/ayolar14.jpg',
-        lc: 'lc-3400',
+        lc: 'Куртка Anaki черная M099 женская',
         pul: 750,
         miqdor: 1,
         karzinka: 'В корзину',
         tab: [
             {
                 id: 4,
-                img: "../img/ayolar2.jpg"
+                img: "../img/ayolar14.jpg"
             },
             {
                 id: 5,
-                img: "../img/ayolar1.jpeg"
+                img: "../img/ayolar15.jpg"
             },
             {
                 id: 6,
-                img: "../img/ayolar5.jpeg"
+                img: "../img/ayolar16.jpeg"
             },
             {
                 id: 7,
-                img: "../img/ayolar4.jpg"
+                img: "../img/ayolar7.jpeg"
             }
         ]
     },
     {
-        id: 31,
+        id: 15,
         img: '../img/ayolar15.jpg',
-        lc: 'lc-3400',
+        lc: 'Куртка Anaki черная 505 женская',
         pul: 800,
         miqdor: 1,
         karzinka: 'В корзину',
         tab: [
             {
                 id: 4,
-                img: "../img/ayolar2.jpg"
+                img: "../img/ayolar15.jpg"
             },
             {
                 id: 5,
-                img: "../img/ayolar1.jpeg"
+                img: "../img/ayolar16.jpeg"
             },
             {
                 id: 6,
-                img: "../img/ayolar5.jpeg"
+                img: "../img/ayolar8.jpg"
             },
             {
                 id: 7,
-                img: "../img/ayolar4.jpg"
+                img: "../img/ayolar9.jpeg"
             }
         ]
     },
     {
-        id: 32,
+        id: 16,
         img: '../img/ayolar16.jpeg',
         lc: 'Plash Molto Caldo sport uslabida kuzgi plash',
         pul: 555,
@@ -820,19 +820,19 @@ export const api2 = [
         tab: [
             {
                 id: 4,
-                img: "../img/ayolar2.jpg"
+                img: "../img/ayolar16.jpeg"
             },
             {
                 id: 5,
-                img: "../img/ayolar1.jpeg"
+                img: "../img/ayolar2.jpg"
             },
             {
                 id: 6,
-                img: "../img/ayolar5.jpeg"
+                img: "../img/ayolar11.jpg"
             },
             {
                 id: 7,
-                img: "../img/ayolar4.jpg"
+                img: "../img/ayolar10.jpg"
             }
         ]
     }
@@ -840,9 +840,9 @@ export const api2 = [
 export const api3 = [
     {
         id: 1,
-        img: opaxon,
-        lc: 'lc-3400',
-        pul: 11360,
+        img: o,
+        lc: `Джинсы для мальчиков, Rumino Jeans, хлопок, синие, страйт, детские, осень, зима, Узбекистан`,
+        pul: 517,
         miqdor: 1,
         karzinka: 'В корзину'
     },
