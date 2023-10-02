@@ -3,7 +3,7 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import Magazin from "./components/Magazin";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { api, bolg } from "./data";
+import { api, api2, api3, bolg } from "./data";
 import CardLike from "./layouts/CardLike";
 import Blog from "./components/Блог";
 import ReactLayouts from "./layouts/ReactLayouts";
@@ -12,6 +12,7 @@ import BlockMalumot from "./components/BlogMalumot";
 import Sinup from "./components/Sinup";
 import Login from "./components/Login";
 import Error404 from "./layouts/Error404";
+import AyolKiyim from "./components/AyolKiyim";
 // import Menu from "./layouts/Menu";
 
 export default function App() {
@@ -24,6 +25,68 @@ export default function App() {
 
     if (!found) {
       const productToAdd = api.find((e) => e.id === i);
+      setShop([...shop, { ...productToAdd, miqdor: 1 }]);
+
+      toast.success("Cartga qo'shildi", {
+        position: "bottom-right",
+        autoClose: 1500,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    } else {
+      toast.error("Bu oldindan mavjud", {
+        position: "bottom-right",
+        autoClose: 1500,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    }
+  };
+
+  const addCart1 = (i) => {
+    const found = shop.find((e) => e.id === i);
+
+    if (!found) {
+      const productToAdd = api2.find((e) => e.id === i);
+      setShop([...shop, { ...productToAdd, miqdor: 1 }]);
+
+      toast.success("Cartga qo'shildi", {
+        position: "bottom-right",
+        autoClose: 1500,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    } else {
+      toast.error("Bu oldindan mavjud", {
+        position: "bottom-right",
+        autoClose: 1500,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    }
+  };
+
+  const addCart2 = (i) => {
+    const found = shop.find((e) => e.id === i);
+
+    if (!found) {
+      const productToAdd = api3.find((e) => e.id === i);
       setShop([...shop, { ...productToAdd, miqdor: 1 }]);
 
       toast.success("Cartga qo'shildi", {
@@ -81,8 +144,9 @@ export default function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/">
-        <Route path="/" element={<ReactLayouts shop={shop} like={like} addCart={addCart} addLike={addLike} removeLike={removeLike} />} />
+        <Route path="/" element={<ReactLayouts shop={shop} like={like} addCart={addCart} addCart1={addCart1} addCart2={addCart2} addLike={addLike} removeLike={removeLike} />} />
         <Route path="/guitar/:id" element={<Guitar shop={shop}  like={like} addCart={addCart} addLike={addLike} removeLike={removeLike} />} />
+        <Route path="/ayolarkimlari/:id" element={<AyolKiyim shop={shop}  like={like} addCart1={addCart1} addLike={addLike} removeLike={removeLike} />} />
         <Route path="магазин" element={<Magazin shop={shop} like={like} setShop={setShop} addCart={addCart} addCartPul={addCartPul} />} />
         <Route path="/like" element={<CardLike shop={shop} like={like} addLike={addLike} removeLike={removeLike} />} />
         <Route path="/ьлог" element={<Blog shop={shop} like={like} />} />
