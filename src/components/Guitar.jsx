@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import { api } from '../data';
+import { api, api2, api3 } from '../data';
 import { tapArr } from '../data';
 import MySwiper from '../layouts/Swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -67,7 +67,7 @@ const Guitar = ({ shop, like, shop1, addCart, addCart1, addLike, removeLike }) =
 
                     <div className='space-y-7'>
                         <div>
-                            <h2 className='font-bold text-[28px] leading-9 md:text-4xl md:leading-normal mb-4'>1.122 AJ-SM E9</h2>
+                            <h2 className='font-bold text-[28px] leading-9 md:text-4xl md:leading-normal mb-4'>{e.l}</h2>
                             <span className='font-bold text-sm text-[#9ACC6C]'>В наличии (4)</span>
                         </div>
                         <p className='font-normal text-base leading-normal'>Фолк гитара с металлическими струнами, верхняя дека - ель, корпус - агатис, цвет натуральный, 39", с вырезом</p>
@@ -76,7 +76,7 @@ const Guitar = ({ shop, like, shop1, addCart, addCart1, addLike, removeLike }) =
                             <p className='font-normal text-base leading-6'>Акустическая гитара в корпусе джамбо, с очень мощным звуком и в то же время очень удобная.Инструмент огромных размеров, с эстетикой и звуковой концепцией, которая удивляет с первой секунды.Это одна из самых популярных акустических гитар, обеспечивающая насыщенное звучание с...</p>
                             <p className='font-semibold text-sm leading-normal logo'>Подробнее</p>
                         </div>
-                        <p className='font-extrabold text-4xl leading-normal'>11 360  ₽</p>
+                        <p className='font-extrabold text-4xl leading-normal'>11 360 ₽</p>
                         <button onClick={() => addCart(e.id)} className='w-[240px] font-semibold text-lg leading-6 text-white bg-[#1B37A3] rounded-lg py-4'>
                             {e.karzinka}
                         </button>
@@ -87,7 +87,7 @@ const Guitar = ({ shop, like, shop1, addCart, addCart1, addLike, removeLike }) =
                 {/* text-tab */}
                 <div>
                     <div className="md:flex md:justify-between md:w-[636px] bg-slate-300 py-2 px-5 rounded-xl">
-                        {e.tab.map((el) => {
+                        {tapArr.map((el) => {
                             return (
                                 <div key={el.id}>
                                     <button className={`px-6 py-2.5 rounded-lg ${tab === el.id ? 'duration-700 bg-[#F7F7FC] logo' : 'border-transparent'} font-bold text-xl leading-7`} onClick={() => setActiveTab(el.id)}>
@@ -208,16 +208,16 @@ const Guitar = ({ shop, like, shop1, addCart, addCart1, addLike, removeLike }) =
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 mySwiper"
                     breakpoints={{
                         640: {
-                            slidesPerView: 2,
+                            slidesPerView: 1,
                         },
                         768: {
-                            slidesPerView: 3,
+                            slidesPerView: 2,
                         },
                         1024: {
-                            slidesPerView: 4,
+                            slidesPerView: 3,
                         },
                         1280: {
-                            slidesPerView: 5,
+                            slidesPerView: 4,
                         },
                     }}
                 >

@@ -9,9 +9,11 @@ import 'aos/dist/aos.css'
 import { api, api2, api3, bolg } from '../data';
 import card from '@material-tailwind/react/theme/components/card';
 import { Card, Option, Select } from '@material-tailwind/react';
+import MainWoman from './MainWoman';
+import MainKids from './MainKids';
 
 
-const Frame = ({ addCart, addCart1, addLike, removeLike }) => {
+const Frame = ({ addCart, addCart1, addCart2, addLike, removeLike }) => {
   const [select, setSelect] = useState('opt1');
   const add = (e) => {
     setSelect(e);
@@ -53,11 +55,11 @@ const Frame = ({ addCart, addCart1, addLike, removeLike }) => {
                 ))
                 : select === 'opt2'
                   ? api2.map((e) => (
-                    <Main key={e.id} addCart={addCart} addCart1={addCart1} addLike={addLike} removeLike={removeLike} e={e} />
+                    <MainWoman key={e.id} addCart1={addCart1} addLike={addLike} removeLike={removeLike} e={e} />
                   ))
                   : select === 'opt3'
                     ? api3.map((e) => (
-                      <Main key={e.id} addCart={addCart} addCart1={addCart1} addLike={addLike} removeLike={removeLike} e={e} />
+                      <MainKids key={e.id} addCart2={addCart2} addLike={addLike} removeLike={removeLike} e={e} />
                     ))
                     : null}
             </ul>

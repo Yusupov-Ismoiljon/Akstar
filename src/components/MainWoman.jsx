@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Main = ({ addCart, addCart1, addLike, removeLike, e }) => {
+const MainWoman = ({ addCart1, addLike, removeLike, e }) => {
   const [liked, setLiked] = useState(false);
   const toggleLike = (id) => {
     setLiked(!liked);
@@ -33,10 +33,10 @@ const Main = ({ addCart, addCart1, addLike, removeLike, e }) => {
         <span className="font-extrabold text-base sm:text-lg logo">{e.pul} ₽</span>
       </div>
       <div className="flex">
-        <button onClick={() => addCart(e.id)} className="w-full font-semibold text-base leading-6 text-[#1B37A3] py-1 px-9 border-2 border-[#1B37A3] rounded-md mr-2">
+        <button onClick={() => addCart1(e.id)} className="w-full font-semibold text-base leading-6 text-[#1B37A3] py-1 px-9 border-2 border-[#1B37A3] rounded-md mr-2">
           {e.karzinka}
         </button>
-        <Link to={`/guitar/${e.id}`} className="flex justify-center items-center px-5 font-semibold text-base leading-6  text-white bg-[#1B37A3] rounded-md">
+        <Link to={`/ayolarkimlari/${e.id}`} className="flex justify-center items-center px-5 font-semibold text-base leading-6  text-white bg-[#1B37A3] rounded-md">
           i
         </Link>
       </div>
@@ -44,4 +44,4 @@ const Main = ({ addCart, addCart1, addLike, removeLike, e }) => {
   );
 };
 
-export default Main;
+export default MainWoman;

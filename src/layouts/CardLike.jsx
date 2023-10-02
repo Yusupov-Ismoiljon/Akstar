@@ -27,7 +27,7 @@ const CardLike = ({ shop, like, removeLike }) => {
                     </div>
 
                     <div className='hidden lg:block'>
-                      <p className='font-bold text-3xl logo leading-normal'>{e.pul}  ₽</p>
+                      <p className='font-bold text-3xl logo leading-normal'>{e.pul} ₽</p>
                       <button className='text-[#B0B0B0] my-auto' onClick={() => removeLike(e.id)}>
                         <span className='leading-normal'>
                           Удалить
@@ -37,7 +37,7 @@ const CardLike = ({ shop, like, removeLike }) => {
                     </div>
                   </div>
                   <div className='flex justify-between block lg:hidden mt-5 md:mt-0'>
-                    <p className='font-bold text-3xl logo leading-normal'>{e.pul}  ₽</p>
+                    <p className='font-bold text-3xl logo leading-normal'>{e.pul} ₽</p>
                     <button className='text-[#B0B0B0] my-auto' onClick={() => removeLike(e.id)}>
                       <span className='leading-normal'>
                         Удалить

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-export default function MySwiper({ addCart, addLike, removeLike, e }) {
+export default function MySwiperAyolar({ addCart1, addLike, removeLike, e }) {
     const [liked, setLiked] = useState(false);
     const toggleLike = (id) => {
         setLiked(!liked);
@@ -22,13 +22,13 @@ export default function MySwiper({ addCart, addLike, removeLike, e }) {
                 <span className="font-extrabold text-base sm:text-lg logo">{e.pul} ₽</span>
             </div>
             <div className="flex">
-                <button onClick={() => addCart(e.id)} className="w-full font-semibold text-base leading-6 text-[#1B37A3] py-1 px-9 border-2 border-[#1B37A3] rounded-md mr-2">
+                <button onClick={() => addCart1(e.id)} className="w-full font-semibold text-base leading-6 text-[#1B37A3] py-1 px-9 border-2 border-[#1B37A3] rounded-md mr-2">
                     {e.karzinka}
                 </button>
-                <Link to={`/guitar/${e.id}`} className="flex justify-center items-center px-5 font-semibold text-base leading-6  text-white bg-[#1B37A3] rounded-md scroll-mt-0">
+                <Link to={`/ayolarkimlari/${e.id}`} className="flex justify-center items-center px-5 font-semibold text-base leading-6  text-white bg-[#1B37A3] rounded-md scroll-mt-0">
                     i
                 </Link>
             </div>
         </div >
     );
-}
+};
