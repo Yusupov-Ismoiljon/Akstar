@@ -840,129 +840,129 @@ export const api2 = [
 export const api3 = [
     {
         id: 1,
-        img: o,
-        lc: `Джинсы для мальчиков, Rumino Jeans, хлопок, синие, страйт, детские, осень, зима, Узбекистан`,
+        img: '../img/bola1.jpg',
+        lc: `Джинсы для мальчиков, Rumino Jeans`,
         pul: 517,
         miqdor: 1,
         karzinka: 'В корзину'
     },
     {
         id: 2,
-        img: opaxon,
-        lc: 'lc-3400',
-        pul: 11360,
+        img: '../img/bola2.jpg',
+        lc: `4 цвета, мужские модные футболки с коротким рукавом`,
+        pul: 500,
         miqdor: 1,
         karzinka: 'В корзину'
     },
     {
         id: 3,
-        img: opaxon,
-        lc: 'lc-3400',
-        pul: 11360,
+        img: '../img/bola3.jpg',
+        lc: 'Джинсы для мальчиков, Rumino Jeans',
+        pul: 400,
         miqdor: 1,
         karzinka: 'В корзину'
     },
     {
         id: 4,
-        img: opaxon,
-        lc: 'lc-3400',
-        pul: 11360,
+        img: '../img/bola4.jpg',
+        lc: `Мужские модные футболки с короткими рукавами`,
+        pul: 360,
         miqdor: 1,
         karzinka: 'В корзину'
     },
     {
         id: 5,
-        img: opaxon,
-        lc: 'lc-3400',
-        pul: 11360,
+        img: '../img/bola5.jpeg',
+        lc: `повседневные облегающие пуловеры с круглым вырезом`,
+        pul: 500,
         miqdor: 1,
         karzinka: 'В корзину'
     },
     {
         id: 6,
-        img: opaxon,
-        lc: 'lc-3400',
-        pul: 11360,
+        img: '../img/bola6.jpg',
+        lc: `Повседневные летние мужские топы, пуловеры`,
+        pul: 660,
         miqdor: 1,
         karzinka: 'В корзину'
     },
     {
         id: 7,
-        img: opaxon,
-        lc: 'lc-3400',
-        pul: 11360,
+        img: '../img/bola7.jpg',
+        lc: `Летние футболки с короткими рукавами для мальчиков`,
+        pul: 700,
         miqdor: 1,
         karzinka: 'В корзину'
     },
     {
         id: 8,
-        img: opaxon,
-        lc: 'lc-3400',
-        pul: 11360,
+        img: '../img/bola8.jpg',
+        lc:  `футболка с коротким рукавом, топ, шорты, штаны`,
+        pul: 530,
         miqdor: 1,
         karzinka: 'В корзину'
     },
     {
         id: 9,
-        img: opaxon,
-        lc: 'lc-3400',
-        pul: 11360,
+        img: '../img/bola9.jpg',
+        lc: `Футболка с короткими рукавами и шортами с мультяшным`,
+        pul: 460,
         miqdor: 1,
         karzinka: 'В корзину'
     },
     {
         id: 10,
-        img: opaxon,
-        lc: 'lc-3400',
-        pul: 11360,
+        img: '../img/bola10.jpg',
+        lc: `Футболка с короткими рукавами и шортами с мультяшным `,
+        pul: 450,
         miqdor: 1,
         karzinka: 'В корзину'
     },
     {
         id: 11,
-        img: opaxon,
-        lc: 'lc-3400',
-        pul: 11360,
+        img: '../img/bola11.jpg',
+        lc: `4 цвета, мужские модные футболки с коротким рукавом`,
+        pul: 699,
         miqdor: 1,
         karzinka: 'В корзину'
     },
     {
         id: 12,
-        img: opaxon,
-        lc: 'lc-3400',
-        pul: 11360,
+        img: '../img/bola12.jpg',
+        lc: `Летние наряды из двух предметов для девочек`,
+        pul: 559,
         miqdor: 1,
         karzinka: 'В корзину'
     },
     {
         id: 13,
-        img: opaxon,
-        lc: 'lc-3400',
-        pul: 11360,
+        img: '../img/bola13.jpg',
+        lc: `блузка с милым рисунком акулы и животных`,
+        pul: 550,
         miqdor: 1,
         karzinka: 'В корзину'
     },
     {
         id: 14,
-        img: opaxon,
-        lc: 'lc-3400',
-        pul: 11360,
+        img: '../img/bola14.jpg',
+        lc: `Мужские модные футболки с короткими рукавами`,
+        pul: 490,
         miqdor: 1,
         karzinka: 'В корзину'
     },
     {
         id: 15,
-        img: opaxon,
-        lc: 'lc-3400',
-        pul: 11360,
+        img: '../img/bola15.jpg',
+        lc: `4 цвета, мужские модные футболки с коротким рукавом`,
+        pul: 369,
         miqdor: 1,
         karzinka: 'В корзину'
     },
     {
         id: 16,
-        img: opaxon,
-        lc: 'lc-3400',
-        pul: 11360,
+        img: '../img/bola16.jpg',
+        lc: `Футболка с короткими рукавами и шортами с мультяшным`,
+        pul: 113,
         miqdor: 1,
         karzinka: 'В корзину'
     }
