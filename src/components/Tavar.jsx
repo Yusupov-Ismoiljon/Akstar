@@ -12,10 +12,10 @@ const Tavar = () => {
             <button data-aos="fade-up" className="bg-white text-black rounded-[10px] text-lg font-semibold md:py-4 md:px-9 py-2 px-5 aos-init aos-animate">Перейти в каталог</button>
           </div>
           <div>
-            <ul className="grid grid-cols-2 md:grid-cols-3 gap-5">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
               <li data-aos-delay="0" data-aos="fade-up" className="text-white relative aos-init aos-animate">
-                <div className="bg-white rounded-xl py-4">
-                  <img className="w-full h-60" src="./img/erkak1.jpeg" alt="new product" />
+                <div>
+                  <img className="w-full h-64 rounded-lg" src="./img/erkak1.jpeg" alt="new product" />
                 </div>
                 <div className="py-3">
                   <h3 className="font-bold text-sm sm:text-base">Мужская футболка Street Style</h3>
@@ -23,8 +23,8 @@ const Tavar = () => {
                 </div>
               </li>
               <li data-aos-delay="300" data-aos="fade-up" className="text-white relative aos-init aos-animate">
-                <div className="bg-white rounded-xl py-4">
-                  <img className="w-full h-60" src="./img/ayolar3.jpg" alt="new product" />
+                <div>
+                  <img className="w-full h-64 rounded-lg" src="./img/ayolar3.jpg" alt="new product" />
                 </div>
                 <div className="py-3">
                   <h3 className="font-semibold text-sm sm:text-base">Куртка Anaki черная 2091 женская</h3>
@@ -32,12 +32,12 @@ const Tavar = () => {
                 </div>
               </li>
               <li data-aos-delay="600" data-aos="fade-up" className="text-white relative aos-init aos-animate">
-                <div className="bg-white rounded-xl py-4">
-                  <img className="w-full h-60" src="./img/gitar.png" alt="new product" />
+                <div>
+                  <img className="w-full h-64 rounded-lg" src="./img/bola1.jpg" alt="new product" />
                 </div>
                 <div className="py-3">
-                  <h3 className="font-semibold text-sm sm:text-base">LC-3400</h3>
-                  <span className="font-bold text-base sm:text-lg">11 360 ₽</span>
+                  <h3 className="font-semibold text-sm sm:text-base">Джинсы для мальчиков, Rumino Jeans</h3>
+                  <span className="font-bold text-base sm:text-lg">517 ₽</span>
                 </div>
               </li>
             </ul>
