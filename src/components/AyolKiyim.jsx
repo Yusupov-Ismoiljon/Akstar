@@ -228,7 +228,6 @@ const AyolKiyim = ({addCart1, addLike, removeLike }) => {
                 </Swiper>
 
             </div>
-            <Footer />
         </div>
     )
 }
