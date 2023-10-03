@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className='bg-[#1B37A3] text-white'>
       <div className='w-full max-w-[1300px] mx-auto px-10 py-12'>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div className="md:flex md:justify-between gap-7">
           <div>
             <Link to={`/`}>
               <h1 data-aos-delay="100" data-aos="fade-up" className='font-russo font-light md:text-[40.34px] text-[23px] text-white leading-[135%] uppercase mb-7  aos-init aos-animate'>akstar</h1>
@@ -47,19 +47,6 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <div className='flex flex-col space-y-4 mb-7'>
-              <span data-aos-delay="100" data-aos="fade-up" className='font-bold text-2xl leading-normal aos-init aos-animate'>Служба поддержки</span>
-              <div data-aos-delay="100" data-aos="fade-up" className='aos-init aos-animate'>
-                <a className='block mb-2.5' href="tel:+7 (499) 286 87 10">+7 (499) 286 87 10</a>
-                <a target="_blank" href="https://akstar.help@gmail.com">akstar.help@gmail.com</a>
-              </div>
-            </div>
-            <div>
-              <span className='font-normal text-base block leading-normal'>Политика конфиденциальности</span>
-              <span className='font-normal text-base leading-normal'>Обработка персональных данных</span>
-            </div>
-          </div>
-          <div>
             <h3 className='font-bold text-2xl leading-normal mb-7'>Меню</h3>
             <ul className='space-y-5'>
               <li>
@@ -75,6 +62,19 @@ const Footer = () => {
                 <Link className='font-normal text-lg leading-normal' to={'/ьлог'}>Блог</Link>
               </li>
             </ul>
+          </div>
+          <div>
+            <div className='flex flex-col space-y-4 mb-7'>
+              <span data-aos-delay="100" data-aos="fade-up" className='font-bold text-2xl leading-normal aos-init aos-animate'>Служба поддержки</span>
+              <div data-aos-delay="100" data-aos="fade-up" className='aos-init aos-animate'>
+                <a className='block mb-2.5' href="tel:+7 (499) 286 87 10">+7 (499) 286 87 10</a>
+                <a target="_blank" href="https://akstar.help@gmail.com">akstar.help@gmail.com</a>
+              </div>
+            </div>
+            <div>
+              <span className='font-normal text-base block leading-normal'>Политика конфиденциальности</span>
+              <span className='font-normal text-base leading-normal'>Обработка персональных данных</span>
+            </div>
           </div>
         </div>
       </div>
