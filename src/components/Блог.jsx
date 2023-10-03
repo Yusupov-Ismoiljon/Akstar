@@ -28,25 +28,6 @@ const Blog = ({ shop, like, addMalumot }) => {
                             <i className="fa-solid fa-magnifying-glass absolute left-5 top-3 mr-4"></i>
                         </div>
                     </div>
-                    <Tabs className='hidden ' value={activeTab}>
-                        <TabsHeader className="rounded-none border-b border-blue-gray-50 bg-transparent pb-2"
-                            indicatorProps={{
-                                className: "bg-transparent border-b-2 border-[#1B37A3] shadow-none rounded-none p-4",
-                            }}
-                        >
-                            {data2.map(({ label, id }) => (
-                                <Tab
-                                    value={id}
-                                    key={id}
-                                    onClick={() => setActiveTab(id)}
-                                    className={`md:font-bold text-sm ${activeTab === id ? "logo" : "icon"} duration-700`}
-                                >
-                                    {label}
-                                </Tab>
-                            ))}
-                        </TabsHeader>
-
-                    </Tabs>
                 </div>
                 <div>
                     <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
