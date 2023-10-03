@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { bolg } from '../../public/data';
 import Footer from './Footer';
 import Header from './Header';
@@ -14,11 +14,11 @@ const BlogMalumot = () => {
         <div className='xl:flex xl:justify-between'>
           <div className='w-[630px] space-y-4'>
             <div>
-              <h1 className='font-bold leading-normal text-4xl'>{data.title1}</h1>
+              <h1 className='font-bold leading-normal text-4xl'>{data.title}</h1>
               <span className='icon'>19 июля 2022</span>
             </div>
-            <p className='font-normal text-base leading-6'>Британцы имеют репутацию одной из самых странных наций в мире - а знаете ли вы, почему? Все дело в том, что в Туманном Альбионе очень ценятся традиции и обычаи, поэтому британцы до сих пор следуют многим из них просто потому, что так принято, и это важная часть культуры. Сегодня мы расскажем вам о некоторых странностях британцев, которые удивляют приезжих - хотя для самих британцев все это совершенно в порядке вещей.</p>
-            <img className='h-[630px] rounded-xl' src={data.img2} alt="" aria-hidden='false' />
+            <p className='font-bold text-lg leading-6'>{data.title1}</p>
+            <img className='h-[500px] rounded-xl' src={data.img2} alt="" aria-hidden='false' />
             <p className='font-normal text-base leading-6'>{data.naprumir}</p>
             <p className='font-bold text-base leading-6'>{data.brit2} <span className='font-normal'>{data.text2}</span> </p>
             <img className='w-full h-[280px] rounded-xl' src={data.img} alt="" aria-hidden='false' />
@@ -30,8 +30,10 @@ const BlogMalumot = () => {
               {bolg.map((e) => {
                 return (
                   <li className='w-[300px]'>
-                    <img className='rounded-lg mb-2' src={e.img} alt="" aria-hidden='false' />
-                    <p>{e.text}</p>
+                    <Link to={`/malumotlar/${e.id}`}>
+                      <img className='rounded-lg mb-2' src={e.img} alt="" aria-hidden='false' />
+                      <p>{e.text}</p>
+                    </Link>
                   </li>
                 )
               })}
