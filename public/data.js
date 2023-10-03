@@ -140,19 +140,19 @@ export const api = [
         karzinka: 'В корзину',
         tab: [
             {
-                id: 6,
+                id: 4,
                 img: "../img/erkak6.jpeg"
             },
             {
-                id: 7,
+                id: 5,
                 img: "../img/erkak2.jpg"
             },
             {
-                id: 8,
+                id: 6,
                 img: "../img/erkak3.jpg"
             },
             {
-                id: 9,
+                id: 7,
                 img: "../img/erkak4.jpg"
             }
         ]
