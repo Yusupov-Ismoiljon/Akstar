@@ -656,7 +656,7 @@ export const api2 = [
     {
         id: 26,
         img: '../img/ayolar10.jpg',
-        lc: 'lc-3400',
+        lc: 'Мужские модные футболки с короткими рукавами',
         pul: 950,
         miqdor: 1,
         karzinka: 'В корзину',
