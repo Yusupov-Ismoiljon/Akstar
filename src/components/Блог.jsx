@@ -11,22 +11,22 @@ const Blog = ({ shop, like, addMalumot }) => {
     return (
         <>
             <div className='w-full max-w-[1300px] mx-auto px-5'>
-                    <div className='md:flex justify-between mb-5'>
-                        <div>
-                            <h2 className='fond-bold text-4xl'>Блог</h2>
-                        </div>
-
-                        <div className='flex md:justify-end w-[410px] relative'>
-                            <input
-                                value={searchQuery}
-                                onChange={(e) => setSearchQuery(e.target.value)}
-                                className='rounded-3xl border border-black outline-none py-2 px-12'
-                                type="search"
-                                placeholder='Поиск...' />
-
-                            <i className="fa-solid fa-magnifying-glass absolute md:left-32 left-3 top-3"></i>
-                        </div>
+                <div className='md:flex justify-between mb-5'>
+                    <div>
+                        <h2 className='fond-bold text-4xl'>Блог</h2>
                     </div>
+
+                    <div className='flex md:justify-end w-[410px] relative'>
+                        <input
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            className='rounded-3xl border border-black outline-none py-2 px-12'
+                            type="search"
+                            placeholder='Поиск...' />
+
+                        <i className="fa-solid fa-magnifying-glass absolute md:left-32 left-3 top-3"></i>
+                    </div>
+                </div>
                 <div>
                     <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
                         {
@@ -35,15 +35,15 @@ const Blog = ({ shop, like, addMalumot }) => {
                                     <li key={e.id} data-aos-delay="0" data-aos="fade-up" className={`${e.title.toLowerCase().includes(searchQuery.toLowerCase()) ? 'block' : 'hidden'} show rounded-xl p-4 mb-14 aos-init aos-animate`}>
                                         <Link to={`/malumotlar/${e.id}`} onClick={() => addMalumot(e.id)}>
                                             <img className='rounded-xl mb-4' src={e.img} alt="" />
-                                        </Link>
-                                        <div className='space-y-2.5'>
-                                            <div className='flex justify-between items-center icon'>
-                                                <p>01.07.2023</p>
-                                                <span><i className="fa-solid fa-eye"></i> 1257</span>
+                                            <div className='space-y-2.5'>
+                                                <div className='flex justify-between items-center icon'>
+                                                    <p>01.07.2023</p>
+                                                    <span><i className="fa-solid fa-eye"></i> 1257</span>
+                                                </div>
+                                                <h2 className='font-bold text-2xl leading-normal'>{e.title}</h2>
+                                                <p className='font-normal text-sm leading-5'>{e.text}</p>
                                             </div>
-                                            <h2 className='font-bold text-2xl leading-normal'>{e.title}</h2>
-                                            <p className='font-normal text-sm leading-5'>{e.text}</p>
-                                        </div>
+                                        </Link>
                                     </li>
                                 )
                             })
