@@ -11,37 +11,22 @@ const CardLike = ({ shop, like, removeLike }) => {
           <div className={`flex justify-center items-center w-full ${like.length === 0 ? 'block' : 'hidden'}`}>
             <img src="./img/gif.gif" alt="" />
           </div>
-          <ul className='space-y-10'>
+          <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5'>
             {like.map((e) => {
               return (
-                <li key={e.id} data-aos-delay="100" data-aos="fade-right" className='aos-init aos-animate relative'>
-                  <div className='md:flex md:justify-between gap-y-5'>
-                    <div className='md:flex gap-5'>
-                      <img className='w-[250px] h-[300px] rounded-md mb-5 md:mb-0' src={e.img} alt="product img" />
-                      <div>
-                        <p className='font-bold text-2xl leading-normal mb-5'>{e.lc}</p>
-                        <p className='font-normal text-base leading-normal'>Фолк гитара с металлическими струнами, верхняя дека - ель, <br /> корпус - агатис, цвет натуральный, 39", с вырезом</p>
-                      </div>
-                    </div>
-
-                    <div className='hidden lg:block'>
-                      <p className='font-bold text-3xl logo leading-normal mb-10'>{e.pul} ₽</p>
-                      <button className='flex items-center absolute bottom-0 hover:text-red-500 duration-500' onClick={() => removeLike(e.id)}>
-                        <span className='leading-normal'>
-                          Удалить
-                        </span>
-                          <i className="fa-solid fa-trash-can ml-2"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <div className='flex justify-between block lg:hidden mt-5 md:mt-0'>
-                    <p className='font-bold text-3xl logo leading-normal'>{e.pul} ₽</p>
-                    <button className='text-[#B0B0B0] my-auto' onClick={() => removeLike(e.id)}>
-                      <span className='leading-normal'>
-                        Удалить
-                        <i className="fa-solid fa-trash-can ml-2"></i>
-                      </span>
+                <li key={e.id} data-aos-delay="100" data-aos="fade-right" className='flex flex-col show aos-init aos-animate relative rounded-md'>
+                  <div className='relative grow'>
+                    <img className='w-[328px] h-[238px] rounded-md brightness-90 mb-3' src={e.img} alt="product img" />
+                    {/* delete */}
+                    <button className='flex items-center absolute top-2 right-2 hover:text-red-500 duration-500' onClick={() => removeLike(e.id)}>
+                      <i className="fa-solid fa-trash-can ml-2"></i>
                     </button>
+                  </div>
+
+                  <div className='p-3'>
+                    <p className='font-bold text-base text-[#111] leading-normal mb-1'>{e.lc}</p>
+                    <p className='font-bold text-xl logo leading-normal mb-3'>{e.pul} ₽</p>
+                    <button className='border-2 border-[#1B37A3] rounded-lg px-4 py-1'>{e.karzinka}</button>
                   </div>
                 </li>
               )

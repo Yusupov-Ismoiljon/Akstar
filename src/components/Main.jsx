@@ -36,7 +36,7 @@ const Main = ({ addCart, addLike, removeLike, e }) => {
         <span className="font-extrabold text-base sm:text-lg logo">{e.pul} ₽</span>
       </div>
       {/*  */}
-      <div className='grow'>
+      <div>
         {/* link  */}
         <div className="flex items-center p-2.5 pt-0">
           <button onClick={() => addCart(e.id)} className="w-full font-semibold text-base leading-6 text-[#1B37A3] py-1 px-9 border-2 border-[#1B37A3] rounded-md mr-2">
