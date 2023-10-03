@@ -9,12 +9,11 @@ import {
 import { Link } from 'react-router-dom';
 import Header from './Header';
 
-const Login = ({ shop, like, signup, setSignup }) => {
+const Login = ({ signup, setSignup }) => {
     return (
         <>
             <div>
-                <Header shop={shop} like={like} />
-                <div className='flex justify-center items-center'>
+                <div className='flex justify-center items-center mb-10'>
                     <div className='w-[450px] border-[#0B0B0B] rounded-lg show py-7 px-7'>
                         <Card className='flex text-center' color="transparent" shadow={false}>
                             <h2 className='font-bold text-2xl leading-8 text-[#242424]'>

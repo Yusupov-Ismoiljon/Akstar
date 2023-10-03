@@ -3,7 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import { toast } from 'react-toastify';
 
-const Magazin = ({ shop, like, setShop, addCartPul}) => {
+const Magazin = ({ shop, setShop, addCartPul}) => {
   const [pul, setPul] = useState(true);
   const [namber, setNamber] = useState(1);
   const [narhi, setNarhi] = useState(0);
@@ -39,7 +39,6 @@ const Magazin = ({ shop, like, setShop, addCartPul}) => {
 
   return (
     <>
-      <Header shop={shop} like={like} />
       <section className='mb-10'>
         <div className='w-full max-w-[1300px] mx-auto px-10'>
           <h2 className='font-bold text-4xl leading-normal mb-[30px]'>Корзина</h2>
@@ -61,7 +60,7 @@ const Magazin = ({ shop, like, setShop, addCartPul}) => {
                       </div>
                       <div className='xl:block hidden'>
                         <div className='flex justify-between'>
-                          <button onClick={() => deleteCard(product.id)}>
+                          <button className='hover:text-red-500 duration-500' onClick={() => deleteCard(product.id)}>
                             <span className='text-[#B0B0B0]'>
                               Удалить
                               <i className='fa-solid fa-trash-can ml-2'></i>
@@ -94,7 +93,7 @@ const Magazin = ({ shop, like, setShop, addCartPul}) => {
                         <i className='fa-solid fa-plus'></i>
                       </button>
                     </div>
-                    <button onClick={() => deleteCard(product.id)}>
+                    <button className='hover:text-red-500 duration-500' onClick={() => deleteCard(product.id)}>
                       <span className='text-[#B0B0B0]'>
                         Удалить
                         <i className='fa-solid fa-trash-can ml-2'></i>
@@ -122,7 +121,7 @@ const Magazin = ({ shop, like, setShop, addCartPul}) => {
           </div>
         </div>
       </section>
-      <Footer />
+
     </>
   );
 };

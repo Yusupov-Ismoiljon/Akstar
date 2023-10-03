@@ -6,14 +6,14 @@ import Main from './Main';
 import Footer from './Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
-import { api, api2, api3, bolg } from '../data';
+import { api, api2, api3, bolg } from '../../public/data';
 import card from '@material-tailwind/react/theme/components/card';
 import { Card, Option, Select } from '@material-tailwind/react';
 import MainWoman from './MainWoman';
 import MainKids from './MainKids';
 
 
-const Frame = ({ addCart, addCart1, addCart2, addLike, removeLike }) => {
+const Frame = ({ addCart, addCart1, addCart2, addLike, removeLike, addLike1, removeLike1, addLike2, removeLike2 }) => {
   const [select, setSelect] = useState('opt1');
   const add = (e) => {
     setSelect(e);
@@ -33,17 +33,19 @@ const Frame = ({ addCart, addCart1, addCart2, addLike, removeLike }) => {
             <div className="flex items-center justify-between py-6 border-b-2 border-[#191919]">
               <button
                 data-aos="fade-right"
-                className="flex items-center aos-init aos-animate"
+                className="flex items-center aos-init aos-animate mr-5"
               >
-                <img className="mr-4" src="./img/menu-sort.svg" alt="" aria-hidden="true" />
-                <span className="font-bold text-4xl brend">Каталог</span>
+                <span className="md:font-bold font-medium text-xl md:text-2xl brend">Фильтр</span>
               </button>
               <div>
-                <Select onChange={(e) => add(e)} label="">
-                  <Option value='opt1'>Для мужчин</Option>
-                  <Option value='opt2'>Для женщин</Option>
-                  <Option value='opt3'>Для детей</Option>
-                </Select>
+                <div>
+                  <Select onChange={(e) => add(e)} label='Фильтр'>
+                    <Option value='фильтр' disabled>Фильтр</Option>
+                    <Option value='opt1'>Для мужчин</Option>
+                    <Option value='opt2'>Для женщин</Option>
+                    <Option value='opt3'>Для детей</Option>
+                  </Select>
+                </div>
               </div>
             </div>
           </div>
@@ -55,11 +57,11 @@ const Frame = ({ addCart, addCart1, addCart2, addLike, removeLike }) => {
                 ))
                 : select === 'opt2'
                   ? api2.map((e) => (
-                    <MainWoman key={e.id} addCart1={addCart1} addLike={addLike} removeLike={removeLike} e={e} />
+                    <MainWoman key={e.id} addCart1={addCart1} addLike1={addLike1} removeLike1={removeLike1} e={e} />
                   ))
                   : select === 'opt3'
                     ? api3.map((e) => (
-                      <MainKids key={e.id} addCart2={addCart2} addLike={addLike} removeLike={removeLike} e={e} />
+                      <MainKids key={e.id} addCart2={addCart2} addLike2={addLike2} removeLike={removeLike2} e={e} />
                     ))
                     : null}
             </ul>

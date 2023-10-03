@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import { api, api2, api3 } from '../data';
-import { tapArr } from '../data';
+import { api, api2, api3 } from '../../public/data';
+import { tapArr } from '../../public/data';
 import MySwiper from '../layouts/Swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -10,7 +10,7 @@ import { useParams } from 'react-router-dom';
 import MySwiperAyolar from '../layouts/SwiperAyol';
 
 
-const AyolKiyim = ({ shop, like, addCart1, addLike, removeLike }) => {
+const AyolKiyim = ({addCart1, addLike, removeLike }) => {
     const [tab, setTab] = useState(1);
     const setActiveTab = (id) => {
         setTab(id)
@@ -26,7 +26,6 @@ const AyolKiyim = ({ shop, like, addCart1, addLike, removeLike }) => {
 
     return (
         <div>
-            <Header shop={shop} like={like} />
             <div className='w-full max-w-[1300px] mx-auto px-10 py-10 mb-16'>
                 {/* img-tab */}
                 <div className={`grid xl:grid-cols-2 grid-cols-1 gap-7 mb-16`}>
@@ -36,7 +35,7 @@ const AyolKiyim = ({ shop, like, addCart1, addLike, removeLike }) => {
                                 {e.tab.map((e) => {
                                     return (
                                         <button key={e.id} onClick={() => setActiveTabImg(e.id)}>
-                                            <img className={`md:w-28 md:h-28 w-[70px] h-[70px] rounded-lg ${e.tab === e.id ? 'border-2 border-[#1B37A3] rounded duration-500' : 'border-transparent'}`} src={e.img} aria-hidden='false' />
+                                            <img className={`md:w-[107px] md:h-[107px] w-[70px] h-[70px] rounded-lg ${e.tab === e.id ? 'border-2 border-[#1B37A3] rounded duration-500' : 'border-transparent'}`} src={e.img} aria-hidden='false' />
                                         </button>
                                     )
                                 })}
@@ -47,18 +46,18 @@ const AyolKiyim = ({ shop, like, addCart1, addLike, removeLike }) => {
                                 e.tab.map((i) => {
                                     return (
                                         <div key={i.id} className={`w-full ${tabImg === i.id ? 'block' : 'hidden'}`}>
-                                            <img className='w-[520px] h-[520px]' src={i.img} alt="" />
+                                            <img className='w-full h-[320px] md:w-[520px] md:h-[520px] rounded-xl' src={i.img} alt="" />
                                         </div>
                                     )
                                 })
                             }
                         </div>
                         <div className='md:hidden block'>
-                            <div className='grid grid-cols-4 md:grid-cols-1 gap-7'>
+                            <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-1 gap-7'>
                                 {e.tab.map((e) => {
                                     return (
                                         <button key={e.id} onClick={() => setActiveTabImg(e.id)}>
-                                            <img className={`md:w-28 md:h-28 w-[70px] h-[70px] ${e.tab === e.id ? 'border-2 border-[#1B37A3] rounded duration-500' : 'border-transparent'}`} src={e.img} aria-hidden='false' />
+                                            <img className={`md:w-28 md:h-28 w-[70px] h-[70px] rounded-lg ${e.tab === e.id ? 'duration-500' : 'border-transparent'}`} src={e.img} aria-hidden='false' />
                                         </button>
                                     )
                                 })}
