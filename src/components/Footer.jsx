@@ -64,16 +64,16 @@ const Footer = () => {
             <h3 className='font-bold text-2xl leading-normal mb-7'>Меню</h3>
             <ul className='space-y-5'>
               <li>
-                <a className='font-normal text-lg leading-normal' href="#">Главная</a>
+                <Link className='font-normal text-lg leading-normal' to='/'>Главная</Link>
               </li>
               <li>
-                <a className='font-normal text-lg leading-normal' href="#">Школа</a>
+                <Link className='font-normal text-lg leading-normal' to='/like'>Любимые</Link>
               </li>
               <li>
-                <a className='font-normal text-lg leading-normal' href="#">Магазин</a>
+                <Link className='font-normal text-lg leading-normal' to={'магазин'}>Корзина</Link>
               </li>
               <li>
-                <a className='font-normal text-lg leading-normal' href="#">Блог</a>
+                <Link className='font-normal text-lg leading-normal' to={'/ьлог'}>Блог</Link>
               </li>
             </ul>
           </div>
