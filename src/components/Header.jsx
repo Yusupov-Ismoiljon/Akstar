@@ -62,9 +62,14 @@ const Header = ({ shop, like, singup, setSIngup }) => {
                         </ul>
                     </div>
                     <div className='lg:hidden block'>
-                        <Link to='/магазин'>
+                        <Link className='mr-5' to='/магазин'>
                             <Badge color="blue" content={`${shop.length}`}>
                                 <i className="fas fa-cart-shopping fa-lg"></i>
+                            </Badge>
+                        </Link>
+                        <Link to='/like'>
+                            <Badge content={`${like.length}`}>
+                                <i className="fa-sharp fa-regular fa-heart fa-xl"></i>
                             </Badge>
                         </Link>
                         <button className='w-5 ml-5' onClick={() => setMenu(!menu)}>
