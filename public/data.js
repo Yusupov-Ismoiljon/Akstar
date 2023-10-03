@@ -1,6 +1,5 @@
-import img from '../public/img/gitara.png';
-import opaxon from '../public/img/opaxon.png';
-
+import img from './img/gitara.png';
+import opaxon from './img/opaxon.png';
 export const api = [
     {
         id: 1,
@@ -421,7 +420,7 @@ export const api = [
 ];
 export const api2 = [
     {
-        id: 1,
+        id: 17,
         img: '../img/ayollar1.jpg',
         lc: 'Куртка Anaki черная 1833 женская',
         pul: 660,
@@ -447,7 +446,7 @@ export const api2 = [
         ]
     },
     {
-        id: 2,
+        id: 18,
         img: '../img/ayolar2.jpg',
         lc: 'Куртка Anaki черная 2050 женская',
         pul: 700,
@@ -473,7 +472,7 @@ export const api2 = [
         ]
     },
     {
-        id: 3,
+        id: 19,
         img: '../img/ayolar3.jpg',
         lc: 'Куртка Anaki черная 2091 женская',
         pul: 609,
@@ -499,7 +498,7 @@ export const api2 = [
         ]
     },
     {
-        id: 4,
+        id: 20,
         img: '../img/ayolar4.jpg',
         lc: 'Куртка Anaki черная 1991 женская',
         pul: 800,
@@ -525,7 +524,7 @@ export const api2 = [
         ]
     },
     {
-        id: 5,
+        id: 21,
         img: '../img/ayolar5.jpeg',
         lc: 'Куртка Anaki черная M005 женская',
         pul: 560,
@@ -551,7 +550,7 @@ export const api2 = [
         ]
     },
     {
-        id: 6,
+        id: 22,
         img: '../img/ayolar6.jpg',
         lc: 'Куртка Anaki черный 22364 для девушек',
         pul: 900,
@@ -577,7 +576,7 @@ export const api2 = [
         ]
     },
     {
-        id: 7,
+        id: 23,
         img: '../img/ayolar7.jpeg',
         lc: 'Куртка Anaki черная 701 женская',
         pul: 950,
@@ -603,7 +602,7 @@ export const api2 = [
         ]
     },
     {
-        id: 8,
+        id: 24,
         img: '../img/ayolar8.jpg',
         lc: 'Куртка Anaki черная M091 женская',
         pul: 790,
@@ -629,7 +628,7 @@ export const api2 = [
         ]
     },
     {
-        id: 9,
+        id: 25,
         img: '../img/ayolar9.jpeg',
         lc: 'Куртка Anaki черная 091 женская',
         pul: 560,
@@ -655,7 +654,7 @@ export const api2 = [
         ]
     },
     {
-        id: 10,
+        id: 26,
         img: '../img/ayolar10.jpg',
         lc: 'lc-3400',
         pul: 950,
@@ -681,7 +680,7 @@ export const api2 = [
         ]
     },
     {
-        id: 11,
+        id: 27,
         img: '../img/ayolar11.jpg',
         lc: 'Куртка Anaki черная 5000-2091 женская',
         pul: 890,
@@ -707,7 +706,7 @@ export const api2 = [
         ]
     },
     {
-        id: 12,
+        id: 28,
         img: '../img/ayolar12.jpg',
         lc: 'Куртка Anaki черная M209 женская',
         pul: 600,
@@ -733,7 +732,7 @@ export const api2 = [
         ]
     },
     {
-        id: 13,
+        id: 29,
         img: '../img/ayolar13.jpg',
         lc: 'Куртка Anaki черная 09050-2091 женская',
         pul: 760,
@@ -759,7 +758,7 @@ export const api2 = [
         ]
     },
     {
-        id: 14,
+        id: 30,
         img: '../img/ayolar14.jpg',
         lc: 'Куртка Anaki черная M099 женская',
         pul: 750,
@@ -785,7 +784,7 @@ export const api2 = [
         ]
     },
     {
-        id: 15,
+        id: 31,
         img: '../img/ayolar15.jpg',
         lc: 'Куртка Anaki черная 505 женская',
         pul: 800,
@@ -811,7 +810,7 @@ export const api2 = [
         ]
     },
     {
-        id: 16,
+        id: 32,
         img: '../img/ayolar16.jpeg',
         lc: 'Plash Molto Caldo sport uslabida kuzgi plash',
         pul: 555,
@@ -839,132 +838,420 @@ export const api2 = [
 ];
 export const api3 = [
     {
-        id: 1,
+        id: 33,
         img: '../img/bola1.jpg',
         lc: `Джинсы для мальчиков, Rumino Jeans`,
         pul: 517,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/bola1.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/bola2.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/bola3.jpg"
+            },
+            {
+                id: 7,
+                img: "../img/bola4.jpg"
+            }
+        ]
     },
     {
-        id: 2,
+        id: 34,
         img: '../img/bola2.jpg',
         lc: `4 цвета, мужские модные футболки с коротким рукавом`,
         pul: 500,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/bola2.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/bola3.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/bola4.jpg"
+            },
+            {
+                id: 7,
+                img: "../img/bola5.jpeg"
+            }
+        ]
     },
     {
-        id: 3,
+        id: 35,
         img: '../img/bola3.jpg',
         lc: 'Джинсы для мальчиков, Rumino Jeans',
         pul: 400,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/bola3.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/bola4.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/bola5.jpeg"
+            },
+            {
+                id: 7,
+                img: "../img/bola6.jpg"
+            }
+        ]
     },
     {
-        id: 4,
+        id: 36,
         img: '../img/bola4.jpg',
         lc: `Мужские модные футболки с короткими рукавами`,
         pul: 360,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/bola4.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/bola5.jpeg"
+            },
+            {
+                id: 6,
+                img: "../img/bola6.jpg"
+            },
+            {
+                id: 7,
+                img: "../img/bola7.jpg"
+            }
+        ]
     },
     {
-        id: 5,
+        id: 37,
         img: '../img/bola5.jpeg',
         lc: `повседневные облегающие пуловеры с круглым вырезом`,
         pul: 500,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/bola5.jpeg"
+            },
+            {
+                id: 5,
+                img: "../img/bola6.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/bola7.jpg"
+            },
+            {
+                id: 7,
+                img: "../img/bola8.jpg"
+            }
+        ]
     },
     {
-        id: 6,
+        id: 38,
         img: '../img/bola6.jpg',
         lc: `Повседневные летние мужские топы, пуловеры`,
         pul: 660,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/bola6.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/bola7.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/bola8.jpg"
+            },
+            {
+                id: 7,
+                img: "../img/bola9.jpg"
+            }
+        ]
     },
     {
-        id: 7,
+        id: 39,
         img: '../img/bola7.jpg',
         lc: `Летние футболки с короткими рукавами для мальчиков`,
         pul: 700,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/bola5.jpeg"
+            },
+            {
+                id: 5,
+                img: "../img/bola6.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/bola7.jpg"
+            },
+            {
+                id: 7,
+                img: "../img/bola8.jpg"
+            }
+        ]
     },
     {
-        id: 8,
+        id: 40,
         img: '../img/bola8.jpg',
         lc:  `футболка с коротким рукавом, топ, шорты, штаны`,
         pul: 530,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/bola8.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/bola9.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/bola10.jpg"
+            },
+            {
+                id: 7,
+                img: "../img/bola11.jpg"
+            }
+        ]
     },
     {
-        id: 9,
+        id: 41,
         img: '../img/bola9.jpg',
-        lc: `Футболка с короткими рукавами и шортами с мультяшным`,
+        lc: `Футболка с короткими рукавами и шортами с `,
         pul: 460,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/bola9.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/bola10.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/bola11.jpg"
+            },
+            {
+                id: 7,
+                img: "../img/bola12.jpg"
+            }
+        ]
     },
     {
-        id: 10,
+        id: 42,
         img: '../img/bola10.jpg',
-        lc: `Футболка с короткими рукавами и шортами с мультяшным `,
+        lc: `Футболка с короткими рукавами и шортами с `,
         pul: 450,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/bola10.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/bola11.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/bola12.jpg"
+            },
+            {
+                id: 7,
+                img: "../img/bola13.jpg"
+            }
+        ]
     },
     {
-        id: 11,
+        id: 43,
         img: '../img/bola11.jpg',
         lc: `4 цвета, мужские модные футболки с коротким рукавом`,
         pul: 699,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/bola11.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/bola12.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/bola13.jpg"
+            },
+            {
+                id: 7,
+                img: "../img/bola14.jpg"
+            }
+        ]
     },
     {
-        id: 12,
+        id: 44,
         img: '../img/bola12.jpg',
         lc: `Летние наряды из двух предметов для девочек`,
         pul: 559,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/bola12.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/bola16.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/bola10.jpg"
+            },
+            {
+                id: 7,
+                img: "../img/bola7.jpg"
+            }
+        ]
     },
     {
-        id: 13,
+        id: 45,
         img: '../img/bola13.jpg',
         lc: `блузка с милым рисунком акулы и животных`,
         pul: 550,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/bola13.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/bola2.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/bola10.jpg"
+            },
+            {
+                id: 7,
+                img: "../img/bola7.jpg"
+            }
+        ]
     },
     {
-        id: 14,
+        id: 46,
         img: '../img/bola14.jpg',
         lc: `Мужские модные футболки с короткими рукавами`,
         pul: 490,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/bola14.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/bola15.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/bola1.jpg"
+            },
+            {
+                id: 7,
+                img: "../img/bola2.jpg"
+            }
+        ]
     },
     {
-        id: 15,
+        id: 47,
         img: '../img/bola15.jpg',
         lc: `4 цвета, мужские модные футболки с коротким рукавом`,
         pul: 369,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/bola15.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/bola16.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/bola1.jpg"
+            },
+            {
+                id: 7,
+                img: "../img/bola8.jpg"
+            }
+        ]
     },
     {
-        id: 16,
+        id: 48,
         img: '../img/bola16.jpg',
         lc: `Футболка с короткими рукавами и шортами с мультяшным`,
         pul: 113,
         miqdor: 1,
-        karzinka: 'В корзину'
+        karzinka: 'В корзину',
+        tab: [
+            {
+                id: 4,
+                img: "../img/bola16.jpg"
+            },
+            {
+                id: 5,
+                img: "../img/bola13.jpg"
+            },
+            {
+                id: 6,
+                img: "../img/bola10.jpg"
+            },
+            {
+                id: 7,
+                img: "../img/bola11.jpg"
+            }
+        ]
     }
 ];
 export const tapArr = [
