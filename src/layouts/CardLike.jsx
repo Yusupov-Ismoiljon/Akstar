@@ -26,7 +26,6 @@ const CardLike = ({ shop, like, removeLike }) => {
                   <div className='p-3'>
                     <p className='font-bold text-base text-[#111] leading-normal mb-1'>{e.lc}</p>
                     <p className='font-bold text-xl logo leading-normal mb-3'>{e.pul} ₽</p>
-                    <button className='border-2 border-[#1B37A3] rounded-lg px-4 py-1'>{e.karzinka}</button>
                   </div>
                 </li>
               )
