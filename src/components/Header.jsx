@@ -116,7 +116,7 @@ const Header = ({ shop, like, singup, setSIngup }) => {
             <div className='-z-30 bg-black mb-4'>
                 <div className='w-full max-w-[1300px] mx-auto px-10'>
                     <marquee>
-                        <div className='font-raleway text-white space-x-9 py-2'>
+                        <div className='font-raleway text-white pb-3 pt-4'>
                             <span className='text-base leading-normal uppercase'>Промокод <span className='font-extrabold'>CROW</span>- скидка 25% на все курсы гитарной академии</span>
                             <span className='text-base leading-normal uppercase'>Промокод <span className='font-extrabold'>CROW</span>- скидка 25% на все курсы гитарной академии</span>
                             <span className='text-base leading-normal uppercase'>Промокод <span className='font-extrabold'>CROW</span>- скидка 25% на все курсы гитарной академии</span>
