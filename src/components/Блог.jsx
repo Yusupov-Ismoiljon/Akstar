@@ -16,15 +16,15 @@ const Blog = ({ shop, like, addMalumot }) => {
                         <h2 className='fond-bold text-4xl'>Блог</h2>
                     </div>
 
-                    <div className='flex md:justify-end w-[410px] relative'>
+                    <div className='flex md:justify-end md:w-[410px] relative'>
                         <input
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
-                            className='rounded-3xl border border-black outline-none py-2 px-12'
+                            className='w-full rounded-3xl border border-black outline-none py-2 px-12'
                             type="search"
                             placeholder='Поиск...' />
 
-                        <i className="fa-solid fa-magnifying-glass absolute md:left-32 left-3 top-3"></i>
+                        <i className="fa-solid fa-magnifying-glass absolute md:left-5 left-3 top-3"></i>
                     </div>
                 </div>
                 <div>
