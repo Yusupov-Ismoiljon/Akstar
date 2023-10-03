@@ -55,8 +55,8 @@ const Hero = () => {
           </div>
         </Swiper>
       </div>
-      <div className='bg-[#1b37a31a] mb-8 top-0'>
-        <div className='w-full max-w-[1300px] mx-auto text-center px-5 py-2.5'>
+      <div className='bg-[#1b37a31a] mb-8'>
+        <div className='w-full max-w-[1300px] mx-auto text-center px-5 py-3'>
           <span className='font-semibold text-base leading-normal mr-2'>TELEGRAM-КАНАЛ МУЗЫКАЛЬНОГО СООБЩЕСТВА AKSTAR</span>
           <i className={`fa-brands fa-telegram`}></i>
         </div>
