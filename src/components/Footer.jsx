@@ -53,7 +53,6 @@ const Footer = () => {
                 <a className='block mb-2.5' href="tel:+7 (499) 286 87 10">+7 (499) 286 87 10</a>
                 <a target="_blank" href="https://akstar.help@gmail.com">akstar.help@gmail.com</a>
               </div>
-              <button data-aos-delay="100" data-aos="fade-up" className='w-[165px] text-black bg-white rounded-lg py-2 aos-init aos-animate'>Обратиться</button>
             </div>
             <div>
               <span className='font-normal text-base block leading-normal'>Политика конфиденциальности</span>
