@@ -30,22 +30,20 @@ const Frame = ({ addCart, addCart1, addCart2, addLike, removeLike, addLike1, rem
         <Tavar />
         <div className='w-full max-w-[1300px] mx-auto px-10 mt-10'>
           <div className="mb-4">
-            <div className="flex items-center justify-between py-6 border-b-2 border-[#191919]">
+            <div className="sm:flex items-center justify-between border-[#191919] border-b-2 gap-5">
               <button
                 data-aos="fade-right"
-                className="flex items-center aos-init aos-animate mr-5"
+                className="flex items-center aos-init aos-animate mb-5"
               >
                 <span className="md:font-bold font-medium text-xl md:text-2xl brend">Фильтр</span>
               </button>
               <div>
-                <div>
-                  <Select onChange={(e) => add(e)} label='Фильтр'>
-                    <Option value='фильтр' disabled>Фильтр</Option>
-                    <Option value='opt1'>Для мужчин</Option>
-                    <Option value='opt2'>Для женщин</Option>
-                    <Option value='opt3'>Для детей</Option>
-                  </Select>
-                </div>
+                <Select onChange={(e) => add(e)} label='Фильтр'>
+                  <Option value='фильтр' disabled>Фильтр</Option>
+                  <Option value='opt1'>Для мужчин</Option>
+                  <Option value='opt2'>Для женщин</Option>
+                  <Option value='opt3'>Для детей</Option>
+                </Select>
               </div>
             </div>
           </div>

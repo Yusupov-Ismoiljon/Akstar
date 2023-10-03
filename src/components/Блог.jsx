@@ -10,14 +10,13 @@ const Blog = ({ shop, like, addMalumot }) => {
     const [activeTab, setActiveTab] = React.useState(1);
     return (
         <>
-            <div className='w-full max-w-[1300px] mx-auto px-10'>
-                <div className='mb-7'>
-                    <div className='md:flex justify-between md:mb-0 mb-10'>
+            <div className='w-full max-w-[1300px] mx-auto px-5'>
+                    <div className='md:flex justify-between mb-5'>
                         <div>
                             <h2 className='fond-bold text-4xl'>Блог</h2>
                         </div>
 
-                        <div className='md:w-[410px] w-[100px] relative'>
+                        <div className='flex md:justify-end w-[410px] relative'>
                             <input
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -25,10 +24,9 @@ const Blog = ({ shop, like, addMalumot }) => {
                                 type="search"
                                 placeholder='Поиск...' />
 
-                            <i className="fa-solid fa-magnifying-glass absolute left-5 top-3 mr-4"></i>
+                            <i className="fa-solid fa-magnifying-glass absolute md:left-32 left-3 top-3"></i>
                         </div>
                     </div>
-                </div>
                 <div>
                     <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
                         {
