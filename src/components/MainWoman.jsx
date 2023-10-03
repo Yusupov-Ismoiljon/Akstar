@@ -41,7 +41,7 @@ const MainWoman = ({ addCart1, addLike1, removeLike1, e }) => {
             {e.karzinka}
           </button>
           <div>
-            <Link to={`/ayolarkimlari/${e.id}`} className="flex justify-center items-center px-5 font-semibold text-base leading-6  text-white bg-[#1B37A3] rounded-md">
+            <Link to={`/ayolarkimlari/${e.id}`} className="flex justify-center items-center font-semibold text-base leading-6 text-white bg-[#1B37A3] rounded-md py-1 px-5">
               i
             </Link>
           </div>
