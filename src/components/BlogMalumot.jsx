@@ -1,16 +1,15 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { bolg } from '../data';
+import { bolg } from '../../public/data';
 import Footer from './Footer';
 import Header from './Header';
 
-const BlogMalumot = ({ shop, like }) => {
+const BlogMalumot = () => {
   const { id } = useParams();
   const data = bolg.find(i => i.id === parseInt(id));
 
   return (
     <>
-      <Header shop={shop} like={like} />
       <div className='w-full max-w-[1300px] mx-auto px-5 pb-14 mt-7'>
         <div className='xl:flex xl:justify-between'>
           <div className='w-[630px] space-y-4'>
@@ -31,7 +30,7 @@ const BlogMalumot = ({ shop, like }) => {
               {bolg.map((e) => {
                 return (
                   <li className='w-[300px]'>
-                    <img className='rounded-lg mb-2' src={e.img} alt="" aria-hidden='false'/>
+                    <img className='rounded-lg mb-2' src={e.img} alt="" aria-hidden='false' />
                     <p>{e.text}</p>
                   </li>
                 )
@@ -40,7 +39,6 @@ const BlogMalumot = ({ shop, like }) => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   )
 }

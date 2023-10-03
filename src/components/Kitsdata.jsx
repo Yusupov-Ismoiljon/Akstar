@@ -1,15 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import { api, api2, api3 } from '../../public/data';
+import React, { useState } from 'react';
+import { api3 } from '../../public/data';
 import { tapArr } from '../../public/data';
-import MySwiper from '../layouts/Swiper';
+import MySwiperBola from '../layouts/SwiperBola';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { useParams } from 'react-router-dom';
 
 
-const Guitar = ({ addCart, addCart1, addLike, removeLike }) => {
+const KitsData = ({ addCart2, addLike2, removeLike2 }) => {
     const [tab, setTab] = useState(1);
     const setActiveTab = (id) => {
         setTab(id)
@@ -21,10 +19,8 @@ const Guitar = ({ addCart, addCart1, addLike, removeLike }) => {
     };
 
     const { id } = useParams();
-    const e = api.find(i => i.id === parseInt(id));
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    const e = api3.find(i => i.id === parseInt(id));
+
     return (
         <div>
             <div className='w-full max-w-[1300px] mx-auto px-10 py-10 mb-16'>
@@ -43,15 +39,14 @@ const Guitar = ({ addCart, addCart1, addLike, removeLike }) => {
                             </div>
                         </div>
                         <div className='md:mb-0 mb-5'>
-                            {
-                                e.tab.map((i) => {
-                                    return (
-                                        <div key={i.id} className={`w-full ${tabImg === i.id ? 'block' : 'hidden'}`}>
-                                            <img className='w-[520px] h-[520px]' src={i.img} alt="" />
-                                        </div>
-                                    )
-                                })
-                            }
+                            {e.tab.map((e) => {
+                                return (
+                                    <div key={e.id} className={`w-full ${tabImg === e.id ? 'block' : 'hidden'}`}>
+                                        <img className='w-[520px] h-[520px]' src={e.img} alt="" />
+                                    </div>
+                                )
+                            })}
+
                         </div>
                         <div className='md:hidden block'>
                             <div className='grid grid-cols-4 md:grid-cols-1 gap-7'>
@@ -68,7 +63,7 @@ const Guitar = ({ addCart, addCart1, addLike, removeLike }) => {
 
                     <div className='space-y-7'>
                         <div>
-                            <h2 className='font-bold text-[28px] leading-9 md:text-4xl md:leading-normal mb-4'>{e.l}</h2>
+                            <h2 className='font-bold text-[28px] leading-9 md:text-4xl md:leading-normal mb-4'>{e.lc}</h2>
                             <span className='font-bold text-sm text-[#9ACC6C]'>В наличии (4)</span>
                         </div>
                         <p className='font-normal text-base leading-normal'>Фолк гитара с металлическими струнами, верхняя дека - ель, корпус - агатис, цвет натуральный, 39", с вырезом</p>
@@ -78,7 +73,7 @@ const Guitar = ({ addCart, addCart1, addLike, removeLike }) => {
                             <p className='font-semibold text-sm leading-normal logo'>Подробнее</p>
                         </div>
                         <p className='font-extrabold text-4xl leading-normal'>11 360 ₽</p>
-                        <button onClick={() => addCart(e.id)} className='w-[240px] font-semibold text-lg leading-6 text-white bg-[#1B37A3] rounded-lg py-4'>
+                        <button onClick={() => addCart2(e.id)} className='w-[240px] font-semibold text-lg leading-6 text-white bg-[#1B37A3] rounded-lg py-4'>
                             {e.karzinka}
                         </button>
                     </div>
@@ -222,9 +217,9 @@ const Guitar = ({ addCart, addCart1, addLike, removeLike }) => {
                         },
                     }}
                 >
-                    {api.map((e) => (
+                    {api3.map((e) => (
                         <SwiperSlide key={e.id}>
-                            <MySwiper addCart={addCart} addCart1={addCart1} addLike={addLike} removeLike={removeLike} e={e} />
+                            <MySwiperBola addCart2={addCart2} addLike2={addLike2} removeLike2={removeLike2} e={e} />
                         </SwiperSlide>
                     ))}
                 </Swiper>
@@ -234,4 +229,4 @@ const Guitar = ({ addCart, addCart1, addLike, removeLike }) => {
     )
 }
 
-export default Guitar
+export default KitsData
