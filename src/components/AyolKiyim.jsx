@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import { api, api2, api3 } from '../../public/data';
@@ -10,7 +10,7 @@ import { useParams } from 'react-router-dom';
 import MySwiperAyolar from '../layouts/SwiperAyol';
 
 
-const AyolKiyim = ({addCart1, addLike, removeLike }) => {
+const AyolKiyim = ({ addCart1, addLike, removeLike }) => {
     const [tab, setTab] = useState(1);
     const setActiveTab = (id) => {
         setTab(id)
@@ -23,7 +23,9 @@ const AyolKiyim = ({addCart1, addLike, removeLike }) => {
 
     const { id } = useParams();
     const e = api2.find(i => i.id === parseInt(id));
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div>
             <div className='w-full max-w-[1300px] mx-auto px-10 py-10 mb-16'>

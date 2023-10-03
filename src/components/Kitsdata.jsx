@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { api3 } from '../../public/data';
 import { tapArr } from '../../public/data';
 import MySwiperBola from '../layouts/SwiperBola';
@@ -20,7 +20,9 @@ const KitsData = ({ addCart2, addLike2, removeLike2 }) => {
 
     const { id } = useParams();
     const e = api3.find(i => i.id === parseInt(id));
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div>
             <div className='w-full max-w-[1300px] mx-auto px-10 py-10 mb-16'>
