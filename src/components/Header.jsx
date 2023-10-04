@@ -1,6 +1,7 @@
-import { Badge } from '@material-tailwind/react';
+import { Badge, Menu } from '@material-tailwind/react';
 import React, { useContext, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom';
+import MenuHeader from './Menu';
 
 const Header = ({ shop, like, singup, setSIngup }) => {
     const [menu, setMenu] = useState(false);
@@ -79,7 +80,7 @@ const Header = ({ shop, like, singup, setSIngup }) => {
 
                 </div>
                 {menu &&
-                    <div className='w-full absolute bg-white top-[60px] left-0 z-30 lg:hidden'>
+                    <div className='w-full h-screen fixed top-0 right-0 bg-white lg:hidden z-30'>
                         <div className='relative'>
                             <nav className='py-10 pl-4'>
                                 <ul className='space-y-10'>
@@ -114,6 +115,9 @@ const Header = ({ shop, like, singup, setSIngup }) => {
                                     <span className='font-medium text-base leading-normal'>Войти</span>
                                 </li>
                             </ul>
+                            <button className='w-5 ml-5 absolute top-7 right-10' onClick={() => setMenu(!menu)}>
+                                <i className={`fas ${!menu ? `fa-bars` : `fa-xmark text-red-500`} fa-lg`}></i>
+                            </button>
                         </div>
                     </div>
                 }
@@ -121,7 +125,7 @@ const Header = ({ shop, like, singup, setSIngup }) => {
             <div className='-z-30 bg-black mb-4'>
                 <div className='w-full max-w-[1300px] mx-auto px-5'>
                     <marquee>
-                        <div className='font-bold text-md text-white pb-2 pt-3 uppercase' style={{wordSpacing: '100px'}}>
+                        <div className='font-bold text-md text-white pb-2 pt-3 uppercase' style={{ wordSpacing: '100px' }}>
                             Akstar Akstar Akstar Akstar Akstar Akstar
                         </div>
                     </marquee>
