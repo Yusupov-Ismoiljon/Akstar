@@ -32,13 +32,13 @@ const Blog = ({ shop, like, addMalumot }) => {
                                 return (
                                     <li key={e.id} data-aos-delay="0" data-aos="fade-up" className={`${e.title.toLowerCase().includes(searchQuery.toLowerCase()) ? 'block' : 'hidden'} show rounded-xl p-4 mb-14 aos-init aos-animate`}>
                                         <Link to={`/malumotlar/${e.id}`} onClick={() => addMalumot(e.id)}>
-                                            <img className='w-full h-[300px] rounded-xl mb-4' src={e.img} alt="" />
+                                            <img className='w-full h-[250px] rounded-xl mb-4' src={e.img} alt="" />
                                             <div>
                                                 <div className='flex justify-between items-center icon'>
                                                     <p>01.07.2023</p>
                                                     <span><i className="fa-solid fa-eye"></i> 1257</span>
                                                 </div>
-                                                <h2 className='font-bold text-2xl leading-normal'>{e.title}</h2>
+                                                <h2 className='font-bold text-lg leading-normal'>{e.title}</h2>
                                             </div>
                                         </Link>
                                     </li>
