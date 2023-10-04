@@ -11,28 +11,30 @@ const BlogMalumot = () => {
   return (
     <>
       <div className='w-full max-w-[1300px] mx-auto px-5 pb-14 mt-7'>
+        <Link className='text-lg logo mb-5 inline-block' to={'/ьлог'}>
+          Блог вернуться к
+        </Link>
         <div className='xl:flex xl:justify-between'>
-          <div className='md:w-[630px] w-[328]'>
+          <div className='md:w-[630px] w-[328px]'>
             <div>
               <h1 className='font-bold leading-normal text-4xl'>{data.title}</h1>
               <span className='icon'>19 июля 2022</span>
             </div>
             <p className='font-bold text-lg leading-6'>{data.title1}</p>
-            <img className='w-full md:h-[500px] rounded-xl' src={data.img2} alt="" aria-hidden='false' />
+            <img className='w-full md:h-[500px] rounded-xl' src={data.img} alt="" aria-hidden='false' />
             <p className='font-normal text-base leading-6'>{data.naprumir}</p>
             <p className='font-bold text-base leading-6'>{data.brit2} <span className='font-normal'>{data.text2}</span> </p>
-            <img className='w-full h-[280px] rounded-xl' src={data.img} alt="" aria-hidden='false' />
             <p className='font-normal text-base leading-6'>{data.pirv}</p>
           </div>
-          <div className='flex flex-col'>
-            <h3 className='font-bold text-2xl leading-normal'>Похожие статьи</h3>
+          <div className='flex flex-col w-[400px]'>
+            <h3 className='font-bold text-2xl leading-normal mb-3'>Похожие статьи</h3>
             <ul className='grid grid-cols-1 gap-7'>
               {bolg.map((e) => {
                 return (
-                  <li className='w-[300px]'>
-                    <Link to={`/malumotlar/${e.id}`}>
+                  <li className='w-full'>
+                    <Link onClick={()=> window.scrollTo(0,0)} to={`/malumotlar/${e.id}`}>
                       <img className='rounded-lg mb-2' src={e.img} alt="" aria-hidden='false' />
-                      <p>{e.text}</p>
+                      <p className='text-xl'>{e.title}</p>
                     </Link>
                   </li>
                 )
