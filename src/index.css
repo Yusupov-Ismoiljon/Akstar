@@ -43,11 +43,15 @@ a.active {
 
 .swiper-slide img {
     display: block;
-    width: 90%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
 /* Aloqada CSS fayli */
 .scroll-mt-0 {
     top: 0;
+}
+
+.hero .swiper-slide img {
+    width: 90%;
 }

@@ -23,7 +23,8 @@ const Hero = () => {
 
   return (
     <>
-      <div className='w-full max-w-[1300px] mx-auto px-5 mb-10'>
+    {/* Hero */}
+      <div className='w-full max-w-[1300px] mx-auto px-5 mb-10 hero'>
         <Swiper
           onInit={(swiper) => setSlide(swiper)}
           loop={true}
