@@ -16,7 +16,7 @@ export default function MySwiperAyolar({ addCart1, addLike, removeLike, e }) {
             <button onClick={() => toggleLike(e.id)} className="absolute w-7 h-7 top-4 right-4 z-30">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="like"><path fill={`${liked ? 'red' : 'white'}`} d="M11.692 1C10.123 1 8.753 1.946 8 3.182 7.247 1.946 5.877 1 4.308 1 1.928 1 0 2.899 0 5.242c0 1.173.468 2.246 1.231 3.031C2.963 10.054 8 15 8 15s5.037-4.946 6.769-6.727A4.341 4.341 0 0 0 16 5.242C16 2.899 14.072 1 11.692 1z"></path></svg>
             </button>
-            <img className="w-full brightness-90 rounded-lg" style={{ objectFit: 'inherit', height: '350px' }} src={e.img} alt="new product" />
+            <img className="w-full brightness-90 rounded-t-lg" style={{ objectFit: 'inherit', height: '350px' }} src={e.img} alt="new product" />
             <div className='p-3'>
                 <div className="grow">
                     <h3 className="font-bold text-sm sm:text-base brend">{e.lc}</h3>
