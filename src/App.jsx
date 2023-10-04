@@ -164,13 +164,12 @@ export default function App() {
 
     setShop([...tempArr]);
   };
-
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route element={<ReactLayouts shop={shop} like={like} addCart={addCart} addCart1={addCart1} addCart2={addCart2} addLike={addLike} removeLike={removeLike} addLike1={addLike1} />}>
         <Route path="/" element={<Frame addCart={addCart} addCart1={addCart1} addCart2={addCart2} addLike={addLike} addLike1={addLike1} addLike2={addLike2} removeLike={removeLike} removeLike1={removeLike1} removeLike2={removeLike2} />} />
         <Route path="/erkaklerkiyimlari/:id" element={<Guitar addCart={addCart} addLike={addLike} removeLike={removeLike} />} />
-        <Route path="/ayolarkimlari/:id" element={<AyolKiyim addCart1={addCart1} addLike={addLike} removeLike={removeLike} />} />
+        <Route path="/ayolarkimlari/:id" element={<AyolKiyim addCart1={addCart1} addLike1={addLike1} removeLike1={removeLike1} />} />
         <Route path="/bolalar/:id" element={<KitsData addCart2={addCart2} addLike2={addLike2} removeLike2={removeLike2} />} />
         <Route path="магазин" element={<Magazin shop={shop} setShop={setShop} addCart={addCart} addCartPul={addCartPul} />} />
         <Route path="/like" element={<CardLike shop={shop} like={like} addLike={addLike} removeLike={removeLike} />} />
