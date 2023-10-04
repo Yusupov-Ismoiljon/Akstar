@@ -10,7 +10,7 @@ import { useParams } from 'react-router-dom';
 import MySwiperAyolar from '../layouts/SwiperAyol';
 
 
-const AyolKiyim = ({ addCart1, addLike, removeLike }) => {
+const AyolKiyim = ({ addCart1, addLike, addLike1, removeLike1 }) => {
     const [tab, setTab] = useState(1);
     const setActiveTab = (id) => {
         setTab(id)
@@ -224,7 +224,7 @@ const AyolKiyim = ({ addCart1, addLike, removeLike }) => {
                 >
                     {api2.map((e) => (
                         <SwiperSlide key={e.id}>
-                            <MySwiperAyolar addCart1={addCart1} addLike={addLike} removeLike={removeLike} e={e} />
+                            <MySwiperAyolar addLike1={addLike1} removeLike1={removeLike1} e={e} />
                         </SwiperSlide>
                     ))}
                 </Swiper>
