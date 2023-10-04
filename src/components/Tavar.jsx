@@ -15,7 +15,7 @@ const Tavar = () => {
               <p data-aos="fade-right" className='font-bold text-xl text-white aos-init aos-animate'>Мы продаем ткань</p>
             </div>
           </div>
-          <img data-aos="fade-left" className='md:w-[500px] md:h-[400px] sm:w-[200px] sm:h-[200px] w-full h-[300px] rounded-xl aos-init aos-animate' src="./img/erkak12.jpeg" alt="" />
+          <img  className='md:w-[500px] md:h-[400px] sm:w-[200px] sm:h-[200px] w-full h-[300px] rounded-xl aos-init aos-animate' src="./img/erkak12.jpeg" alt="" />
         </div>
       </div>
       <div>
