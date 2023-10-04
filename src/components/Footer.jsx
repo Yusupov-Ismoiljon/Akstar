@@ -37,11 +37,6 @@ const Footer = () => {
                     <i className="fa-brands fa-vk fa-2xl text-white"></i>
                   </a>
                 </li>
-                <li data-aos-delay="100" data-aos="fade-up" className='aos-init aos-animate'>
-                  <a target="_blank" href="https://t.me/Ismoiljon_12_04">
-                    <i className="fa-brands fa-vk fa-2xl text-white"></i>
-                  </a>
-                </li>
               </ul>
             </div>
           </div>
