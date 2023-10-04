@@ -84,22 +84,22 @@ const Header = ({ shop, like, singup, setSIngup }) => {
                             <nav className='py-10 pl-4'>
                                 <ul className='space-y-10'>
                                     <li>
-                                        <NavLink to='/'>
+                                        <NavLink onClick={()=> setMenu(!menu)} to='/'>
                                             <span className='font-semibold text-lg leading-normal'>Главная</span>
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to='/like'>
+                                        <NavLink onClick={()=> setMenu(!menu)} to='/like'>
                                             <span className='font-semibold text-lg leading-normal'>Академия</span>
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to='/магазин'>
+                                        <NavLink onClick={()=> setMenu(!menu)} to='/магазин'>
                                             <span className='font-semibold text-lg leading-normal'>Магазин</span>
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to='/ьлог'>
+                                        <NavLink onClick={()=> setMenu(!menu)} to='/ьлог'>
                                             <span className='font-semibold text-lg leading-normal'>Блог</span>
                                         </NavLink>
                                     </li>
