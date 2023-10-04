@@ -165,7 +165,6 @@ export default function App() {
     setShop([...tempArr]);
   };
 
-  console.log(like);
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route element={<ReactLayouts shop={shop} like={like} addCart={addCart} addCart1={addCart1} addCart2={addCart2} addLike={addLike} removeLike={removeLike} addLike1={addLike1} />}>
