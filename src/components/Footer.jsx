@@ -49,16 +49,16 @@ const Footer = () => {
             <h3 className='font-bold text-2xl leading-normal mb-7'>Меню</h3>
             <ul className='space-y-5'>
               <li>
-                <Link className='font-normal text-lg leading-normal' to='/'>Главная</Link>
+                <Link onClick={() => window.scrollTo(0, 0)} className='font-normal text-lg leading-normal' to='/'>Главная</Link>
               </li>
               <li>
-                <Link className='font-normal text-lg leading-normal' to='/like'>Любимые</Link>
+                <Link onClick={() => window.scrollTo(0, 0)} className='font-normal text-lg leading-normal' to='/like'>Любимые</Link>
               </li>
               <li>
-                <Link className='font-normal text-lg leading-normal' to={'магазин'}>Корзина</Link>
+                <Link onClick={() => window.scrollTo(0, 0)} className='font-normal text-lg leading-normal' to={'магазин'}>Корзина</Link>
               </li>
               <li>
-                <Link className='font-normal text-lg leading-normal' to={'/ьлог'}>Блог</Link>
+                <Link onClick={() => window.scrollTo(0, 0)} className='font-normal text-lg leading-normal' to={'/ьлог'}>Блог</Link>
               </li>
             </ul>
           </div>
