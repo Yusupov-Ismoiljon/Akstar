@@ -18,8 +18,8 @@ const CardLike = ({ shop, like, removeLike }) => {
                   <div className='relative grow'>
                     <img className='w-[328px] h-[238px] rounded-md brightness-90 mb-3' src={e.img} alt="product img" />
                     {/* delete */}
-                    <button className='flex items-center absolute top-2 right-2 hover:text-red-500 duration-500' onClick={() => removeLike(e.id)}>
-                      <i className="fa-solid fa-trash-can ml-2"></i>
+                    <button className='flex items-center absolute top-5 right-3 text-red-500 duration-500' onClick={() => removeLike(e.id)}>
+                      <i className="fa-solid fa-trash-can fa-lg ml-2"></i>
                     </button>
                   </div>
 
