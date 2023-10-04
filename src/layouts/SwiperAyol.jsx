@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
-export default function MySwiperAyolar({ addCart1, addLike, removeLike, e }) {
+export default function MySwiperAyolar({ addCart1, addLike1, removeLike1, e }) {
     const [liked, setLiked] = useState(false);
     const toggleLike = (id) => {
         setLiked(!liked);
         if (!liked) {
-            addLike(id);
+            addLike1(id);
         } else {
-            removeLike(id);
+            removeLike1(id);
         }
     }
     return (

@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-export default function MySwiperBola({ addCart, addLike, removeLike, e }) {
+export default function MySwiperBola({ addCart, addLike2, removeLike2, e }) {
+    const [liked, setLiked] = useState(false)
     const toggleLike = (id) => {
         setLiked(!liked);
         if (!liked) {
-            addLike(id);
+            addLike2(id);
         } else {
-            removeLike(id);
+            removeLike2(id);
         }
     }
     return (
