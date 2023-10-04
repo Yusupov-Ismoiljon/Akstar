@@ -14,8 +14,8 @@ const BlogMalumot = () => {
         <Link className='text-lg logo mb-5 inline-block' to={'/ьлог'}>
           Блог вернуться к
         </Link>
-        <div className='xl:flex xl:justify-between'>
-          <div className='md:w-[630px] w-[328px]'>
+        <div className='xl:flex xl:justify-between gap-16'>
+          <div className='md:w-[730px] w-[328px]'>
             <div>
               <h1 className='font-bold leading-normal text-4xl'>{data.title}</h1>
               <span className='icon'>19 июля 2022</span>
@@ -26,7 +26,7 @@ const BlogMalumot = () => {
             <p className='font-bold text-base leading-6'>{data.brit2} <span className='font-normal'>{data.text2}</span> </p>
             <p className='font-normal text-base leading-6'>{data.pirv}</p>
           </div>
-          <div className='flex flex-col w-[400px]'>
+          <div className='flex flex-col w-[450px]'>
             <h3 className='font-bold text-2xl leading-normal mb-3'>Похожие статьи</h3>
             <ul className='grid grid-cols-1 gap-7'>
               {bolg.map((e) => {
