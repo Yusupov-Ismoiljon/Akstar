@@ -7,9 +7,9 @@ import { Outlet } from 'react-router-dom'
 
 const ReactLayouts = ({ shop, like, singup, setSIngup }) => {
     return (
-        <div>
+        <div className='flex flex-col h-screen'>
             <Header shop={shop} like={like} singup={singup} setSIngup={setSIngup}/>
-            <main>
+            <main className=' grow'>
                 <Outlet/>
             </main>
             <Footer />

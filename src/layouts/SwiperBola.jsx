@@ -26,9 +26,9 @@ export default function MySwiperBola({ addCart, addLike, removeLike, e }) {
                     <button onClick={() => addCart(e.id)} className="w-full font-semibold text-base leading-6 text-[#1B37A3] py-1 px-9 border-2 border-[#1B37A3] rounded-md mr-2">
                         {e.karzinka}
                     </button>
-                    <Link to={`/bolalar/${e.id}`} className="flex justify-center items-center px-5 font-semibold text-base leading-6  text-white bg-[#1B37A3] rounded-md scroll-mt-0">
-                    i
-                </Link>
+                    <Link to={`/bolalar/${e.id}`} onClick={() => window.scrollTo(0, 0)} className="flex justify-center items-center px-5 font-semibold text-base leading-6  text-white bg-[#1B37A3] rounded-md scroll-mt-0">
+                        i
+                    </Link>
                 </div>
             </div>
         </div >

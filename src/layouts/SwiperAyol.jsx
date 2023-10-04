@@ -26,7 +26,7 @@ export default function MySwiperAyolar({ addCart1, addLike, removeLike, e }) {
                     <button onClick={() => addCart1(e.id)} className="w-full font-semibold text-base leading-6 text-[#1B37A3] py-1 px-9 border-2 border-[#1B37A3] rounded-md mr-2">
                         {e.karzinka}
                     </button>
-                    <Link to={`/ayolarkimlari/${e.id}`} onClick={window.scrollTo(0,0)} className="flex justify-center items-center px-5 font-semibold text-base leading-6  text-white bg-[#1B37A3] rounded-md scroll-mt-0">
+                    <Link to={`/ayolarkimlari/${e.id}`} onClick={()=> window.scrollTo(0,0)} className="flex justify-center items-center px-5 font-semibold text-base leading-6  text-white bg-[#1B37A3] rounded-md scroll-mt-0">
                         i
                     </Link>
                 </div>
