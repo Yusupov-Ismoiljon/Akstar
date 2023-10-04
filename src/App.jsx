@@ -116,9 +116,11 @@ export default function App() {
   };
 
   const addLike = (i) => {
-    const productToAdd = api.find((e) => e.id === i);
-    setLike([...like, { ...productToAdd, miqdor: 1 }]);
-
+    const found = like.find((e) => e.id === i);
+    if (!found) {
+      const productToAdd = api.find((e) => e.id === i);
+      setLike([...like, { ...productToAdd, miqdor: 1 }]);
+    }
   };
 
   const removeLike = (i) => {
@@ -168,7 +170,7 @@ export default function App() {
     createRoutesFromElements(
       <Route element={<ReactLayouts shop={shop} like={like} addCart={addCart} addCart1={addCart1} addCart2={addCart2} addLike={addLike} removeLike={removeLike} addLike1={addLike1} />}>
         <Route path="/" element={<Frame addCart={addCart} addCart1={addCart1} addCart2={addCart2} addLike={addLike} addLike1={addLike1} addLike2={addLike2} removeLike={removeLike} removeLike1={removeLike1} removeLike2={removeLike2} />} />
-        <Route path="/guitar/:id" element={<Guitar addCart={addCart} addLike={addLike} removeLike={removeLike} />} />
+        <Route path="/erkaklerkiyimlari/:id" element={<Guitar addCart={addCart} addLike={addLike} removeLike={removeLike} />} />
         <Route path="/ayolarkimlari/:id" element={<AyolKiyim addCart1={addCart1} addLike={addLike} removeLike={removeLike} />} />
         <Route path="/bolalar/:id" element={<KitsData addCart2={addCart2} addLike2={addLike2} removeLike2={removeLike2} />} />
         <Route path="магазин" element={<Magazin shop={shop} setShop={setShop} addCart={addCart} addCartPul={addCartPul} />} />
