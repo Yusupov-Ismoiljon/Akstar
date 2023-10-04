@@ -1,7 +1,6 @@
 import { Badge, Menu } from '@material-tailwind/react';
 import React, { useContext, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom';
-import MenuHeader from './Menu';
 
 const Header = ({ shop, like, singup, setSIngup }) => {
     const [menu, setMenu] = useState(false);
