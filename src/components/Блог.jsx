@@ -12,9 +12,7 @@ const Blog = ({ shop, like, addMalumot }) => {
         <>
             <div className='w-full max-w-[1300px] mx-auto px-5'>
                 <div className='md:flex justify-between mb-5'>
-                    <div>
-                        <h2 className='fond-bold text-4xl'>Блог</h2>
-                    </div>
+                    <h2 className='fond-bold text-4xl mb-5 md:mb-0'>Блог</h2>
 
                     <div className='flex md:justify-end md:w-[410px] relative'>
                         <input
@@ -35,7 +33,7 @@ const Blog = ({ shop, like, addMalumot }) => {
                                     <li key={e.id} data-aos-delay="0" data-aos="fade-up" className={`${e.title.toLowerCase().includes(searchQuery.toLowerCase()) ? 'block' : 'hidden'} show rounded-xl p-4 mb-14 aos-init aos-animate`}>
                                         <Link to={`/malumotlar/${e.id}`} onClick={() => addMalumot(e.id)}>
                                             <img className='rounded-xl mb-4' src={e.img} alt="" />
-                                            <div className='space-y-2.5'>
+                                            <div>
                                                 <div className='flex justify-between items-center icon'>
                                                     <p>01.07.2023</p>
                                                     <span><i className="fa-solid fa-eye"></i> 1257</span>

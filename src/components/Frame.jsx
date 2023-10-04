@@ -28,15 +28,16 @@ const Frame = ({ addCart, addCart1, addCart2, addLike, removeLike, addLike1, rem
       <div>
         <Hero />
         <Tavar />
-        <div className='w-full max-w-[1300px] mx-auto px-10 mt-10'>
+        <div className='w-full max-w-[1300px] mx-auto px-5 mt-10'>
           <div className="mb-4">
-            <div className="sm:flex items-center justify-between border-[#191919] border-b-2 gap-5">
-              <button
+            <div className="border-[#191919] border-b-2">
+              <div className='sm:flex items-center justify-between mb-5'>
+              <h2
                 data-aos="fade-right"
-                className="flex items-center aos-init aos-animate mb-5"
+                className="flex items-center md:font-bold font-medium text-xl md:text-2xl brend aos-init aos-animate mb-3 sm:mb-0 md:mb-0 lg:mb-0 xl:mb-0"
               >
-                <span className="md:font-bold font-medium text-xl md:text-2xl brend">Фильтр</span>
-              </button>
+                Фильтр
+              </h2>
               <div>
                 <Select onChange={(e) => add(e)} label='Фильтр'>
                   <Option value='фильтр' disabled>Фильтр</Option>
@@ -44,6 +45,8 @@ const Frame = ({ addCart, addCart1, addCart2, addLike, removeLike, addLike1, rem
                   <Option value='opt2'>Для женщин</Option>
                   <Option value='opt3'>Для детей</Option>
                 </Select>
+              </div>
+
               </div>
             </div>
           </div>

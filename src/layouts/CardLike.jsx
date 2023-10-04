@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 const CardLike = ({ shop, like, removeLike }) => {
   return (
     <div>
-      <div className='w-full max-w-[1300px] mx-auto px-10 py-10'>
+      <div className='w-full max-w-[1300px] mx-auto px-5 py-10'>
         <h1 className='font-bold text-4xl leading-normal mb-7'>Любимые</h1>
         <div>
           <div className={`flex justify-center items-center w-full ${like.length === 0 ? 'block' : 'hidden'}`}>

@@ -40,7 +40,7 @@ const Magazin = ({ shop, setShop, addCartPul}) => {
   return (
     <>
       <section className='mb-10'>
-        <div className='w-full max-w-[1300px] mx-auto px-10'>
+        <div className='w-full max-w-[1300px] mx-auto px-5'>
           <h2 className='font-bold text-4xl leading-normal mb-[30px]'>Корзина</h2>
           <div className={`xl:flex xl:justify-between gap-7 ${shop.length >= 0 ? 'block' : 'hidden'}`}>
             <ul className='flex flex-col gap-5 space-y-3'>

@@ -6,7 +6,7 @@ const Header = ({ shop, like, singup, setSIngup }) => {
     const [menu, setMenu] = useState(false);
     return (
         <header>
-            <div className='w-full max-w-[1300px] mx-auto px-10 py-3 mb-3'>
+            <div className='w-full max-w-[1300px] mx-auto px-5 md:px-10 py-3 mb-3'>
                 <div className='flex items-center justify-between'>
                     <Link to={`/`}>
                         <h1 className='font-russo font-light md:text-[40.34px] text-[23px] logo leading-[135%] uppercase'>akstar</h1>
@@ -119,13 +119,10 @@ const Header = ({ shop, like, singup, setSIngup }) => {
                 }
             </div>
             <div className='-z-30 bg-black mb-4'>
-                <div className='w-full max-w-[1300px] mx-auto px-10'>
+                <div className='w-full max-w-[1300px] mx-auto px-5'>
                     <marquee>
-                        <div className='font-raleway text-white pb-3 pt-4'>
-                            <span className='text-base leading-normal uppercase'>Промокод <span className='font-extrabold'>CROW</span>- скидка 25% на все курсы гитарной академии</span>
-                            <span className='text-base leading-normal uppercase'>Промокод <span className='font-extrabold'>CROW</span>- скидка 25% на все курсы гитарной академии</span>
-                            <span className='text-base leading-normal uppercase'>Промокод <span className='font-extrabold'>CROW</span>- скидка 25% на все курсы гитарной академии</span>
-                            <span className='text-base leading-normal uppercase'>Промокод <span className='font-extrabold'>CROW</span>- скидка 25% на все курсы гитарной академии</span>
+                        <div className='font-bold text-md text-white pb-2 pt-3 uppercase' style={{wordSpacing: '100px'}}>
+                            Akstar Akstar Akstar Akstar Akstar Akstar
                         </div>
                     </marquee>
                 </div>

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css/pagination';
+import { EffectFade, Navigation, Pagination } from 'swiper/modules';
 
 
 const Hero = () => {
@@ -22,23 +23,25 @@ const Hero = () => {
 
   return (
     <>
-      <div className='w-full max-w-[1300px] mx-auto px-10'>
+      <div className='w-full max-w-[1300px] mx-auto px-5 mb-10'>
         <Swiper
           onInit={(swiper) => setSlide(swiper)}
           loop={true}
-
-          autoplay={true}
-          // navigation={true}
-          modules={[Pagination]}
-          className="relative mySwiper mb-5"
+          spaceBetween={30}
+          effect={"fade"}
+          pagination={{
+            clickable: true
+          }}
+          modules={[EffectFade, Navigation, Pagination]}
+          className="mySwiper relative"
         >
-          <SwiperSlide className='h-[383px]' >
+          <SwiperSlide className='h-[383px]'>
             <img src="./img/sweper1.jpg" alt="" />
           </SwiperSlide>
-          <SwiperSlide className='h-[382px]' >
+          <SwiperSlide className='h-[383px]'>
             <img src="./img/swper2.jpg" alt="" />
           </SwiperSlide>
-          <SwiperSlide className='h-[382px]' >
+          <SwiperSlide className='h-[383px]'>
             <img src="./img/swper3.jpg" alt="" />
           </SwiperSlide>
           <div>
@@ -54,12 +57,6 @@ const Hero = () => {
             </button>
           </div>
         </Swiper>
-      </div>
-      <div className='bg-[#1b37a31a] mb-8'>
-        <div className='w-full max-w-[1300px] mx-auto text-center px-5 py-3'>
-          <span className='font-semibold text-base leading-normal mr-2'>TELEGRAM-КАНАЛ МУЗЫКАЛЬНОГО СООБЩЕСТВА AKSTAR</span>
-          <i className={`fa-brands fa-telegram`}></i>
-        </div>
       </div>
     </>
   )

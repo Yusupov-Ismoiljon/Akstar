@@ -43,7 +43,7 @@ const Main = ({ addCart, addLike, removeLike, e }) => {
             {e.karzinka}
           </button>
           <div>
-            <Link to={`/guitar/${e.id}`} className="px-5 py-2 font-semibold text-base leading-6  text-white bg-[#1B37A3] rounded-md">
+            <Link to={`/erkaklerkiyimlari/${e.id}`} className="px-5 py-2 font-semibold text-base leading-6  text-white bg-[#1B37A3] rounded-md">
               i
             </Link>
           </div>

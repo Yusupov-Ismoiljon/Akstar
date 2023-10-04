@@ -25,7 +25,7 @@ const KitsData = ({ addCart2, addLike2, removeLike2 }) => {
     }, []);
     return (
         <div>
-            <div className='w-full max-w-[1300px] mx-auto px-10 py-10 mb-16'>
+            <div className='w-full max-w-[1300px] mx-auto px-5 py-10 mb-16'>
                 {/* img-tab */}
                 <div className={`grid xl:grid-cols-2 grid-cols-1 gap-7 mb-16`}>
                     <div className='md:flex md:items-center md:justify-between'>
@@ -196,7 +196,7 @@ const KitsData = ({ addCart2, addLike2, removeLike2 }) => {
                     </div>
                 </div>
             </div>
-            <div className='w-full max-w-[1300px] mx-auto px-10 mb-14'>
+            <div className='w-full max-w-[1300px] mx-auto px-5 mb-14'>
                 <Swiper
                     spaceBetween={30}
                     loop={true}

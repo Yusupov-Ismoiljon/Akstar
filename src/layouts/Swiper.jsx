@@ -29,7 +29,7 @@ export default function MySwiper({ addCart, addLike, removeLike, e }) {
                     <button onClick={() => addCart(e.id)} className="w-full font-semibold text-base leading-6 text-[#1B37A3] py-1 px-9 border-2 border-[#1B37A3] rounded-md mr-2">
                         {e.karzinka}
                     </button>
-                    <Link to={`/guitar/${e.id}`} onClick={window.scrollTo(0,0)}      className="px-5 py-2 font-semibold text-base leading-6  text-white bg-[#1B37A3] rounded-md">
+                    <Link to={`/erkaklerkiyimlari/${e.id}`} onClick={()=> window.scrollTo(0,0)} className="px-5 py-2 font-semibold text-base leading-6  text-white bg-[#1B37A3] rounded-md">
                         i
                     </Link>
                 </div>

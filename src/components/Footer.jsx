@@ -4,14 +4,13 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <div className='bg-[#1B37A3] text-white'>
-      <div className='w-full max-w-[1300px] mx-auto px-10 py-12'>
+      <div className='w-full max-w-[1300px] mx-auto px-5 py-12'>
         <div className="md:flex md:justify-between gap-7">
-          <div>
+          <div className='mb-7 md:mb-0'>
             <Link to={`/`}>
               <h1 data-aos-delay="100" data-aos="fade-up" className='font-russo font-light md:text-[40.34px] text-[23px] text-white leading-[135%] uppercase mb-7  aos-init aos-animate'>akstar</h1>
             </Link>
-            <div className='space-y-4'>
-              <span data-aos-delay="100" data-aos="fade-up" className='font-bold text-2xl leading-normal aos-init aos-animate'>Музыкальное сообщество</span>
+            <div>
               <ul className='flex space-x-3'>
                 <li data-aos-delay="100" data-aos="fade-up" className='aos-init aos-animate'>
                   <a target="_blank" href="https://t.me/Ismoiljon_12_04">
@@ -46,7 +45,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div>
+          <div className='mb-7 md:mb-0'>
             <h3 className='font-bold text-2xl leading-normal mb-7'>Меню</h3>
             <ul className='space-y-5'>
               <li>

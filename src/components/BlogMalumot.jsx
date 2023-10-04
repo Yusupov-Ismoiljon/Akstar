@@ -12,13 +12,13 @@ const BlogMalumot = () => {
     <>
       <div className='w-full max-w-[1300px] mx-auto px-5 pb-14 mt-7'>
         <div className='xl:flex xl:justify-between'>
-          <div className='w-[630px] space-y-4'>
+          <div className='md:w-[630px] w-[328]'>
             <div>
               <h1 className='font-bold leading-normal text-4xl'>{data.title}</h1>
               <span className='icon'>19 июля 2022</span>
             </div>
             <p className='font-bold text-lg leading-6'>{data.title1}</p>
-            <img className='h-[500px] rounded-xl' src={data.img2} alt="" aria-hidden='false' />
+            <img className='w-full md:h-[500px] rounded-xl' src={data.img2} alt="" aria-hidden='false' />
             <p className='font-normal text-base leading-6'>{data.naprumir}</p>
             <p className='font-bold text-base leading-6'>{data.brit2} <span className='font-normal'>{data.text2}</span> </p>
             <img className='w-full h-[280px] rounded-xl' src={data.img} alt="" aria-hidden='false' />
