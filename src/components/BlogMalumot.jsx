@@ -15,7 +15,7 @@ const BlogMalumot = () => {
           Блог вернуться к
         </Link>
         <div className='xl:flex xl:justify-between gap-16'>
-          <div className='md:w-[730px] w-[328px]'>
+          <div className='md:w-[730px] sm:w-[328px] w-full'>
             <div>
               <h1 className='font-bold leading-normal text-4xl'>{data.title}</h1>
               <span className='icon'>19 июля 2022</span>
@@ -26,12 +26,12 @@ const BlogMalumot = () => {
             <p className='font-bold text-base leading-6'>{data.brit2} <span className='font-normal'>{data.text2}</span> </p>
             <p className='font-normal text-base leading-6'>{data.pirv}</p>
           </div>
-          <div className='flex flex-col w-[450px]'>
+          <div className='flex flex-col w-full md:w-[450px]'>
             <h3 className='font-bold text-2xl leading-normal mb-3'>Похожие статьи</h3>
-            <ul className='grid grid-cols-1 gap-7'>
+            <ul className='grid gap-7'>
               {bolg.map((e) => {
                 return (
-                  <li className='w-full'>
+                  <li>
                     <Link onClick={()=> window.scrollTo(0,0)} to={`/malumotlar/${e.id}`}>
                       <img className='rounded-lg mb-2' src={e.img} alt="" aria-hidden='false' />
                       <p className='text-xl'>{e.title}</p>
