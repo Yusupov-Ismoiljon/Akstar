@@ -8,10 +8,10 @@ const Cta = () => {
         <div className='py-7'>
           <h2 className='font-bold text-4xl leading-6 mb-10'>Свяжитесь с нами сейчас и получите <span>скидки</span></h2>
 
-          <div className='md:flex text-center justify-center items-center gap-5 sm:space-y-0 space-y-5 mx-auto'>
-            <a className='w-52 inline-block border-2 border-[#008DFF] py-3 rounded-xl' target='_blank' href="https://t.me/IsmoiljonFD"><i class="fa-brands fa-telegram fa-lg mr-2"></i>Телеграмма</a>
-            <a className='inline-block border-2 border-[#008DFF] py-3 px-10 rounded-xl' href="tel:+998932598079"><i class="fa-solid fa-square-phone fa-lg mr-2"></i>Telefon</a>
-            <a className='inline-block border-2 border-[#008DFF] py-3 px-10 rounded-xl' target='_blank' href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope fa-lg mr-2"></i>Электронная почта</a>
+          <div className='flex text-center justify-center items-center gap-5 sm:space-y-0 space-y-5 mx-auto'>
+            <a className='flex justify-center text-center items-center md:border-2 md:border-[#008DFF] md:py-3 md:px-10' target='_blank' href="https://t.me/IsmoiljonFD"><i class="fa-brands fa-telegram md:fa-lg fa-2xl mr-2"></i><span className='md:block hidden'>Телеграмма</span></a>
+            <a className='flex justify-center text-center items-center md:border-2 md:border-[#008DFF] md:py-3 md:px-10' href="tel:+998932598079"><i class="fa-solid fa-square-phone md:fa-lg fa-2xl mr-2"></i><span  className='md:block hidden'>Telefon</span></a>
+            <a className='flex justify-center text-center items-center md:border-2 md:border-[#008DFF] md:py-3 md:px-10' target='_blank' href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope md:fa-lg fa-2xl mr-2"></i><span  className='md:block hidden'>Электронная почта</span></a>
           </div>
         </div>
       </div>
