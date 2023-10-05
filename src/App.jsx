@@ -128,8 +128,11 @@ export default function App() {
     setLike(updatedShop);
   };
   const addLike1 = (i) => {
-    const productToAdd = api2.find((e) => e.id === i);
-    setLike([...like, { ...productToAdd, miqdor: 1 }]);
+    const updatedShop = like.filter((e) => e.id !== i);
+    if (updatedShop) {
+      const productToAdd = api2.find((e) => e.id === i);
+      setLike([...like, { ...productToAdd, miqdor: 1 }]);
+    }
 
   };
 
@@ -138,8 +141,11 @@ export default function App() {
     setLike(updatedShop);
   };
   const addLike2 = (i) => {
-    const productToAdd = api3.find((e) => e.id === i);
-    setLike([...like, { ...productToAdd, miqdor: 1 }]);
+    const updatedShop = like.filter((e) => e.id !== i);
+    if (updatedShop) {
+      const productToAdd = api3.find((e) => e.id === i);
+      setLike([...like, { ...productToAdd, miqdor: 1 }]);
+    }
 
   };
 
