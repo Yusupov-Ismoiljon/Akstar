@@ -6,7 +6,7 @@ const Cta = () => {
     <div className='bg-[#008DFF] text-[#008DFF] text-center py-10'>
       <div className='w-full max-w-[1300px] mx-auto px-5 bg-white rounded-2xl'>
         <div className='py-7'>
-          <h2 className='font-bold text-4xl leading-6 mb-10'>Свяжитесь с нами сейчас и получите <span>скидки</span></h2>
+          <h2 className='font-bold md:text-4xl text-3xl leading-6 mb-10'>Свяжитесь с нами сейчас и получите <span>скидки</span></h2>
 
           <div className='flex text-center justify-center items-center gap-5 mx-auto'>
             <a className='flex justify-center text-center items-center md:border-2 md:border-[#008DFF] md:py-3 md:px-10' target='_blank' href="https://t.me/IsmoiljonFD"><i class="fa-brands fa-telegram md:fa-lg fa-2xl mr-2"></i><span className='md:block hidden'>Телеграмма</span></a>
