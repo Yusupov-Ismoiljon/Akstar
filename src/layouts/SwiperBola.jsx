@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-export default function MySwiperBola({ addCart, addLike2, removeLike2, e }) {
+export default function MySwiperBola({ addCart2, addLike2, removeLike2, e }) {
     const [liked, setLiked] = useState(false)
     const toggleLike = (id) => {
         setLiked(!liked);
@@ -23,7 +23,7 @@ export default function MySwiperBola({ addCart, addLike2, removeLike2, e }) {
                     <span className="font-extrabold text-base sm:text-lg logo">{e.pul} ₽</span>
                 </div>
                 <div className="flex">
-                    <button onClick={() => addCart(e.id)} className="w-full font-semibold text-base leading-6 text-[#1B37A3] py-1 px-9 border-2 border-[#1B37A3] rounded-md mr-2">
+                    <button onClick={() => addCart2(e.id)} className="w-full font-semibold text-base leading-6 text-[#1B37A3] py-1 px-9 border-2 border-[#1B37A3] rounded-md mr-2">
                         {e.karzinka}
                     </button>
                     <Link to={`/bolalar/${e.id}`} onClick={() => window.scrollTo(0, 0)} className="flex justify-center items-center px-5 font-semibold text-base leading-6  text-white bg-[#1B37A3] rounded-md scroll-mt-0">

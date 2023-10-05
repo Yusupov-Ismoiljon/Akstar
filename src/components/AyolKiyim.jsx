@@ -224,7 +224,7 @@ const AyolKiyim = ({ addCart1, addLike, addLike1, removeLike1 }) => {
                 >
                     {api2.map((e) => (
                         <SwiperSlide key={e.id}>
-                            <MySwiperAyolar addLike1={addLike1} removeLike1={removeLike1} e={e} />
+                            <MySwiperAyolar addCart1={addCart1} addLike1={addLike1} removeLike1={removeLike1} e={e} />
                         </SwiperSlide>
                     ))}
                 </Swiper>
