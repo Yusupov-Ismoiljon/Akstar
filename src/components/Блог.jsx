@@ -49,7 +49,7 @@ const Blog = ({ shop, like, addMalumot }) => {
                         }
                     </ul>
                     {searchQuery.length > 0 && bolg.every(e => !e.title.toLowerCase().includes(searchQuery.toLowerCase())) && (
-                        <h2 className='flex justify-center items-center font-bold text-4xl text-red-500'>Нет информации :(</h2>
+                        <h2 className='flex justify-center items-center font-bold md:text-4xl text-2xl pb-10 text-red-500'>Нет информации :(</h2>
                     )}
 
                 </div>
