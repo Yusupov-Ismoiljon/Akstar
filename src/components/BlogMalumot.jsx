@@ -14,14 +14,14 @@ const BlogMalumot = () => {
         </Link>
         <div className='xl:flex xl:justify-between gap-16'>
           <div className='md:w-[730px] sm:w-[328px] w-full'>
-            <div>
-              <h1 className='font-bold leading-normal text-4xl'>{data.title}</h1>
+            <div className='mb-7'>
+              <h1 className='font-bold leading-normal text-4xl mb-1'>{data.title}</h1>
               <span className='icon'>19 июля 2022</span>
             </div>
-            <p className='font-bold text-lg leading-6'>{data.title1}</p>
-            <img className='w-full md:h-[500px] rounded-xl' src={data.img} alt="" aria-hidden='false' />
-            <p className='font-normal text-base leading-6'>{data.naprumir}</p>
-            <p className='font-bold text-base leading-6'>{data.brit2} <span className='font-normal'>{data.text2}</span> </p>
+            <p className='font-bold text-lg leading-6 mb-7'>{data.title1}</p>
+            <img className='w-full md:h-[500px] rounded-xl mb-4' src={data.img} alt="" aria-hidden='false' />
+            <p className='font-normal text-base leading-6 mb-4'>{data.naprumir}</p>
+            <p className='font-bold text-base leading-6 mb-4'>{data.brit2} <span className='font-normal'>{data.text2}</span> </p>
             <p className='font-normal text-base leading-6'>{data.pirv}</p>
           </div>
           <div className='flex flex-col w-full md:w-[450px]'>
