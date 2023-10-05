@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { bolg } from '../../public/data';
-import Footer from './Footer';
-import Header from './Header';
 
 const BlogMalumot = () => {
   const { id } = useParams();
