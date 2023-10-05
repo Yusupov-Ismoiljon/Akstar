@@ -63,10 +63,10 @@ const Guitar = ({ addCart }) => {
 
                     <div className='space-y-7'>
                         <div>
-                            <h2 className='font-bold text-[28px] leading-9 md:text-4xl md:leading-normal mb-4'>{e.l}</h2>
+                            <h2 className='font-bold text-[28px] leading-9 md:text-4xl md:leading-normal mb-4'>{e.lc}</h2>
                             <span className='font-bold text-sm text-[#9ACC6C]'>В наличии (4)</span>
                         </div>
-                        <p className='font-normal text-base leading-normal'>Фолк гитара с металлическими струнами, верхняя дека - ель, корпус - агатис, цвет натуральный, 39", с вырезом</p>
+                        <p className='font-normal text-base leading-normal'>{e.text}</p>
                         <div className='space-y-4'>
                             <h3 className='font-bold text-lg leading-normal brend'>Описание</h3>
                             <p className='font-normal text-base leading-6'>Акустическая гитара в корпусе джамбо, с очень мощным звуком и в то же время очень удобная.Инструмент огромных размеров, с эстетикой и звуковой концепцией, которая удивляет с первой секунды.Это одна из самых популярных акустических гитар, обеспечивающая насыщенное звучание с...</p>

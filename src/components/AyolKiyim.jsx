@@ -64,7 +64,7 @@ const AyolKiyim = ({ addCart1 }) => {
 
                     <div className='space-y-7'>
                         <div>
-                            <h2 className='font-bold text-[28px] leading-9 md:text-4xl md:leading-normal mb-4'>{e.l}</h2>
+                            <h2 className='font-bold text-[28px] leading-9 md:text-4xl md:leading-normal mb-4'>{e.lc}</h2>
                             <span className='font-bold text-sm text-[#9ACC6C]'>В наличии (4)</span>
                         </div>
                         <p className='font-normal text-base leading-normal'>Фолк гитара с металлическими струнами, верхняя дека - ель, корпус - агатис, цвет натуральный, 39", с вырезом</p>
