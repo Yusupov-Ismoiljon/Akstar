@@ -26,13 +26,19 @@ const BlogMalumot = () => {
           </div>
           <div className='flex flex-col w-full md:w-[450px]'>
             <h3 className='font-bold text-2xl leading-normal mb-3'>Похожие статьи</h3>
-            <ul className='grid gap-7'>
+            <ul className='w-full grid gap-7'>
               {bolg.map((e) => {
                 return (
-                  <li>
-                    <Link onClick={()=> window.scrollTo(0,0)} to={`/malumotlar/${e.id}`}>
-                      <img className='rounded-lg mb-2' src={e.img} alt="" aria-hidden='false' />
-                      <p className='text-xl'>{e.title}</p>
+                  <li className='show p-4'>
+                    <Link className='flex justify-between gap-5' onClick={() => window.scrollTo(0, 0)} to={`/malumotlar/${e.id}`}>
+                      <img className='w-[183px] h-[124px] rounded-lg mb-2' src={e.img} alt="" aria-hidden='false' />
+                      <div className='flex flex-col'>
+                        <p className='grow font-medium text-sm'>{e.title}</p>
+                        <div className='flex justify-between items-center icon'>
+                          <p>01.07.2023</p>
+                          <span><i className="fa-solid fa-eye"></i> 1257</span>
+                        </div>
+                      </div>
                     </Link>
                   </li>
                 )
