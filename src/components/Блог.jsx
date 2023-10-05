@@ -29,8 +29,10 @@ const Blog = ({ shop, like, addMalumot }) => {
                     <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
                         {
                             bolg.map((e) => {
+                                const isMalumotYoq = !e.title.toLowerCase().includes(searchQuery.toLowerCase());
+
                                 return (
-                                    <li key={e.id} data-aos-delay="0" data-aos="fade-up" className={`${e.title.toLowerCase().includes(searchQuery.toLowerCase()) ? 'block' : 'hidden'} show rounded-xl p-4 mb-14 aos-init aos-animate`}>
+                                    <li key={e.id} data-aos-delay="0" data-aos="fade-up" className={`${isMalumotYoq ? 'hidden' : 'block'} show rounded-xl p-4 mb-14 aos-init aos-animate`}>
                                         <Link to={`/malumotlar/${e.id}`} onClick={() => addMalumot(e.id)}>
                                             <img className='w-full h-[250px] rounded-xl mb-4' src={e.img} alt="" />
                                             <div>
@@ -46,6 +48,10 @@ const Blog = ({ shop, like, addMalumot }) => {
                             })
                         }
                     </ul>
+                    {searchQuery.length > 0 && bolg.every(e => !e.title.toLowerCase().includes(searchQuery.toLowerCase())) && (
+                        <h2 className='flex justify-center items-center font-bold text-4xl text-red-500'>Нет ссылки :(</h2>
+                    )}
+
                 </div>
             </div>
         </>
