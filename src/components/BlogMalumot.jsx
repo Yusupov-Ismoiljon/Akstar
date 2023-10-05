@@ -10,6 +10,7 @@ const BlogMalumot = () => {
     <>
       <div className='w-full max-w-[1300px] mx-auto px-5 pb-14 mt-7'>
         <Link className='text-lg logo mb-5 inline-block' to={'/ьлог'}>
+        <i className="fa-solid fa-left-long mr-2"></i>
           Блог вернуться к
         </Link>
         <div className='xl:flex xl:justify-between gap-16'>
@@ -29,7 +30,7 @@ const BlogMalumot = () => {
             <ul className='w-full grid gap-7'>
               {bolg.map((e) => {
                 return (
-                  <li className='show p-4'>
+                  <li className='show rounded-lg p-4'>
                     <Link className='flex justify-between gap-5' onClick={() => window.scrollTo(0, 0)} to={`/malumotlar/${e.id}`}>
                       <img className='w-[183px] h-[124px] rounded-lg mb-2' src={e.img} alt="" aria-hidden='false' />
                       <div className='flex flex-col'>
