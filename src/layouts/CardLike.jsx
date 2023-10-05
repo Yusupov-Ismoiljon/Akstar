@@ -16,7 +16,7 @@ const CardLike = ({ shop, like, removeLike }) => {
               return (
                 <li key={e.id} data-aos-delay="100" data-aos="fade-right" className='flex flex-col show aos-init aos-animate relative rounded-md'>
                   <div className='relative grow'>
-                    <img className='w-[328px] h-[238px] rounded-md brightness-90 mb-3' src={e.img} alt="product img" />
+                    <img className='w-full h-[238px] rounded-md brightness-90 mb-3' src={e.img} alt="product img" />
                     {/* delete */}
                     <button className='flex items-center absolute top-5 right-3 text-red-500 duration-500' onClick={() => removeLike(e.id)}>
                       <i className="fa-solid fa-trash-can fa-lg ml-2"></i>
