@@ -47,7 +47,7 @@ const Magazin = ({ shop, setShop, addCartPul }) => {
               {shop.map((product) => (
                 <li className='flex flex-col show rounded-lg gap-7' key={product.id}>
                   <div className='sm:flex sm:justify-between w-full gap-[30px] items-start'>
-                    <img className='w-full h-[300px] rounded-md' src={product.img} alt='product img' />
+                    <img className='w-full md:w-[300px] h-[350px] md:h-[300px] rounded-md' src={product.img} alt='product img' />
                     <div className='p-3'>
                       <div className='flex justify-between gap-7 mb-7'>
                         <div>
@@ -104,8 +104,8 @@ const Magazin = ({ shop, setShop, addCartPul }) => {
               ))}
             </ul>
 
-            <div className={`space-y-7 ${shop.length === 0 ? 'hidden' : 'block '} xl:mt-0 mt-10`}>
-              <div className='w-full md:w-[410px] bg-[#EDEDF2] rounded-xl p-7 space-y-7'>
+            <div className={`space-y-7 ${shop.length === 0 ? 'hidden' : 'block '} w-full xl:w-[410px] xl:mt-0 mt-10`}>
+              <div className='bg-[#EDEDF2] rounded-xl p-7 space-y-7'>
                 <h2 className='font-bold text-2xl leading-normal'>Всего: {shop.length} товара</h2>
                 <input className='w-full rounded-xl p-4' type='text' placeholder='Промокод:' />
                 <div className='flex justify-between'>
@@ -113,7 +113,7 @@ const Magazin = ({ shop, setShop, addCartPul }) => {
                   <span className='font-bold text-3xl leading-normal logo'>{narhi}  ₽</span>
                 </div>
               </div>
-              <button className='w-full md:w-[410px] bg-[#1B37A3] text-white rounded-xl px-9 py-4'>Перейти к оформлению</button>
+              <button className='w-full xl:w-[410px] bg-[#1B37A3] text-white rounded-xl px-9 py-4'>Перейти к оформлению</button>
             </div>
           </div>
           <div className={`w-full flex items-center justify-center ${shop.length === 0 ? 'block' : 'hidden'}`}>
