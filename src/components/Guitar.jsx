@@ -32,7 +32,7 @@ const Guitar = ({ addCart }) => {
                                 {e.tab.map((e) => {
                                     return (
                                         <button key={e.id} onClick={() => setActiveTabImg(e.id)}>
-                                            <img className={`md:w-28 md:h-28 w-[70px] h-[70px] rounded-lg ${e.tab === e.id ? 'border-2 border-[#1B37A3] rounded duration-500' : 'border-transparent'}`} src={e.img} aria-hidden='false' />
+                                            <img style={{ objectFit: 'cover', objectPosition: 'top' }} className={`md:w-28 md:h-28 w-[70px] h-[70px] ${e.tab === e.id ? 'border-2 border-[#1B37A3] rounded duration-500' : 'border-transparent'}`} src={e.img} aria-hidden='false' />
                                         </button>
                                     )
                                 })}
@@ -43,7 +43,7 @@ const Guitar = ({ addCart }) => {
                                 e.tab.map((i) => {
                                     return (
                                         <div key={i.id} className={`w-full ${tabImg === i.id ? 'block' : 'hidden'}`}>
-                                            <img className='w-[520px] h-[520px]' src={i.img} alt="" />
+                                            <img style={{ objectFit: 'cover', objectPosition: 'top' }} className='w-[520px] h-[520px]' src={i.img} aria-hidden="false"/>
                                         </div>
                                     )
                                 })
@@ -54,7 +54,7 @@ const Guitar = ({ addCart }) => {
                                 {e.tab.map((e) => {
                                     return (
                                         <li key={e.id} onClick={() => setActiveTabImg(e.id)}>
-                                            <img className={`md:w-28 md:h-28 w-full h-40`} src={e.img} aria-hidden='false' />
+                                            <img style={{ objectFit: 'cover', objectPosition: 'top' }} className={`md:w-28 md:h-28 w-full h-40`} src={e.img} aria-hidden='false' />
                                         </li>
                                     )
                                 })}

@@ -34,7 +34,7 @@ const Blog = ({ shop, like, addMalumot }) => {
                                 return (
                                     <li key={e.id} data-aos-delay="0" data-aos="fade-up" className={`${isMalumotYoq ? 'hidden' : 'block'} show rounded-xl p-4 mb-14 aos-init aos-animate`}>
                                         <Link to={`/malumotlar/${e.id}`} onClick={() => addMalumot(e.id)}>
-                                            <img className='w-full h-[250px] rounded-xl mb-4' src={e.img} alt="" />
+                                            <img style={{ objectFit: 'cover', objectPosition: 'top' }} className='w-full h-[250px] rounded-xl mb-4' src={e.img} aria-hidden="false"/>
                                             <div>
                                                 <div className='flex justify-between items-center icon'>
                                                     <p>01.07.2023</p>

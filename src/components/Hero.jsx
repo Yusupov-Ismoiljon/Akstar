@@ -37,13 +37,13 @@ const Hero = () => {
           className="mySwiper relative"
         >
           <SwiperSlide className='h-[383px]'>
-            <img src="./img/sweper1.jpg" alt="" />
+            <img src="./img/sweper1.jpg" aria-hidden="false"/>
           </SwiperSlide>
           <SwiperSlide className='h-[383px]'>
-            <img src="./img/swper2.jpg" alt="" />
+            <img src="./img/swper2.jpg" aria-hidden="false"/>
           </SwiperSlide>
           <SwiperSlide className='h-[383px]'>
-            <img src="./img/swper3.jpg" alt="" />
+            <img src="./img/swper3.jpg" aria-hidden="false"/>
           </SwiperSlide>
           <div>
             <button className='flex justify-center items-center w-10 h-10 absolute z-40 top-[191px] left-2 rounded-full bg-white show' onClick={prevSlider}>

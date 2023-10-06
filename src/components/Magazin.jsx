@@ -47,7 +47,7 @@ const Magazin = ({ shop, setShop, addCartPul }) => {
               {shop.map((product) => (
                 <li className='flex flex-col show rounded-lg gap-7' key={product.id}>
                   <div className='sm:flex sm:justify-between w-full gap-[30px] items-start'>
-                    <img className='w-full md:w-[300px] h-[350px] md:h-[300px] rounded-md' src={product.img} alt='product img' />
+                    <img style={{ objectFit: 'cover', objectPosition: 'top' }} className='w-full md:w-[300px] h-[350px] md:h-[300px] rounded-md' src={product.img} alt='product img' />
                     <div className='p-3'>
                       <div className='flex justify-between gap-7 mb-7'>
                         <div>
@@ -117,7 +117,7 @@ const Magazin = ({ shop, setShop, addCartPul }) => {
             </div>
           </div>
           <div className={`w-full flex items-center justify-center ${shop.length === 0 ? 'block' : 'hidden'}`}>
-            <img src='./img/gif.gif' alt='' />
+            <img style={{ objectFit: 'cover', objectPosition: 'top' }} src='./img/gif.gif' alt='' />
           </div>
         </div>
       </section>
