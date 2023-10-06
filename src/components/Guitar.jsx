@@ -49,15 +49,15 @@ const Guitar = ({ addCart }) => {
                             }
                         </div>
                         <div className='md:hidden block'>
-                            <div className='grid grid-cols-4 md:grid-cols-1 gap-7'>
+                            <ul className='grid grid-cols-4 md:grid-cols-1 md:gap-7 gap-5'>
                                 {e.tab.map((e) => {
                                     return (
-                                        <button key={e.id} onClick={() => setActiveTabImg(e.id)}>
-                                            <img className={`md:w-28 md:h-28 w-[70px] h-[70px] ${e.tab === e.id ? 'border-2 border-[#1B37A3] rounded duration-500' : 'border-transparent'}`} src={e.img} aria-hidden='false' />
-                                        </button>
+                                        <li key={e.id} onClick={() => setActiveTabImg(e.id)}>
+                                            <img className={`md:w-28 md:h-28 w-full h-40`} src={e.img} aria-hidden='false' />
+                                        </li>
                                     )
                                 })}
-                            </div>
+                            </ul>
                         </div>
                     </div>
 
