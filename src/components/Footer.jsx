@@ -14,27 +14,27 @@ const Footer = () => {
               <ul className='flex space-x-3'>
                 <li>
                   <a target="_blank" href="https://t.me/Ismoiljon_12_04">
-                    <i className="fa-brands fa-telegram hover:fa-beat fa-2xl text-white"></i>
+                    <i className="fa-brands fa-telegram fa-2xl text-white hover:text-red-500  hover:border-red-500 duration-500 "></i>
                   </a>
                 </li>
                 <li>
                   <a target="_blank" href="https://t.me/Ismoiljon_12_04">
-                    <i className="fa-brands fa-square-instagram hover:fa-beat fa-2xl text-white"></i>
+                    <i className="fa-brands fa-square-instagram fa-2xl text-white hover:text-red-500  hover:border-red-500 duration-500"></i>
                   </a>
                 </li>
                 <li>
                   <a target="_blank" href="https://t.me/Ismoiljon_12_04">
-                    <i className="fa-brands fa-square-youtube hover:fa-beat fa-2xl text-white"></i>
+                    <i className="fa-brands fa-square-youtube fa-2xl text-white hover:text-red-500  hover:border-red-500 duration-500"></i>
                   </a>
                 </li>
                 <li>
                   <a target="_blank" href="https://t.me/Ismoiljon_12_04">
-                    <i className="fa-brands fa-tiktok fa-2xl text-white"></i>
+                    <i className="fa-brands fa-tiktok fa-2xl text-white hover:text-red-500  hover:border-red-500 duration-500"></i>
                   </a>
                 </li>
                 <li>
                   <a target="_blank" href="https://t.me/Ismoiljon_12_04">
-                    <i className="fa-brands fa-vk fa-2xl text-white"></i>
+                    <i className="fa-brands fa-vk fa-2xl text-white hover:text-red-500  hover:border-red-500 duration-500"></i>
                   </a>
                 </li>
               </ul>
