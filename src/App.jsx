@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, xuseState } from "react";
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
 import Magazin from "./components/Magazin";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { api, api2, api3} from "../public/data";
+import { api, api2, api3 } from "../public/data";
 import CardLike from "./layouts/CardLike";
 import Blog from "./components/Блог";
 import ReactLayouts from "./layouts/ReactLayouts";
@@ -15,12 +15,11 @@ import Error404 from "./layouts/Error404";
 import AyolKiyim from "./components/AyolKiyim";
 import Frame from "./components/Frame";
 import KitsData from "./components/Kitsdata";
-// import Menu from "./layouts/Menu";
 
 export default function App() {
   const [shop, setShop] = useState([]);
-  const [like, setLike] = useState([]);
 
+  const [like, setLike] = useState([]);
 
   const addCart = (i) => {
     const found = shop.find((e) => e.id === i);
@@ -166,10 +165,11 @@ export default function App() {
 
     if (tempArr[ind].miqdor === 0) {
       tempArr[ind].miqdor = 1;
-    }
-
+    };
+    
     setShop([...tempArr]);
   };
+
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route element={<ReactLayouts shop={shop} like={like} addCart={addCart} addCart1={addCart1} addCart2={addCart2} addLike={addLike} removeLike={removeLike} addLike1={addLike1} />}>

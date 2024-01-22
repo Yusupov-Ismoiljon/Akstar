@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Header from './Header';
-import Footer from './Footer';
 import { toast } from 'react-toastify';
 
 const Magazin = ({ shop, setShop, addCartPul }) => {
   const [pul, setPul] = useState(true);
-  const [namber, setNamber] = useState(1);
   const [narhi, setNarhi] = useState(0);
 
   const CartNarhi = () => {

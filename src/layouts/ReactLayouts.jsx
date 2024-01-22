@@ -10,7 +10,7 @@ const ReactLayouts = ({ shop, like, singup, setSIngup }) => {
     return (
         <div className='flex flex-col h-screen'>
             <Header shop={shop} like={like} singup={singup} setSIngup={setSIngup} />
-            <main className=' grow'>
+            <main className='grow'>
                 <Outlet />
             </main>
             <Cta />

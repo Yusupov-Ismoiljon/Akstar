@@ -20,7 +20,7 @@ const BlogMalumot = () => {
               <span className='icon'>19 июля 2022</span>
             </div>
             <p className='font-bold text-lg leading-6 mb-7'>{data.title1}</p>
-            <img style={{ objectFit: 'cover', objectPosition: 'top' }} className='w-full md:h-[500px] rounded-xl mb-4' src={data.img} aria-hidden="false"aria-hidden='false' />
+            <img style={{ objectFit: 'cover', objectPosition: 'top' }} className='w-full md:h-[500px] rounded-xl mb-4' src={data.img} aria-hidden="false" />
             <p className='font-normal text-base leading-6 mb-4'>{data.naprumir}</p>
             <p className='font-bold text-base leading-6 mb-4'>{data.brit2} <span className='font-normal'>{data.text2}</span> </p>
             <p className='font-normal text-base leading-6'>{data.pirv}</p>
@@ -32,7 +32,7 @@ const BlogMalumot = () => {
                 return (
                   <li className='show rounded-lg p-4'>
                     <Link className='flex justify-between gap-5' onClick={() => window.scrollTo(0, 0)} to={`/malumotlar/${e.id}`}>
-                      <img style={{ objectFit: 'cover', objectPosition: 'top' }} className='w-[183px] h-[124px] rounded-lg mb-2' src={e.img} aria-hidden="false"aria-hidden='false' />
+                      <img style={{ objectFit: 'cover', objectPosition: 'top' }} className='w-[183px] h-[124px] rounded-lg mb-2' src={e.img} aria-hidden="false"/>
                       <div className='flex flex-col'>
                         <p className='grow font-medium text-sm'>{e.title}</p>
                         <div className='md:block hidden'>

@@ -7,7 +7,6 @@ import Footer from './Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import { api, api2, api3, bolg } from '../../public/data';
-import card from '@material-tailwind/react/theme/components/card';
 import { Card, Option, Select } from '@material-tailwind/react';
 import MainWoman from './MainWoman';
 import MainKids from './MainKids';

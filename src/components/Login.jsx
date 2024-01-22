@@ -45,4 +45,4 @@ const Login = ({ signup, setSignup }) => {
     )
 }
 
-export default Login
+export default Login;

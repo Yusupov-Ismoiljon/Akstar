@@ -5,7 +5,7 @@ import { Input, Tab, Tabs, TabsHeader } from '@material-tailwind/react';
 import { bolg } from '../../public/data';
 import { Link } from 'react-router-dom';
 
-const Blog = ({ shop, like, addMalumot }) => {
+const Blog = ({ addMalumot }) => {
     const [searchQuery, setSearchQuery] = useState('');
     const [activeTab, setActiveTab] = React.useState(1);
     return (
@@ -32,7 +32,7 @@ const Blog = ({ shop, like, addMalumot }) => {
                                 const isMalumotYoq = !e.title.toLowerCase().includes(searchQuery.toLowerCase());
 
                                 return (
-                                    <li key={e.id} data-aos-delay="0" data-aos="fade-up" className={`${isMalumotYoq ? 'hidden' : 'block'} show rounded-xl p-4 mb-14 aos-init aos-animate`}>
+                                    <li key={e.id} data-aos-delay="0" data-aos="fade-up" className={`${isMalumotYoq ? 'hidden' : 'block'} show rounded-xl p-4 mb-14 aos-init aos-animate`   }>
                                         <Link to={`/malumotlar/${e.id}`} onClick={() => addMalumot(e.id)}>
                                             <img style={{ objectFit: 'cover', objectPosition: 'top' }} className='w-full h-[250px] rounded-xl mb-4' src={e.img} aria-hidden="false"/>
                                             <div>
@@ -49,7 +49,7 @@ const Blog = ({ shop, like, addMalumot }) => {
                         }
                     </ul>
                     {searchQuery.length > 0 && bolg.every(e => !e.title.toLowerCase().includes(searchQuery.toLowerCase())) && (
-                        <h2 className='flex justify-center items-center font-bold md:text-4xl text-2xl pb-10 text-red-500'>Нет информации :(</h2>
+                        <h2 className='flex justify-center items-center font-bold md:text-4xl text-2xl pb-10 text-red-500'></h2>
                     )}
 
                 </div>
