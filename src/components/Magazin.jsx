@@ -114,7 +114,7 @@ const Magazin = ({ shop, setShop, addCartPul }) => {
             </div>
           </div>
           <div className={`w-full flex items-center justify-center ${shop.length === 0 ? 'block' : 'hidden'}`}>
-            <img style={{ objectFit: 'cover', objectPosition: 'top' }} src='./img/gif.gif' alt='' />
+            <img style={{ objectFit: 'cover', objectPosition: 'top' }} src='./img/gif.gif' alt='gif' />
           </div>
         </div>
       </section>
