@@ -1,6 +1,8 @@
 import { Badge, Menu } from '@material-tailwind/react';
 import React, { useContext, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom';
+import shopIcon from '../../public/img/shopping-svg.svg';
+import likeIcon from '../../public/img/like-svg.svg';
 
 const Header = ({ shop, like, singup, setSIngup }) => {
     const [menu, setMenu] = useState(false);
@@ -42,14 +44,14 @@ const Header = ({ shop, like, singup, setSIngup }) => {
                             <li>
                                 <Badge color="blue" content={`${shop.length}`}>
                                     <Link to='/магазин'>
-                                        <i className="fas fa-cart-shopping fa-xl"></i>
+                                        <img className='w-6 h-6' src={shopIcon} alt="shop icon" />
                                     </Link>
                                 </Badge>
                             </li>
                             <li>
                                 <Badge content={`${like.length}`}>
                                     <Link to='/like'>
-                                        <i className="fa-sharp fa-regular fa-heart fa-xl"></i>
+                                       <img className='w-6 h-6' src={likeIcon} alt="like svg" />
                                     </Link>
                                 </Badge>
                             </li>

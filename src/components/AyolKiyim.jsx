@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { api, api2, } from '../../public/data';
-import { tapArr } from '../../public/data';
 import 'swiper/css';
 import { useParams } from 'react-router-dom';
 
